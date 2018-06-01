@@ -84,7 +84,9 @@ prnt("7. Recolorizing or smthng")
 pRecons = subprocess.Popen( [os.path.join(MVG_PATH, "openMVG_main_ComputeSfM_DataColor"),  "-i", MVG_RECONSTRUCT+"/robust.bin", "-o", os.path.join(MVG_RECONSTRUCT,"robust_colorized.ply")] )
 pRecons.wait()
 
-print ("7. Starting MVS conversion")
+print ("8. Starting MVS conversion")
 pMVS = subprocess.Popen( [os.path.join(MVG_PATH, "openMVG_main_openMVG2openMVS"), "-i", MVG_RECONSTRUCT+"/sfm_data.bin", "-o", os.path.join(MVS_PATH, "output.mvs")] )
 pMVS.wait()
 #END OF MVG PIPELINE
+
+#START OF MVS PIPELINE
