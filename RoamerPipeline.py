@@ -23,9 +23,6 @@ SENSOR_DATABASE_PATH = "~/openMVG/src/openMVG/exif/sensor_width_database/sensor_
 MVG_PATH = "~/openMVG_build/Linux-x86 64-RELEASE/"
 MVS_PATH = "~/openMVS_build/bin/"
 
-MVG_MATCHES = MVG_PATH + "matches"
-MVG_RECONSTRUCT = MVG_PATH + "reconstruction_sequential"
-
 #Get Directories
 INPUT_DIR = input("Enter the Input Directory")
 OUTPUT_DIR = input("Enter the Output Directory")
@@ -35,24 +32,32 @@ while(True):
         break
     time.sleep(1)
 
-fileOut = open("/LOGS/pythonLog.txt", "w")
+if(OUTPUT_DIR[len(OUTPUT_DIR)-1] != "/"):
+    OUTPUT_DIR = OUTPUT_DIR + "/"
+
+fileOut = open(OUTPUT_DIR + "/LOGS/pythonLog.txt", "w")
 
 #Create needed file structure
-os.rmdir(OUTPUT_DIR + "/MVG")
-os.mkdir(OUTPUT_DIR + "/MVG")
+os.rmdir(OUTPUT_DIR + "MVG")
+os.mkdir(OUTPUT_DIR + "MVG")
 prnt("Created MVG Dir")
 
-os.mkdir(OUTPUT_DIR + "/MVG/matches")
-os.mkdir(OUTPUT_DIR + "/MVG/reconstruction_sequential")
+os.mkdir(OUTPUT_DIR + "MVG/matches")
+os.mkdir(OUTPUT_DIR + "MVG/reconstruction_sequential")
 prnt("Populated MVG Dir")
 
-os.rmdir(OUTPUT_DIR + "/MVS")
-os.mkdir(OUTPUT_DIR + "/MVS")
+os.rmdir(OUTPUT_DIR + "MVS")
+os.mkdir(OUTPUT_DIR + "MVS")
 prnt("Created MVS Dir")
 
-os.rmdir(OUTPUT_DIR + "/LOGS")
-os.mkdir(OUTPUT_DIR + "/LOGS")
+os.rmdir(OUTPUT_DIR + "LOGS")
+os.mkdir(OUTPUT_DIR + "LOGS")
 prnt("Created LOGS Dir")
+
+MVG_MATCHES = OUTPUT_DIR + "matches"
+MVG_RECONSTRUCT = OUTPUT_DIR + "reconstruction_sequential"
+MVS_OUTPUT = OUTPUT_DIR + "MVS"
+
 
 #START OF MVG PIPELINE
 prnt("1. Intrinsics Analysis")
@@ -90,3 +95,18 @@ pMVS.wait()
 #END OF MVG PIPELINE
 
 #START OF MVS PIPELINE
+print ("9. Starting Dense Point Reconstruction")
+pDense = subprocess.Popen( [os.path.join(MVS_PATH, "DensifyPointCloud"), os.path.join(MVS_OUTPUT, "output.mvs")] )
+pDense.wait()
+
+print ("10. Starting mesh reconstruction")
+pMesh = subprocess.Popen( [os.path.join(MVS_PATH, "ReconstructMesh"), os.path.join(MVS_OUTPUT, "output_dense.mvs")] )
+pMesh.wait()
+
+print ("11. Starting mesh refinement")
+pMeshRefine = subprocess.Popen( [os.path.join(MVS_PATH, "RefineMesh"), os.path.join(MVS_OUTPUT, "output_dense_mesh.mvs")] )
+pMeshRefine.wait()
+
+print ("12. Starting mesh texturing")
+pTexture = subprocess.Popen( [os.path.join(MVS_PATH, "TextureMesh"), os.path.join(MVS_OUTPUT, "output_dense_mesh_refine.mvs")] )
+pTexture.wait()
