@@ -42,10 +42,10 @@ def removeBasedOnExt(ext, src):
 '''
 
 
-SENSOR_DATABASE_PATH = "/home/roamer/openMVG/src/openMVG/exif/sensor_width_database/sensor_width_camera_database.txt"
+SENSOR_DATABASE_PATH = "/home/rmr/openMVG/src/openMVG/exif/sensor_width_database/sensor_width_camera_database.txt"
 
-MVG_PATH = "/home/roamer/openMVG_build/Linux-x86_64-RELEASE/"
-MVS_PATH = "/home/roamer/openMVS_build/bin/"
+MVG_PATH = "/home/rmr/openMVG_build/Linux-x86_64-RELEASE/"
+MVS_PATH = "/home/rmr/openMVS_build/bin/"
 
 #Get Directories
 INPUT_DIR = str(raw_input("Enter the Input Directory"))
@@ -65,11 +65,11 @@ OUTPUT_DIR = OUTPUT_DIR.strip()
 
 if("~" in OUTPUT_DIR):
     OUTPUT_DIR = OUTPUT_DIR.strip("~")
-    OUTPUT_DIR = "/home/roamer" + OUTPUT_DIR
+    OUTPUT_DIR = "/home/rmr" + OUTPUT_DIR
 
 if("~" in INPUT_DIR):
     INPUT_DIR = INPUT_DIR.strip("~")
-    INPUT_DIR = "/home/roamer" + INPUT_DIR
+    INPUT_DIR = "/home/rmr" + INPUT_DIR
 
 
 #Create needed file structure
@@ -139,19 +139,19 @@ pMVS.wait()
 
 #START OF MVS PIPELINE
 prnt ("9. Starting Dense Point Reconstruction")
-pDense = subprocess.Popen([join(MVS_PATH, "DensifyPointCloud"), "-i", MVS_OUTPUT + "/output.mvs", "-o", MVS_OUTPUT + "/output_dense.mvs"])
+pDense = subprocess.Popen([join(MVS_PATH, "DensifyPointCloud"), "-i", MVS_OUTPUT + "/output.mvs"])
 pDense.wait()
 
 prnt ("10. Starting mesh reconstruction")
-pMesh = subprocess.Popen([join(MVS_PATH, "ReconstructMesh"), "-i", MVS_OUTPUT + "/output_dense.mvs", "-o", MVS_OUTPUT + "/output_dense_mesh.mvs"])
+pMesh = subprocess.Popen([join(MVS_PATH, "ReconstructMesh"), "-i", MVS_OUTPUT + "/output_dense.mvs"])
 pMesh.wait()
 
 prnt ("11. Starting mesh refinement")
-pMeshRefine = subprocess.Popen([join(MVS_PATH, "RefineMesh"), "-i", MVS_OUTPUT + "/output_dense_mesh.mvs", "-o", MVS_OUTPUT + "/output_dense_mesh_refine.mvs"])
+pMeshRefine = subprocess.Popen([join(MVS_PATH, "RefineMesh"), "-i", MVS_OUTPUT + "/output_dense_mesh.mvs"])
 pMeshRefine.wait()
 
 prnt ("12. Starting mesh texturing")
-pTexture = subprocess.Popen([join(MVS_PATH, "TextureMesh"), "-i", MVS_OUTPUT + "/output_dense_mesh_refine.mvs", "-o", MVS_OUTPUT + "/output_dense_mesh_refine_textured.mvs"])
+pTexture = subprocess.Popen([join(MVS_PATH, "TextureMesh"), "-i", MVS_OUTPUT + "/output_dense_mesh_refine.mvs"])
 pTexture.wait()
 
 #Clean out logs and other auxillary files
@@ -160,6 +160,6 @@ pTexture.wait()
 time.sleep(2)
 
 #purge and reorganize aux files
-moveBasedOnExt(".log", "/home/roamer/Documents/Pipeline/rmr/", join(OUTPUT_DIR, "LOGS/"))
-removeBasedOnExt(".dmap", "/home/roamer/Documents/Pipeline/rmr/")
-shutil.rmtree("/home/roamer/Documents/Pipeline/rmr/undistorted_images")
+moveBasedOnExt(".log", "/home/rmr/Documents/Pipeline/rmr/", join(OUTPUT_DIR, "LOGS/"))
+removeBasedOnExt(".dmap", "/home/rmr/Documents/Pipeline/rmr/")
+shutil.rmtree("/home/rmr/Documents/Pipeline/rmr/undistorted_images")
