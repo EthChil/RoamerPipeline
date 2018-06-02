@@ -34,7 +34,7 @@ def removeBasedOnExt(ext, src):
     sourceFiles = os.listdir(src)
     for file in sourceFiles:
         if file.endswith(ext) and os.path.exists(join(src, file)):
-            os.rmdir(join(src, file))
+            os.unlink(join(src, file))
 
 '''
 ~/Documents/Photos/Plaza
@@ -160,6 +160,6 @@ pTexture.wait()
 time.sleep(2)
 
 #purge and reorganize aux files
-moveBasedOnExt(".log", "/home/rmr/Documents/Pipeline/rmr/", join(OUTPUT_DIR, "LOGS/"))
-removeBasedOnExt(".dmap", "/home/rmr/Documents/Pipeline/rmr/")
-shutil.rmtree("/home/rmr/Documents/Pipeline/rmr/undistorted_images")
+moveBasedOnExt(".log", "/home/rmr/Documents/Pipeline/RoamerPipeline/", join(OUTPUT_DIR, "LOGS/"))
+removeBasedOnExt(".dmap", "/home/rmr/Documents/Pipeline/RoamerPipeline/")
+shutil.rmtree("/home/rmr/Documents/Pipeline/RoamerPipeline/undistorted_images")
