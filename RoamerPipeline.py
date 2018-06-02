@@ -14,12 +14,27 @@ import subprocess
 import sys
 import shutil
 
+
+
+
 def prnt(text):
     fileOut.write(text)
     print(text)
 
 def join(path1, path2):
     return os.path.join(path1, path2)
+
+def moveBasedOnExt(ext, src, dest):
+    sourceFiles = os.listdir(src)
+    for file in sourceFiles:
+        if file.endswith(ext):
+            shutil.move(join(src, file), join(dest, file))
+
+def removeBasedOnExt(ext, src):
+    sourceFiles = os.listdir(src)
+    for file in sourceFiles:
+        if file.endswith(ext) and os.path.exists(join(src, file)):
+            os.rmdir(join(src, file))
 
 '''
 ~/Documents/Photos/Plaza
@@ -56,15 +71,16 @@ if("~" in INPUT_DIR):
     INPUT_DIR = INPUT_DIR.strip("~")
     INPUT_DIR = "/home/roamer" + INPUT_DIR
 
+
 #Create needed file structure
+#Make Logs
 if(os.path.isdir(join(OUTPUT_DIR, "LOGS/"))):
     shutil.rmtree(join(OUTPUT_DIR, "LOGS"))
 os.makedirs(join(OUTPUT_DIR, "LOGS"))
-
 fileOut = open(join(OUTPUT_DIR, "LOGS/pythonLog.txt"), "w")
-
 prnt("Created LOGS Dir")
 
+#Make MVG
 if(os.path.isdir(join(OUTPUT_DIR, "MVG"))):
     shutil.rmtree(join(OUTPUT_DIR, "MVG"))
 os.makedirs(join(OUTPUT_DIR, "MVG"))
@@ -74,16 +90,16 @@ os.makedirs(join(OUTPUT_DIR, "MVG/matches"))
 os.makedirs(join(OUTPUT_DIR, "MVG/reconstruction_sequential"))
 prnt("Populated MVG Dir")
 
+#Make MVS
 if(os.path.isdir(join(OUTPUT_DIR, "MVS"))):
     shutil.rmtree(join(OUTPUT_DIR, "MVS"))
 os.makedirs(join(OUTPUT_DIR, "MVS"))
 prnt("Created MVS Dir")
 
-
+#General Purpose
 MVG_MATCHES = join(OUTPUT_DIR, "MVG/matches")
 MVG_RECONSTRUCT = join(OUTPUT_DIR, "MVG/reconstruction_sequential")
 MVS_OUTPUT = join(OUTPUT_DIR, "MVS")
-print("WHOOOOOOOOP " + MVS_OUTPUT)
 
 
 #START OF MVG PIPELINE
@@ -137,3 +153,13 @@ pMeshRefine.wait()
 prnt ("12. Starting mesh texturing")
 pTexture = subprocess.Popen([join(MVS_PATH, "TextureMesh"), "-i", MVS_OUTPUT + "/output_dense_mesh_refine.mvs", "-o", MVS_OUTPUT + "/output_dense_mesh_refine_textured.mvs"])
 pTexture.wait()
+
+#Clean out logs and other auxillary files
+
+#wait for the filesystem to catch up
+time.sleep(2)
+
+#purge and reorganize aux files
+moveBasedOnExt(".log", "/home/roamer/Documents/Pipeline/rmr/", join(OUTPUT_DIR, "LOGS/"))
+removeBasedOnExt(".dmap", "/home/roamer/Documents/Pipeline/rmr/")
+shutil.rmtree("/home/roamer/Documents/Pipeline/rmr/undistorted_images")
