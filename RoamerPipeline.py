@@ -108,7 +108,7 @@ pIntrinsics = subprocess.Popen([join(MVG_PATH, "openMVG_main_SfMInit_ImageListin
 pIntrinsics.wait()
 
 prnt("2. Compute Features")
-pFeatures = subprocess.Popen([join(MVG_PATH, "openMVG_main_ComputeFeatures"),  "-i", MVG_MATCHES+"/sfm_data.json", "-o", MVG_MATCHES, "-m", "SIFT"])
+pFeatures = subprocess.Popen([join(MVG_PATH, "openMVG_main_ComputeFeatures"),  "-i", MVG_MATCHES+"/sfm_data.json", "-o", MVG_MATCHES, "-m", "SIFT", "-p", "ULTRA"])
 pFeatures.wait()
 
 prnt("3. Compute Matches")
