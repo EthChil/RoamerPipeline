@@ -1,4 +1,4 @@
-update=6/8/2018 10:16:55 PM
+update=Wednesday, July 04, 2018 'pmt' 06:28:23 pm
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=Lib
@@ -59,3 +57,6 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=Lib/18650Battery
+LibName31=Lib/hbridge
+[general]
+version=1
