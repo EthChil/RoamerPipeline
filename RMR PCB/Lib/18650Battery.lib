@@ -1,0 +1,17 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# 18650mount
+#
+DEF 18650mount B 0 40 Y Y 1 F N
+F0 "B" 0 0 60 H V C CNN
+F1 "18650mount" 0 0 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+X +ve ~ -150 -300 200 R 50 50 1 1 w
+X -ve ~ -150 -150 200 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+#End Library
