@@ -1,5 +1,7 @@
 from pyfirmata import Arduino, util
 
+#no speeds equal to or less than 0.3
+
 board = Arduino('/dev/ttyACM0')
 
 
@@ -37,8 +39,13 @@ def rotateMast(deg):
     mastServo.write(deg/2)
 
 while(True):
-    drive(1, 1)
+    drive(0.1, 0)
     board.pass_time(2)
-    drive(1, -1)
+    drive(0.2, 0)
     board.pass_time(2)
-
+    drive(0.3, 0)
+    board.pass_time(2)
+    drive(0.4, 0)
+    board.pass_time(2)
+    drive(0.5, 0)
+    board.pass_time(2)
