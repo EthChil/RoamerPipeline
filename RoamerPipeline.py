@@ -14,9 +14,6 @@ import subprocess
 import sys
 import shutil
 
-
-
-
 def prnt(text):
     fileOut.write(text)
     print(text)
@@ -42,10 +39,10 @@ def removeBasedOnExt(ext, src):
 '''
 
 
-SENSOR_DATABASE_PATH = "/home/rmr/openMVG/src/openMVG/exif/sensor_width_database/sensor_width_camera_database.txt"
+SENSOR_DATABASE_PATH = "/Users/Kratos/Documents/BASEF/openMVG/src/openMVG/exif/sensor_width_database/sensor_width_camera_database.txt"
 
-MVG_PATH = "/home/rmr/openMVG_build/Linux-x86_64-RELEASE/"
-MVS_PATH = "/home/rmr/openMVS_build/bin/"
+MVG_PATH = "/Users/Kratos/Documents/BASEF/openMVG_build/Darwin-x86_64-RELEASE/Release/"
+MVS_PATH = "/Users/Kratos/Documents/BASEF/openMVS_build/bin/"
 
 #Get Directories
 INPUT_DIR = str(raw_input("Enter the Input Directory"))
@@ -63,13 +60,14 @@ if(OUTPUT_DIR[len(OUTPUT_DIR)-1] != "/"):
 
 OUTPUT_DIR = OUTPUT_DIR.strip()
 
-if("~" in OUTPUT_DIR):
-    OUTPUT_DIR = OUTPUT_DIR.strip("~")
-    OUTPUT_DIR = "/home/rmr" + OUTPUT_DIR
+# if("~" in OUTPUT_DIR):
+#     OUTPUT_DIR = OUTPUT_DIR.strip("~")
+#     OUTPUT_DIR = "/home/rmr" + OUTPUT_DIR
+#
+# if("~" in INPUT_DIR):
+#     INPUT_DIR = INPUT_DIR.strip("~")
+#     INPUT_DIR = "/home/rmr" + INPUT_DIR
 
-if("~" in INPUT_DIR):
-    INPUT_DIR = INPUT_DIR.strip("~")
-    INPUT_DIR = "/home/rmr" + INPUT_DIR
 
 
 #Create needed file structure
