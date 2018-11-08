@@ -108,15 +108,21 @@ pIntrinsics = subprocess.Popen([join(MVG_PATH, "openMVG_main_SfMInit_ImageListin
 pIntrinsics.wait()
 
 prnt("2. Compute Features")
-pFeatures = subprocess.Popen([join(MVG_PATH, "openMVG_main_ComputeFeatures"),  "-i", MVG_MATCHES+"/sfm_data.json", "-o", MVG_MATCHES, "-m", "SIFT", "-p", "ULTRA"])
+pFeatures = subprocess.Popen([join(MVG_PATH, "openMVG_main_ComputeFeatures"),  "-i", MVG_MATCHES+"/sfm_data.json", "-o", "-f", "1", MVG_MATCHES, "-m", "SIFT", "-p", "ULTRA"])
 pFeatures.wait()
 
+#TODO setup the image pair list
 prnt("3. Compute Matches")
-pMatches = subprocess.Popen( [join(MVG_PATH, "openMVG_main_ComputeMatches"),  "-i", MVG_MATCHES+"/sfm_data.json", "-o", MVG_MATCHES] )
+pMatches = subprocess.Popen( [join(MVG_PATH, "openMVG_main_ComputeMatches"),  "-i", MVG_MATCHES+"/sfm_data.json", "-o", MVG_MATCHES, "-f", "1"] )
 pMatches.wait()
 
-prnt ("4. Do Sequential/Incremental reconstruction")
-pRecons = subprocess.Popen( [join(MVG_PATH, "openMVG_main_IncrementalSfM"),  "-i", MVG_MATCHES+"/sfm_data.json", "-m", MVG_MATCHES, "-o", MVG_RECONSTRUCT] )
+
+# prnt ("4. Do Sequential/Incremental reconstruction")
+# pRecons = subprocess.Popen( [join(MVG_PATH, "openMVG_main_IncrementalSfM"),  "-i", MVG_MATCHES+"/sfm_data.json", "-m", MVG_MATCHES, "-o", MVG_RECONSTRUCT, "-f", "1"])
+# pRecons.wait()
+
+prnt ("4. Do Sequential/Incremental reconstruction") 
+pRecons = subprocess.Popen( [join(MVG_PATH, "openMVG_main_GlobalSfM"),  "-i", MVG_MATCHES+"/sfm_data.json", "-m", MVG_MATCHES, "-o", MVG_RECONSTRUCT, "-f", "1"])
 pRecons.wait()
 
 prnt ("5. Colorize Structure")
