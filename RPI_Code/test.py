@@ -1,8 +1,16 @@
+from picamera import PiCamera
+from time import sleep
+import RPi.GPIO as GPIO
 from pyfirmata import Arduino, util
+from subprocess import call
+
+GPIO.setwarnings(False)
+GPIO.setmode(GPIO.BOARD)
 
 #no speeds equal to or less than 0.3
 
 board = Arduino('/dev/ttyACM0')
+camera = PiCamera()
 
 
 Lmotor1 = board.get_pin('d:5:p')
@@ -13,6 +21,16 @@ Rmotor2 = board.get_pin('d:11:p')
 
 mastServo = board.servo_config(3)
 
+shutdownBtn = 10;
+inputBtn = 12;
+
+GPIO.setup(shutdownBtn, GPIO.IN,  pull_up_down=GPIO.PUD_DOWN)
+GPIO.setup(inputBtn, GPIO.IN,  pull_up_down=GPIO.PUD_DOWN)
+GPIO.add_event_detect(shutdownBtn, GPIO.RISING,callback=shutdown)
+
+def shutdown():
+    GPIO.cleanup()
+    call("sudo shutdown now", shell=True)
 
 def drive(left, right):
     if(left > 0):
@@ -38,14 +56,43 @@ def drive(left, right):
 def rotateMast(deg):
     mastServo.write(deg/2)
 
+imageNumber = 0
+
+def captureImage():
+    camera.start_preview()
+    camera.brightness = 50
+    sleep(5)
+    camera.capture('/home/pi/Documents/RoamerPipeline/RPI_Code/' + str(imageNumber) + '.jpg')
+    imageNumber += 1
+
+def capBubble():
+    rotateMast(0)
+    sleep(0.1)
+
+    for deg in range(0, 360, 45):
+        rotateMast(deg)
+        sleep(0.1)
+        captureImage()
+
+    rotateMast(0)
+
+def wait4Btn():
+    while(GPIO.input(inputBtn) == GPIO.LOW):
+        sleep(0.1)
+
+
+#MAIN PROGRAM
+wait4Btn()
+
 while(True):
-    drive(0.1, 0)
+    drive(1, 1)
     board.pass_time(2)
-    drive(0.2, 0)
-    board.pass_time(2)
-    drive(0.3, 0)
-    board.pass_time(2)
-    drive(0.4, 0)
-    board.pass_time(2)
-    drive(0.5, 0)
-    board.pass_time(2)
+    capBubble()
+
+    wait4Btn()
+
+
+
+
+
+
