@@ -39,21 +39,30 @@ def removeBasedOnExt(ext, src):
 '''
 
 
-SENSOR_DATABASE_PATH = "/Users/Kratos/Documents/BASEF/openMVG/src/openMVG/exif/sensor_width_database/sensor_width_camera_database.txt"
 
-MVG_PATH = "/Users/Kratos/Documents/BASEF/openMVG_build/Darwin-x86_64-RELEASE/Release/"
-MVS_PATH = "/Users/Kratos/Documents/BASEF/openMVS_build/bin/"
+if(input("Linux? y or n") == "y" or input("Linux?") == "Y"):#set this to linux paths
+    SENSOR_DATABASE_PATH = "/Users/Kratos/Documents/BASEF/openMVG/src/openMVG/exif/sensor_width_database/sensor_width_camera_database.txt"
+
+    MVG_PATH = "/Users/Kratos/Documents/BASEF/openMVG_build/Darwin-x86_64-RELEASE/Release/"
+    MVS_PATH = "/Users/Kratos/Documents/BASEF/openMVS_build/bin/"
+
+else:
+    SENSOR_DATABASE_PATH = "/Users/Kratos/Documents/BASEF/openMVG/src/openMVG/exif/sensor_width_database/sensor_width_camera_database.txt"
+
+    MVG_PATH = "/Users/Kratos/Documents/BASEF/openMVG_build/Darwin-x86_64-RELEASE/Release/"
+    MVS_PATH = "/Users/Kratos/Documents/BASEF/openMVS_build/bin/"
+
 
 #Get Directories
-INPUT_DIR = str(raw_input("Enter the Input Directory"))
-OUTPUT_DIR = str(raw_input("Enter the Output Directory"))
+INPUT_DIR = str(input("Enter the Input Directory"))
+OUTPUT_DIR = str(input("Enter the Output Directory"))
 
 while(True):
-    if(raw_input("Are you happy with these directories? (Y/N)") == "Y"):
+    if(input("Are you happy with these directories? (Y/N)") == "Y"):
         break
     time.sleep(1)
-    INPUT_DIR = str(raw_input("Enter the Input Directory"))
-    OUTPUT_DIR = str(raw_input("Enter the Output Directory"))
+    INPUT_DIR = str(input("Enter the Input Directory"))
+    OUTPUT_DIR = str(input("Enter the Output Directory"))
 
 if(OUTPUT_DIR[len(OUTPUT_DIR)-1] != "/"):
     OUTPUT_DIR = OUTPUT_DIR + "/"
