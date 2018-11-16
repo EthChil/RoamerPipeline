@@ -40,7 +40,7 @@ def removeBasedOnExt(ext, src):
 
 
 
-if(input("Linux? y or n") == "y" or input("Linux?") == "Y"):#set this to linux paths
+if(raw_input("Linux? y or n") == "y"):#set this to linux paths
     SENSOR_DATABASE_PATH = "/Users/Kratos/Documents/BASEF/openMVG/src/openMVG/exif/sensor_width_database/sensor_width_camera_database.txt"
 
     MVG_PATH = "/Users/Kratos/Documents/BASEF/openMVG_build/Darwin-x86_64-RELEASE/Release/"
@@ -52,17 +52,19 @@ else:
     MVG_PATH = "/Users/Kratos/Documents/BASEF/openMVG_build/Darwin-x86_64-RELEASE/Release/"
     MVS_PATH = "/Users/Kratos/Documents/BASEF/openMVS_build/bin/"
 
+    imagePath = "/Users/Kratos/Documents/RoamerPipeline/PhotoSets/"
+
 
 #Get Directories
-INPUT_DIR = str(input("Enter the Input Directory"))
-OUTPUT_DIR = str(input("Enter the Output Directory"))
+INPUT_DIR = str(raw_input("Enter the Photo Project Name"))
+OUTPUT_DIR = str(raw_input("Enter the Output Directory"))
 
 while(True):
-    if(input("Are you happy with these directories? (Y/N)") == "Y"):
+    if(raw_input("Are you happy with these directories? (Y/N)") == "Y"):
         break
     time.sleep(1)
-    INPUT_DIR = str(input("Enter the Input Directory"))
-    OUTPUT_DIR = str(input("Enter the Output Directory"))
+    INPUT_DIR = str(raw_input("Enter the Photo Project Name"))
+    OUTPUT_DIR = str(raw_input("Enter the Output Directory"))
 
 if(OUTPUT_DIR[len(OUTPUT_DIR)-1] != "/"):
     OUTPUT_DIR = OUTPUT_DIR + "/"
@@ -111,11 +113,11 @@ MVS_OUTPUT = join(OUTPUT_DIR, "MVS")
 
 #START OF MVG PIPELINE
 prnt("1. Intrinsics Analysis")
-pIntrinsics = subprocess.Popen([join(MVG_PATH, "openMVG_main_SfMInit_ImageListing"), "-i", INPUT_DIR, "-o", MVG_MATCHES, "-d", SENSOR_DATABASE_PATH])
+pIntrinsics = subprocess.Popen([join(MVG_PATH, "openMVG_main_SfMInit_ImageListing"), "-i", imagePath + INPUT_DIR, "-o", MVG_MATCHES, "-d", SENSOR_DATABASE_PATH])
 pIntrinsics.wait()
 
 prnt("2. Compute Features")
-pFeatures = subprocess.Popen([join(MVG_PATH, "openMVG_main_ComputeFeatures"),  "-i", MVG_MATCHES+"/sfm_data.json", "-o", "-f", "1", MVG_MATCHES, "-m", "SIFT", "-p", "ULTRA"])
+pFeatures = subprocess.Popen([join(MVG_PATH, "openMVG_main_ComputeFeatures"),  "-i", MVG_MATCHES+"/sfm_data.json", "-o", MVG_MATCHES, "-f", "1", MVG_MATCHES, "-m", "SIFT", "-p", "ULTRA"])
 pFeatures.wait()
 
 #TODO setup the image pair list
@@ -129,11 +131,11 @@ pMatches.wait()
 # pRecons.wait()
 
 prnt ("4. Do Sequential/Incremental reconstruction") 
-pRecons = subprocess.Popen( [join(MVG_PATH, "openMVG_main_GlobalSfM"),  "-i", MVG_MATCHES+"/sfm_data.json", "-m", MVG_MATCHES, "-o", MVG_RECONSTRUCT, "-f", "1"])
+pRecons = subprocess.Popen( [join(MVG_PATH, "openMVG_main_GlobalSfM"),  "-i", MVG_MATCHES+"/sfm_data.json", "-m", MVG_MATCHES, "-o", MVG_RECONSTRUCT])
 pRecons.wait()
 
 prnt ("5. Colorize Structure")
-pRecons = subprocess.Popen( [join(MVG_PATH, "openMVG_main_ComputeSfM_DataColor"),  "-i", MVG_RECONSTRUCT + "/sfm_data.bin", "-o", MVG_RECONSTRUCT + "colorized.ply"] )
+pRecons = subprocess.Popen( [join(MVG_PATH, "openMVG_main_ComputeSfM_DataColor"),  "-i", MVG_RECONSTRUCT + "/sfm_data.bin", "-o", MVG_RECONSTRUCT + "colorized.ply", "-f", "1"] )
 pRecons.wait()
 
 # optional, compute final valid structure from the known camera poses
