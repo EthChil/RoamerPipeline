@@ -39,20 +39,31 @@ def removeBasedOnExt(ext, src):
 '''
 
 
-SENSOR_DATABASE_PATH = "/Users/Kratos/Documents/BASEF/openMVG/src/openMVG/exif/sensor_width_database/sensor_width_camera_database.txt"
 
-MVG_PATH = "/Users/Kratos/Documents/BASEF/openMVG_build/Darwin-x86_64-RELEASE/Release/"
-MVS_PATH = "/Users/Kratos/Documents/BASEF/openMVS_build/bin/"
+if(raw_input("Linux? y or n") == "y"):#set this to linux paths
+    SENSOR_DATABASE_PATH = "/Users/Kratos/Documents/BASEF/openMVG/src/openMVG/exif/sensor_width_database/sensor_width_camera_database.txt"
+
+    MVG_PATH = "/Users/Kratos/Documents/BASEF/openMVG_build/Darwin-x86_64-RELEASE/Release/"
+    MVS_PATH = "/Users/Kratos/Documents/BASEF/openMVS_build/bin/"
+
+else:
+    SENSOR_DATABASE_PATH = "/Users/Kratos/Documents/BASEF/openMVG/src/openMVG/exif/sensor_width_database/sensor_width_camera_database.txt"
+
+    MVG_PATH = "/Users/Kratos/Documents/BASEF/openMVG_build/Darwin-x86_64-RELEASE/Release/"
+    MVS_PATH = "/Users/Kratos/Documents/BASEF/openMVS_build/bin/"
+
+    imagePath = "/Users/Kratos/Documents/RoamerPipeline/PhotoSets/"
+
 
 #Get Directories
-INPUT_DIR = str(raw_input("Enter the Input Directory"))
+INPUT_DIR = str(raw_input("Enter the Photo Project Name"))
 OUTPUT_DIR = str(raw_input("Enter the Output Directory"))
 
 while(True):
     if(raw_input("Are you happy with these directories? (Y/N)") == "Y"):
         break
     time.sleep(1)
-    INPUT_DIR = str(raw_input("Enter the Input Directory"))
+    INPUT_DIR = str(raw_input("Enter the Photo Project Name"))
     OUTPUT_DIR = str(raw_input("Enter the Output Directory"))
 
 if(OUTPUT_DIR[len(OUTPUT_DIR)-1] != "/"):
@@ -102,34 +113,38 @@ MVS_OUTPUT = join(OUTPUT_DIR, "MVS")
 
 #START OF MVG PIPELINE
 prnt("1. Intrinsics Analysis")
-pIntrinsics = subprocess.Popen([join(MVG_PATH, "openMVG_main_SfMInit_ImageListing"), "-i", INPUT_DIR, "-o", MVG_MATCHES, "-d", SENSOR_DATABASE_PATH])
+pIntrinsics = subprocess.Popen([join(MVG_PATH, "openMVG_main_SfMInit_ImageListing"), "-i", imagePath + INPUT_DIR, "-o", MVG_MATCHES, "-d", SENSOR_DATABASE_PATH])
 pIntrinsics.wait()
 
 prnt("2. Compute Features")
-pFeatures = subprocess.Popen([join(MVG_PATH, "openMVG_main_ComputeFeatures"),  "-i", MVG_MATCHES+"/sfm_data.json", "-o", "-f", "1", MVG_MATCHES, "-m", "SIFT", "-p", "ULTRA"])
+pFeatures = subprocess.Popen([join(MVG_PATH, "openMVG_main_ComputeFeatures"),  "-i", MVG_MATCHES+"/sfm_data.json", "-o", MVG_MATCHES, "-m", "SIFT", "-p", "ULTRA"])
 pFeatures.wait()
 
 #TODO setup the image pair list
 prnt("3. Compute Matches")
-pMatches = subprocess.Popen( [join(MVG_PATH, "openMVG_main_ComputeMatches"),  "-i", MVG_MATCHES+"/sfm_data.json", "-o", MVG_MATCHES, "-f", "1"] )
+#pMatches = subprocess.Popen( [join(MVG_PATH, "openMVG_main_ComputeMatches"),  "-i", MVG_MATCHES+"/sfm_data.json", "-o", MVG_MATCHES, "-l", "/Users/Kratos/Documents/RoamerPipeline/pairLists/IRHS.txt"] )
+pMatches = subprocess.Popen( [join(MVG_PATH, "openMVG_main_ComputeMatches"),  "-i", MVG_MATCHES+"/sfm_data.json", "-o", MVG_MATCHES] )
 pMatches.wait()
 
 
 # prnt ("4. Do Sequential/Incremental reconstruction")
-# pRecons = subprocess.Popen( [join(MVG_PATH, "openMVG_main_IncrementalSfM"),  "-i", MVG_MATCHES+"/sfm_data.json", "-m", MVG_MATCHES, "-o", MVG_RECONSTRUCT, "-f", "1"])
+# pRecons = subprocess.Popen( [join(MVG_PATH, "openMVG_main_IncrementalSfM"),  "-i", MVG_MATCHES+"/sfm_data.json", "-m", MVG_MATCHES, "-o", MVG_RECONSTRUCT])
 # pRecons.wait()
 
-prnt ("4. Do Sequential/Incremental reconstruction") 
-pRecons = subprocess.Popen( [join(MVG_PATH, "openMVG_main_GlobalSfM"),  "-i", MVG_MATCHES+"/sfm_data.json", "-m", MVG_MATCHES, "-o", MVG_RECONSTRUCT, "-f", "1"])
+os.rename(MVG_MATCHES + "/matches.f.bin", MVG_MATCHES + "/matches.e.bin")
+
+prnt ("4. Do Sequential/Incremental reconstruction")
+pRecons = subprocess.Popen( [join(MVG_PATH, "openMVG_main_GlobalSfM"),  "-i", MVG_MATCHES+"/sfm_data.json", "-m", MVG_MATCHES, "-o", MVG_RECONSTRUCT])
 pRecons.wait()
 
+
 prnt ("5. Colorize Structure")
-pRecons = subprocess.Popen( [join(MVG_PATH, "openMVG_main_ComputeSfM_DataColor"),  "-i", MVG_RECONSTRUCT + "/sfm_data.bin", "-o", MVG_RECONSTRUCT + "colorized.ply"] )
+pRecons = subprocess.Popen( [join(MVG_PATH, "openMVG_main_ComputeSfM_DataColor"),  "-i", MVG_RECONSTRUCT + "/sfm_data.bin", "-o", MVG_RECONSTRUCT + "colorized.ply", "-f", "1"] )
 pRecons.wait()
 
 # optional, compute final valid structure from the known camera poses
 prnt ("6. Structure from Known Poses (robust triangulation)")
-pRecons = subprocess.Popen( [join(MVG_PATH, "openMVG_main_ComputeStructureFromKnownPoses"),  "-i", MVG_RECONSTRUCT+"/sfm_data.bin", "-m", MVG_MATCHES, "-f", os.path.join(MVG_MATCHES, "matches.f.bin"), "-o", os.path.join(MVG_RECONSTRUCT,"robust.bin")])
+pRecons = subprocess.Popen( [join(MVG_PATH, "openMVG_main_ComputeStructureFromKnownPoses"),  "-i", MVG_RECONSTRUCT+"/sfm_data.bin", "-m", MVG_MATCHES, "-f", os.path.join(MVG_MATCHES, "matches.e.bin"), "-o", os.path.join(MVG_RECONSTRUCT,"robust.bin")])
 pRecons.wait()
 
 prnt("7. Recolorizing or smthng")
@@ -163,7 +178,9 @@ pTexture.wait()
 #wait for the filesystem to catch up
 time.sleep(2)
 
+'''
 #purge and reorganize aux files
 moveBasedOnExt(".log", "/home/rmr/Documents/Pipeline/RoamerPipeline/", join(OUTPUT_DIR, "LOGS/"))
 removeBasedOnExt(".dmap", "/home/rmr/Documents/Pipeline/RoamerPipeline/")
 shutil.rmtree("/home/rmr/Documents/Pipeline/RoamerPipeline/undistorted_images")
+'''
