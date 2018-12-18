@@ -1,3 +1,5 @@
 
 .idea/*
 -f/
+depth*
+undistorted_images/*
