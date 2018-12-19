@@ -1,0 +1,18 @@
+{
+    "status": "SUCCESS",
+    "execMode": "LOCAL",
+    "nodeName": "ImageMatching_1",
+    "nodeType": "ImageMatching",
+    "packageName": "aliceVision",
+    "packageVersion": null,
+    "graph": "",
+    "commandLine": "aliceVision_imageMatching  --input \"C:/Users/ethan/Documents/GitHub/RoamerPipeline/Alice/Ethan1/MeshroomCache/CameraInit/8704707052153a072419b2c9b883e65390d9d839/cameraInit.sfm\" --featuresFolders \"C:/Users/ethan/Documents/GitHub/RoamerPipeline/Alice/Ethan1/MeshroomCache/FeatureExtraction/0473eb77f8082d04efbf26b60856110717a9d7a7\" --tree \"C:\\Users\\ethan\\Downloads\\Meshroom-2018.1.0-win64\\Meshroom-2018.1.0\\aliceVision\\share\\aliceVision\\vlfeat_K80L3.SIFT.tree\" --weights \"\" --minNbImages 200 --maxDescriptors 500 --nbMatches 50 --verboseLevel info --output \"C:/Users/ethan/Documents/GitHub/RoamerPipeline/Alice/Ethan1/MeshroomCache/ImageMatching/28bb8fb4980ba80932c9e0b6e5e3ae689cf09a00/imageMatches.txt\" ",
+    "env": null,
+    "startDateTime": "2018-12-18 17:43:14.852251",
+    "endDateTime": "2018-12-18 17:43:16.112774",
+    "elapsedTime": 1.2605228424072266,
+    "hostname": "DESKTOP-537DUK7",
+    "sessionUid": "12bc1f5c-0316-11e9-a053-001a7dda7113",
+    "returnCode": 0,
+    "elapsedTimeStr": "0:00:01.260523"
+}

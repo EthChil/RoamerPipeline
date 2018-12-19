@@ -1,0 +1,179 @@
+<html><head>
+<link rel="stylesheet" type="text/css" href="http://jsxgraph.uni-bayreuth.de/distrib/jsxgraph.css" />
+<link rel="stylesheet" type="text/css" href="http://imagine.enpc.fr/~moulonp/style.css" /><script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.93/jsxgraphcore.js"></script>
+<title>[log] Sequential SfM reconstruction</title>
+</head>
+<h1>[log] Sequential SfM reconstruction</h1>
+<hr>Dataset info:Views count: 67<br><h3>Essential Matrix.</h3>
+
+<b>Robust Essential matrix:</b><br>-> View I:<br>id: 2095558067<br>image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1416.JPG<br>-> View J:<br>id: 2130703568<br>image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1408.JPG<br><br>- Threshold: 33.7496<br>- Resection status: OK<br>- # points used for robust Essential matrix estimation: 131<br>- # points validated by robust estimation: 127<br>- % points validated: 0.969466<br><h3>Initial triangulation - Residual of the robust estimation.<br>Thresholded at: 33.7496</h3>
+<h3>Histogram of residuals</h3>
+
+<div id="InitialPairTriangulationKeptInfo" class="jxgbox" style="width:600px; height:300px;"></div>
+<script type="text/javascript">
+var board = JXG.JSXGraph.initBoard('InitialPairTriangulationKeptInfo', {boundingbox: [-10, 10, 10, -10], axis:true,showCopyright:false});
+board.suspendUpdate();
+var data0= [0.00000,0.11111,0.22222,0.33333,0.44444,0.55556,0.66667,0.77778,0.88889,1.00000,];
+var data1= [0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,];
+board.createElement('chart', [ data0,data1], {chartStyle:'line,point',labels:[ data0,data1]});
+var p2 = board.create('point',[33.74956,0.00000], {fixed:true});
+var p3 = board.create('point',[33.74956,0.00000], {fixed:true});
+var li = board.create('line',[p2,p3], {strokeColor:'00ff00',strokeWidth:2});
+board.unsuspendUpdate();
+board.setBoundingBox([-0.20000,0.00000,1.20000,0.00000]);
+</script>
+<hr><h4>Robust resection of view 1716575903: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1415.JPG<br>- Threshold (error max): 6.34965<br>- Resection status: OK<br>- # points used for Resection: 88<br>- # points validated by robust estimation: 86<br>- % points validated: 0.977273<br><h4>Robust resection of view 78293061: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1418.JPG<br>- Threshold (error max): 8.19349<br>- Resection status: OK<br>- # points used for Resection: 240<br>- # points validated by robust estimation: 232<br>- % points validated: 0.966667<br><h4>Robust resection of view 1861578657: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1414.JPG<br>- Threshold (error max): 3.30765<br>- Resection status: OK<br>- # points used for Resection: 321<br>- # points validated by robust estimation: 307<br>- % points validated: 0.956386<br><h4>Robust resection of view 1643728630: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1419.JPG<br>- Threshold (error max): 4.88792<br>- Resection status: OK<br>- # points used for Resection: 344<br>- # points validated by robust estimation: 326<br>- % points validated: 0.947674<br><h4>Robust resection of view 1906096636: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1364.JPG<br>- Threshold (error max): 4.25825<br>- Resection status: OK<br>- # points used for Resection: 212<br>- # points validated by robust estimation: 155<br>- % points validated: 0.731132<br><h4>Robust resection of view 1474416471: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1362.JPG<br>- Threshold (error max): 2.61798<br>- Resection status: OK<br>- # points used for Resection: 292<br>- # points validated by robust estimation: 233<br>- % points validated: 0.797945<br><h4>Robust resection of view 251570085: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1363.JPG<br>- Threshold (error max): 2.41034<br>- Resection status: OK<br>- # points used for Resection: 614<br>- # points validated by robust estimation: 562<br>- % points validated: 0.915309<br><h4>Robust resection of view 1523815439: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1361.JPG<br>- Threshold (error max): 4.58105<br>- Resection status: OK<br>- # points used for Resection: 579<br>- # points validated by robust estimation: 530<br>- % points validated: 0.915371<br><h4>Robust resection of view 1150832366: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1366.JPG<br>- Threshold (error max): 4.21616<br>- Resection status: OK<br>- # points used for Resection: 661<br>- # points validated by robust estimation: 609<br>- % points validated: 0.921331<br><h4>Robust resection of view 1785851268: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1365.JPG<br>- Threshold (error max): 2.75006<br>- Resection status: OK<br>- # points used for Resection: 773<br>- # points validated by robust estimation: 723<br>- % points validated: 0.935317<br><h4>Robust resection of view 115006752: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1360.JPG<br>- Threshold (error max): 3.61727<br>- Resection status: OK<br>- # points used for Resection: 665<br>- # points validated by robust estimation: 602<br>- % points validated: 0.905263<br><h4>Robust resection of view 1186326363: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1359.JPG<br>- Threshold (error max): 3.7268<br>- Resection status: OK<br>- # points used for Resection: 673<br>- # points validated by robust estimation: 607<br>- % points validated: 0.901932<br><h4>Robust resection of view 136395905: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1409.JPG<br>- Threshold (error max): 2.40567<br>- Resection status: OK<br>- # points used for Resection: 348<br>- # points validated by robust estimation: 292<br>- % points validated: 0.83908<br><h4>Robust resection of view 304795499: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1410.JPG<br>- Threshold (error max): 2.66085<br>- Resection status: OK<br>- # points used for Resection: 501<br>- # points validated by robust estimation: 449<br>- % points validated: 0.896208<br><h4>Robust resection of view 1029832138: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1358.JPG<br>- Threshold (error max): 7.16948<br>- Resection status: OK<br>- # points used for Resection: 480<br>- # points validated by robust estimation: 391<br>- % points validated: 0.814583<br><h4>Robust resection of view 579717169: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1357.JPG<br>- Threshold (error max): 6.75613<br>- Resection status: OK<br>- # points used for Resection: 433<br>- # points validated by robust estimation: 343<br>- % points validated: 0.792148<br><h4>Robust resection of view 936120456: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1356.JPG<br>- Threshold (error max): 4.32815<br>- Resection status: OK<br>- # points used for Resection: 496<br>- # points validated by robust estimation: 369<br>- % points validated: 0.743952<br><h4>Robust resection of view 2045004962: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1407.JPG<br>- Threshold (error max): 3.86205<br>- Resection status: OK<br>- # points used for Resection: 481<br>- # points validated by robust estimation: 421<br>- % points validated: 0.87526<br><h4>Robust resection of view 1430327691: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1406.JPG<br>- Threshold (error max): 3.10271<br>- Resection status: OK<br>- # points used for Resection: 455<br>- # points validated by robust estimation: 389<br>- % points validated: 0.854945<br><h4>Robust resection of view 476880634: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1355.JPG<br>- Threshold (error max): 3.59598<br>- Resection status: OK<br>- # points used for Resection: 514<br>- # points validated by robust estimation: 371<br>- % points validated: 0.72179<br><h4>Robust resection of view 1228518096: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1402.JPG<br>- Threshold (error max): 3.42676<br>- Resection status: OK<br>- # points used for Resection: 520<br>- # points validated by robust estimation: 467<br>- % points validated: 0.898077<br><h4>Robust resection of view 528510916: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1354.JPG<br>- Threshold (error max): 2.70336<br>- Resection status: OK<br>- # points used for Resection: 518<br>- # points validated by robust estimation: 371<br>- % points validated: 0.716216<br><h4>Robust resection of view 2146998783: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1403.JPG<br>- Threshold (error max): 2.77593<br>- Resection status: OK<br>- # points used for Resection: 567<br>- # points validated by robust estimation: 494<br>- % points validated: 0.871252<br><h4>Robust resection of view 411685623: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1401.JPG<br>- Threshold (error max): 3.49261<br>- Resection status: OK<br>- # points used for Resection: 519<br>- # points validated by robust estimation: 455<br>- % points validated: 0.876686<br><h4>Robust resection of view 1358582240: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1405.JPG<br>- Threshold (error max): 4.28515<br>- Resection status: OK<br>- # points used for Resection: 547<br>- # points validated by robust estimation: 485<br>- % points validated: 0.886654<br><h4>Robust resection of view 1788219329: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1404.JPG<br>- Threshold (error max): 3.38294<br>- Resection status: OK<br>- # points used for Resection: 570<br>- # points validated by robust estimation: 519<br>- % points validated: 0.910526<br><h4>Robust resection of view 2014127030: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1353.JPG<br>- Threshold (error max): 4.55921<br>- Resection status: OK<br>- # points used for Resection: 518<br>- # points validated by robust estimation: 378<br>- % points validated: 0.72973<br><h4>Robust resection of view 1799436415: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1411.JPG<br>- Threshold (error max): 3.83945<br>- Resection status: OK<br>- # points used for Resection: 523<br>- # points validated by robust estimation: 429<br>- % points validated: 0.820268<br><h4>Robust resection of view 1636735110: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1368.JPG<br>- Threshold (error max): 3.59706<br>- Resection status: OK<br>- # points used for Resection: 155<br>- # points validated by robust estimation: 90<br>- % points validated: 0.580645<br><h4>Robust resection of view 1076394345: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1400.JPG<br>- Threshold (error max): 5.39551<br>- Resection status: OK<br>- # points used for Resection: 185<br>- # points validated by robust estimation: 165<br>- % points validated: 0.891892<br><h4>Robust resection of view 1689478995: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1396.JPG<br>- Threshold (error max): 5.07908<br>- Resection status: OK<br>- # points used for Resection: 253<br>- # points validated by robust estimation: 225<br>- % points validated: 0.889328<br><h4>Robust resection of view 2124113243: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1391.JPG<br>- Threshold (error max): 5.39104<br>- Resection status: OK<br>- # points used for Resection: 145<br>- # points validated by robust estimation: 131<br>- % points validated: 0.903448<br><h4>Robust resection of view 1203176847: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1398.JPG<br>- Threshold (error max): 3.9573<br>- Resection status: OK<br>- # points used for Resection: 427<br>- # points validated by robust estimation: 379<br>- % points validated: 0.887588<br><h4>Robust resection of view 1305823326: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1395.JPG<br>- Threshold (error max): 7.55053<br>- Resection status: OK<br>- # points used for Resection: 194<br>- # points validated by robust estimation: 173<br>- % points validated: 0.891753<br><h4>Robust resection of view 463090087: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1417.JPG<br>- Threshold (error max): 6.2119<br>- Resection status: OK<br>- # points used for Resection: 112<br>- # points validated by robust estimation: 84<br>- % points validated: 0.75<br><h4>Robust resection of view 868876902: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1397.JPG<br>- Threshold (error max): 5.73374<br>- Resection status: OK<br>- # points used for Resection: 273<br>- # points validated by robust estimation: 243<br>- % points validated: 0.89011<br><h4>Robust resection of view 751210311: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1394.JPG<br>- Threshold (error max): 6.04315<br>- Resection status: OK<br>- # points used for Resection: 184<br>- # points validated by robust estimation: 159<br>- % points validated: 0.86413<br><h4>Robust resection of view 856798745: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1393.JPG<br>- Threshold (error max): 4.92591<br>- Resection status: OK<br>- # points used for Resection: 290<br>- # points validated by robust estimation: 256<br>- % points validated: 0.882759<br><h4>Robust resection of view 561836557: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1399.JPG<br>- Threshold (error max): 5.29464<br>- Resection status: OK<br>- # points used for Resection: 246<br>- # points validated by robust estimation: 214<br>- % points validated: 0.869919<br><h4>Robust resection of view 2019709110: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1392.JPG<br>- Threshold (error max): 6.32665<br>- Resection status: OK<br>- # points used for Resection: 159<br>- # points validated by robust estimation: 146<br>- % points validated: 0.918239<br><h4>Robust resection of view 1240301939: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1412.JPG<br>- Threshold (error max): 5.0391<br>- Resection status: OK<br>- # points used for Resection: 322<br>- # points validated by robust estimation: 260<br>- % points validated: 0.807453<br><h4>Robust resection of view 517252654: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1413.JPG<br>- Threshold (error max): 3.6585<br>- Resection status: OK<br>- # points used for Resection: 268<br>- # points validated by robust estimation: 201<br>- % points validated: 0.75<br><h4>Robust resection of view 670484749: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1367.JPG<br>- Threshold (error max): 4.38155<br>- Resection status: OK<br>- # points used for Resection: 290<br>- # points validated by robust estimation: 166<br>- % points validated: 0.572414<br><h4>Robust resection of view 1115818466: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1369.JPG<br>- Threshold (error max): 2.8114<br>- Resection status: OK<br>- # points used for Resection: 119<br>- # points validated by robust estimation: 91<br>- % points validated: 0.764706<br><h4>Robust resection of view 580816557: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1388.JPG<br>- Threshold (error max): 5.92969<br>- Resection status: OK<br>- # points used for Resection: 160<br>- # points validated by robust estimation: 144<br>- % points validated: 0.9<br><h4>Robust resection of view 789706637: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1383.JPG<br>- Threshold (error max): 6.87297<br>- Resection status: OK<br>- # points used for Resection: 95<br>- # points validated by robust estimation: 84<br>- % points validated: 0.884211<br><h4>Robust resection of view 278451837: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1371.JPG<br>- Threshold (error max): 3.92974<br>- Resection status: OK<br>- # points used for Resection: 193<br>- # points validated by robust estimation: 163<br>- % points validated: 0.84456<br><h4>Robust resection of view 401566863: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1390.JPG<br>- Threshold (error max): 3.46751<br>- Resection status: OK<br>- # points used for Resection: 302<br>- # points validated by robust estimation: 262<br>- % points validated: 0.86755<br><h4>Robust resection of view 1811936640: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1386.JPG<br>- Threshold (error max): 5.92142<br>- Resection status: OK<br>- # points used for Resection: 163<br>- # points validated by robust estimation: 139<br>- % points validated: 0.852761<br><h4>Robust resection of view 1865606473: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1385.JPG<br>- Threshold (error max): 5.74398<br>- Resection status: OK<br>- # points used for Resection: 154<br>- # points validated by robust estimation: 128<br>- % points validated: 0.831169<br><h4>Robust resection of view 249725355: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1370.JPG<br>- Threshold (error max): 3.21517<br>- Resection status: OK<br>- # points used for Resection: 253<br>- # points validated by robust estimation: 210<br>- % points validated: 0.83004<br><h4>Robust resection of view 1701417931: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1378.JPG<br>- Threshold (error max): 7.38146<br>- Resection status: OK<br>- # points used for Resection: 151<br>- # points validated by robust estimation: 137<br>- % points validated: 0.907285<br><h4>Robust resection of view 742308222: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1389.JPG<br>- Threshold (error max): 3.73586<br>- Resection status: OK<br>- # points used for Resection: 347<br>- # points validated by robust estimation: 309<br>- % points validated: 0.89049<br><h4>Robust resection of view 460401179: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1379.JPG<br>- Threshold (error max): 5.80167<br>- Resection status: OK<br>- # points used for Resection: 133<br>- # points validated by robust estimation: 120<br>- % points validated: 0.902256<br><h4>Robust resection of view 233907011: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1382.JPG<br>- Threshold (error max): 3.67508<br>- Resection status: OK<br>- # points used for Resection: 462<br>- # points validated by robust estimation: 434<br>- % points validated: 0.939394<br><h4>Robust resection of view 962831950: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1384.JPG<br>- Threshold (error max): 3.96126<br>- Resection status: OK<br>- # points used for Resection: 453<br>- # points validated by robust estimation: 423<br>- % points validated: 0.933775<br><h4>Robust resection of view 1347700863: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1380.JPG<br>- Threshold (error max): 4.38549<br>- Resection status: OK<br>- # points used for Resection: 364<br>- # points validated by robust estimation: 341<br>- % points validated: 0.936813<br><h4>Robust resection of view 1064082008: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1381.JPG<br>- Threshold (error max): 3.13109<br>- Resection status: OK<br>- # points used for Resection: 453<br>- # points validated by robust estimation: 411<br>- % points validated: 0.907285<br><h4>Robust resection of view 1745211470: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1387.JPG<br>- Threshold (error max): 3.1303<br>- Resection status: OK<br>- # points used for Resection: 587<br>- # points validated by robust estimation: 547<br>- % points validated: 0.931857<br><h4>Robust resection of view 1279412758: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1372.JPG<br>- Threshold (error max): 4.23715<br>- Resection status: OK<br>- # points used for Resection: 104<br>- # points validated by robust estimation: 95<br>- % points validated: 0.913462<br><h4>Robust resection of view 874093608: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1373.JPG<br>- Threshold (error max): 2.64371<br>- Resection status: OK<br>- # points used for Resection: 120<br>- # points validated by robust estimation: 110<br>- % points validated: 0.916667<br><h4>Robust resection of view 356180607: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1375.JPG<br>- Threshold (error max): 4.27949<br>- Resection status: OK<br>- # points used for Resection: 142<br>- # points validated by robust estimation: 131<br>- % points validated: 0.922535<br><h4>Robust resection of view 454164500: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1374.JPG<br>- Threshold (error max): 4.32067<br>- Resection status: OK<br>- # points used for Resection: 154<br>- # points validated by robust estimation: 146<br>- % points validated: 0.948052<br><h4>Robust resection of view 1973424357: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1376.JPG<br>- Threshold (error max): 3.23194<br>- Resection status: OK<br>- # points used for Resection: 225<br>- # points validated by robust estimation: 219<br>- % points validated: 0.973333<br><h4>Robust resection of view 1146127176: <br></h4>
+
+- Image path: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1377.JPG<br>- Threshold (error max): 2.65626<br>- Resection status: OK<br>- # points used for Resection: 160<br>- # points validated by robust estimation: 149<br>- % points validated: 0.93125<br><hr><h3>Structure from Motion process finished.</h3>
+Structure from Motion statistics:<br>- # input images: 67<br>- # camera calibrated: 67<br>- # landmarks: 13083<br>- elapsed time: 26.616<br>- residual RMSE: 0.698279<h2>Histogram of reprojection-residuals</h2>
+
+<div id="3DtoImageResiduals" class="jxgbox" style="width:600px; height:300px;"></div>
+<script type="text/javascript">
+var board = JXG.JSXGraph.initBoard('3DtoImageResiduals', {boundingbox: [-10, 10, 10, -10], axis:true,showCopyright:false});
+board.suspendUpdate();
+var data0= [0.00000,0.44048,0.88095,1.32143,1.76190,2.20238,2.64286,3.08333,3.52381,3.96428,];
+var data1= [59609.00000,23501.00000,9436.00000,4174.00000,2104.00000,1207.00000,634.00000,348.00000,196.00000,69.00000,];
+board.createElement('chart', [ data0,data1], {chartStyle:'line,point',labels:[ data0,data1]});
+board.unsuspendUpdate();
+board.setBoundingBox([-0.79286,71517.00000,4.75714,-11839.00000]);
+</script>
+
+<div id="3DtoTracksSize" class="jxgbox" style="width:600px; height:300px;"></div>
+<script type="text/javascript">
+var board = JXG.JSXGraph.initBoard('3DtoTracksSize', {boundingbox: [-10, 10, 10, -10], axis:true,showCopyright:false});
+board.suspendUpdate();
+var data0= [2.00000,3.03333,4.06667,5.10000,6.13333,7.16667,8.20000,9.23333,10.26667,11.30000,12.33333,13.36667,14.40000,15.43333,16.46667,17.50000,18.53333,19.56667,20.60000,21.63333,22.66667,23.70000,24.73333,25.76667,26.80000,27.83333,28.86667,29.90000,30.93333,31.96667,33.00000,];
+var data1= [5843.00000,2605.00000,1413.00000,899.00000,608.00000,418.00000,325.00000,246.00000,177.00000,131.00000,93.00000,72.00000,64.00000,49.00000,29.00000,29.00000,13.00000,14.00000,12.00000,6.00000,14.00000,8.00000,4.00000,4.00000,3.00000,0.00000,0.00000,2.00000,1.00000,0.00000,1.00000,];
+board.createElement('chart', [ data0,data1], {chartStyle:'line,point',labels:[ data0,data1]});
+board.unsuspendUpdate();
+board.setBoundingBox([-4.20000,7011.60000,39.20000,-1168.60000]);
+</script>
+</html>

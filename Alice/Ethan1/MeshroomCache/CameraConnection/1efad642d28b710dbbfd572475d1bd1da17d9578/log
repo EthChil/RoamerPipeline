@@ -1,0 +1,10 @@
+Program called with the following parameters:
+ * ini = "C:/Users/ethan/Documents/GitHub/RoamerPipeline/Alice/Ethan1/MeshroomCache/PrepareDenseScene/8f7e95e687be8eff4b311dc48231d6dc85ad5c8d/mvs.ini"
+ * verboseLevel = "info"
+
+[17:45:13.891039][info] Found 1 image dimension(s): 
+[17:45:13.892037][info]  - [1080x1440]
+[17:45:13.939909][info] Overall maximum dimension: [1080x1440]
+[17:45:13.940907][info] Compute camera pairs.
+[17:45:13.941904][info] Compute camera pairs matrix file: C:/Users/ethan/Documents/GitHub/RoamerPipeline/Alice/Ethan1/MeshroomCache/PrepareDenseScene/8f7e95e687be8eff4b311dc48231d6dc85ad5c8d/camsPairsMatrixFromSeeds.bin
+[17:45:14.106462][info] Task done in (s): 0.216000

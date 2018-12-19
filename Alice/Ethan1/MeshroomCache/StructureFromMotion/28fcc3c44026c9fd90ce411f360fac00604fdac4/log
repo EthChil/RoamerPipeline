@@ -1,0 +1,1534 @@
+Program called with the following parameters:
+ * describerTypes = "sift"
+ * extraInfoFolder = "C:/Users/ethan/Documents/GitHub/RoamerPipeline/Alice/Ethan1/MeshroomCache/StructureFromMotion/28fcc3c44026c9fd90ce411f360fac00604fdac4"
+ * featuresFolders =  = [C:/Users/ethan/Documents/GitHub/RoamerPipeline/Alice/Ethan1/MeshroomCache/FeatureExtraction/0473eb77f8082d04efbf26b60856110717a9d7a7]
+ * initialPairA = ""
+ * initialPairB = ""
+ * input = "C:/Users/ethan/Documents/GitHub/RoamerPipeline/Alice/Ethan1/MeshroomCache/CameraInit/8704707052153a072419b2c9b883e65390d9d839/cameraInit.sfm"
+ * interFileExtension = ".abc"
+ * localBAGraphDistance = 1
+ * localizerEstimator = "acransac"
+ * lockScenePreviouslyReconstructed = 0
+ * matchesFolders =  = [C:/Users/ethan/Documents/GitHub/RoamerPipeline/Alice/Ethan1/MeshroomCache/FeatureMatching/a247536d9d88e932610c7007beb81ad5fd88e513]
+ * maxAngleInitialPair = 40
+ * maxNumberOfMatches = 0
+ * maxReprojectionError = 4
+ * minAngleForLandmark = 2
+ * minAngleForTriangulation = 3
+ * minAngleInitialPair = 5
+ * minInputTrackLength = 2
+ * minNumberOfObservationsForTriangulation = 2
+ * output = "C:/Users/ethan/Documents/GitHub/RoamerPipeline/Alice/Ethan1/MeshroomCache/StructureFromMotion/28fcc3c44026c9fd90ce411f360fac00604fdac4/sfm.abc"
+ * outputViewsAndPoses = "C:/Users/ethan/Documents/GitHub/RoamerPipeline/Alice/Ethan1/MeshroomCache/StructureFromMotion/28fcc3c44026c9fd90ce411f360fac00604fdac4/cameras.sfm"
+ * refineIntrinsics = 1 (default)
+ * useLocalBA = 1
+ * useOnlyMatchesFromInputFolder = 0
+ * useTrackFiltering = 1 (default)
+ * verboseLevel = "info"
+
+Loading features
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+[17:44:26.207635][info] Fuse matches into tracks: 
+	- # tracks: 14586
+	- # images in tracks: 67
+[17:44:26.209630][info] TrackLength, Occurrence
+[17:44:26.209630][info] 	2	6888
+[17:44:26.209630][info] 	3	2714
+[17:44:26.209630][info] 	4	1484
+[17:44:26.209630][info] 	5	944
+[17:44:26.209630][info] 	6	629
+[17:44:26.210626][info] 	7	452
+[17:44:26.210626][info] 	8	342
+[17:44:26.210626][info] 	9	270
+[17:44:26.210626][info] 	10	208
+[17:44:26.210626][info] 	11	146
+[17:44:26.210626][info] 	12	105
+[17:44:26.210626][info] 	13	83
+[17:44:26.210626][info] 	14	64
+[17:44:26.210626][info] 	15	52
+[17:44:26.211624][info] 	16	34
+[17:44:26.211624][info] 	17	40
+[17:44:26.211624][info] 	18	19
+[17:44:26.211624][info] 	19	15
+[17:44:26.211624][info] 	20	16
+[17:44:26.211624][info] 	21	15
+[17:44:26.211624][info] 	22	18
+[17:44:26.211624][info] 	23	14
+[17:44:26.212622][info] 	24	7
+[17:44:26.212622][info] 	25	5
+[17:44:26.212622][info] 	26	5
+[17:44:26.212622][info] 	28	3
+[17:44:26.212622][info] 	29	6
+[17:44:26.212622][info] 	30	3
+[17:44:26.212622][info] 	32	1
+[17:44:26.212622][info] 	33	1
+[17:44:26.212622][info] 	35	1
+[17:44:26.212622][info] 	37	1
+[17:44:26.213618][info] 	43	1
+Automatic selection of an initial pair:
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+*[17:44:26.213618][info] AutomaticInitialPairChoice, test I: 78293061, J: 115006752, nbCommonTracks: 106
+[17:44:26.213618][info] AutomaticInitialPairChoice, test I: 78293061, J: 251570085, nbCommonTracks: 146
+[17:44:26.214616][info] AutomaticInitialPairChoice, test I: 78293061, J: 136395905, nbCommonTracks: 153
+[17:44:26.214616][info] AutomaticInitialPairChoice, test I: 78293061, J: 304795499, nbCommonTracks: 152
+[17:44:26.236558][info] AutomaticInitialPairChoice, test I: 78293061, J: 517252654, nbCommonTracks: 89
+[17:44:26.236558][info] AutomaticInitialPairChoice, test I: 78293061, J: 579717169, nbCommonTracks: 70
+[17:44:26.237555][info] AutomaticInitialPairChoice, test I: 78293061, J: 670484749, nbCommonTracks: 84
+[17:44:26.243539][info] AutomaticInitialPairChoice, test I: 78293061, J: 936120456, nbCommonTracks: 86
+[17:44:26.257501][info] AutomaticInitialPairChoice, test I: 78293061, J: 1029832138, nbCommonTracks: 85
+*[17:44:26.259496][info] AutomaticInitialPairChoice, test I: 78293061, J: 1150832366, nbCommonTracks: 134
+[17:44:26.259496][info] AutomaticInitialPairChoice, test I: 78293061, J: 1186326363, nbCommonTracks: 97
+[17:44:26.264482][info] AutomaticInitialPairChoice, test I: 78293061, J: 1474416471, nbCommonTracks: 133
+[17:44:26.278445][info] AutomaticInitialPairChoice, test I: 78293061, J: 1523815439, nbCommonTracks: 131
+[17:44:26.279443][info] AutomaticInitialPairChoice, test I: 78293061, J: 1643728630, nbCommonTracks: 587
+[17:44:26.282435][info] AutomaticInitialPairChoice, test I: 78293061, J: 1716575903, nbCommonTracks: 358
+[17:44:26.288418][info] AutomaticInitialPairChoice, test I: 78293061, J: 1785851268, nbCommonTracks: 141
+[17:44:26.302381][info] AutomaticInitialPairChoice, test I: 78293061, J: 1799436415, nbCommonTracks: 102
+[17:44:26.314349][info] AutomaticInitialPairChoice, test I: 78293061, J: 1861578657, nbCommonTracks: 242
+[17:44:26.320333][info] AutomaticInitialPairChoice, test I: 78293061, J: 1906096636, nbCommonTracks: 161
+[17:44:26.324322][info] AutomaticInitialPairChoice, test I: 78293061, J: 2045004962, nbCommonTracks: 102
+[17:44:26.335294][info] AutomaticInitialPairChoice, test I: 78293061, J: 2095558067, nbCommonTracks: 353
+*[17:44:26.346264][info] AutomaticInitialPairChoice, test I: 78293061, J: 2130703568, nbCommonTracks: 133
+[17:44:26.347261][info] AutomaticInitialPairChoice, test I: 115006752, J: 136395905, nbCommonTracks: 117
+[17:44:26.348258][info] AutomaticInitialPairChoice, test I: 115006752, J: 251570085, nbCommonTracks: 539
+[17:44:26.369202][info] AutomaticInitialPairChoice, test I: 115006752, J: 304795499, nbCommonTracks: 134
+[17:44:26.370200][info] AutomaticInitialPairChoice, test I: 115006752, J: 476880634, nbCommonTracks: 116
+[17:44:26.382168][info] AutomaticInitialPairChoice, test I: 115006752, J: 517252654, nbCommonTracks: 69
+[17:44:26.393139][info] AutomaticInitialPairChoice, test I: 115006752, J: 528510916, nbCommonTracks: 95
+[17:44:26.394136][info] AutomaticInitialPairChoice, test I: 115006752, J: 579717169, nbCommonTracks: 198
+[17:44:26.402114][info] AutomaticInitialPairChoice, test I: 115006752, J: 670484749, nbCommonTracks: 114
+[17:44:26.402114][info] AutomaticInitialPairChoice, test I: 115006752, J: 936120456, nbCommonTracks: 149
+[17:44:26.415080][info] AutomaticInitialPairChoice, test I: 115006752, J: 1029832138, nbCommonTracks: 293
+[17:44:26.423058][info] AutomaticInitialPairChoice, test I: 115006752, J: 1150832366, nbCommonTracks: 450
+*[17:44:26.426051][info] AutomaticInitialPairChoice, test I: 115006752, J: 1186326363, nbCommonTracks: 622
+[17:44:26.427048][info] AutomaticInitialPairChoice, test I: 115006752, J: 1474416471, nbCommonTracks: 579
+[17:44:26.449986][info] AutomaticInitialPairChoice, test I: 115006752, J: 1523815439, nbCommonTracks: 653
+[17:44:26.466941][info] AutomaticInitialPairChoice, test I: 115006752, J: 1643728630, nbCommonTracks: 69
+[17:44:26.482898][info] AutomaticInitialPairChoice, test I: 115006752, J: 1716575903, nbCommonTracks: 129
+[17:44:26.486887][info] AutomaticInitialPairChoice, test I: 115006752, J: 1799436415, nbCommonTracks: 101
+[17:44:26.486887][info] AutomaticInitialPairChoice, test I: 115006752, J: 1785851268, nbCommonTracks: 440
+[17:44:26.509826][info] AutomaticInitialPairChoice, test I: 115006752, J: 1861578657, nbCommonTracks: 179
+[17:44:26.511821][info] AutomaticInitialPairChoice, test I: 115006752, J: 1906096636, nbCommonTracks: 522
+[17:44:26.512818][info] AutomaticInitialPairChoice, test I: 115006752, J: 2095558067, nbCommonTracks: 119
+[17:44:26.534760][info] AutomaticInitialPairChoice, test I: 136395905, J: 304795499, nbCommonTracks: 558
+*[17:44:26.534760][info] AutomaticInitialPairChoice, test I: 136395905, J: 411685623, nbCommonTracks: 160
+[17:44:26.537751][info] AutomaticInitialPairChoice, test I: 136395905, J: 476880634, nbCommonTracks: 119
+[17:44:26.561687][info] AutomaticInitialPairChoice, test I: 136395905, J: 517252654, nbCommonTracks: 109
+[17:44:26.563682][info] AutomaticInitialPairChoice, test I: 136395905, J: 528510916, nbCommonTracks: 109
+[17:44:26.565677][info] AutomaticInitialPairChoice, test I: 136395905, J: 579717169, nbCommonTracks: 147
+[17:44:26.584626][info] AutomaticInitialPairChoice, test I: 136395905, J: 868876902, nbCommonTracks: 109
+[17:44:26.586621][info] AutomaticInitialPairChoice, test I: 136395905, J: 936120456, nbCommonTracks: 128
+[17:44:26.588615][info] AutomaticInitialPairChoice, test I: 136395905, J: 1029832138, nbCommonTracks: 161
+[17:44:26.589613][info] AutomaticInitialPairChoice, test I: 136395905, J: 1186326363, nbCommonTracks: 126
+[17:44:26.605570][info] AutomaticInitialPairChoice, test I: 136395905, J: 1203176847, nbCommonTracks: 113
+[17:44:26.612551][info] AutomaticInitialPairChoice, test I: 136395905, J: 1228518096, nbCommonTracks: 204
+*[17:44:26.613549][info] AutomaticInitialPairChoice, test I: 136395905, J: 1240301939, nbCommonTracks: 159
+[17:44:26.614546][info] AutomaticInitialPairChoice, test I: 136395905, J: 1358582240, nbCommonTracks: 152
+[17:44:26.629506][info] AutomaticInitialPairChoice, test I: 136395905, J: 1430327691, nbCommonTracks: 223
+[17:44:26.638482][info] AutomaticInitialPairChoice, test I: 136395905, J: 1643728630, nbCommonTracks: 101
+[17:44:26.638482][info] AutomaticInitialPairChoice, test I: 136395905, J: 1689478995, nbCommonTracks: 89
+[17:44:26.639479][info] AutomaticInitialPairChoice, test I: 136395905, J: 1716575903, nbCommonTracks: 180
+[17:44:26.658429][info] AutomaticInitialPairChoice, test I: 136395905, J: 1788219329, nbCommonTracks: 140
+[17:44:26.660423][info] AutomaticInitialPairChoice, test I: 136395905, J: 1799436415, nbCommonTracks: 286
+[17:44:26.661420][info] AutomaticInitialPairChoice, test I: 136395905, J: 1861578657, nbCommonTracks: 261
+[17:44:26.667404][info] AutomaticInitialPairChoice, test I: 136395905, J: 2014127030, nbCommonTracks: 99
+[17:44:26.682364][info] AutomaticInitialPairChoice, test I: 136395905, J: 2045004962, nbCommonTracks: 276
+[17:44:26.690343][info] AutomaticInitialPairChoice, test I: 136395905, J: 2095558067, nbCommonTracks: 149
+*[17:44:26.695330][info] AutomaticInitialPairChoice, test I: 136395905, J: 2130703568, nbCommonTracks: 403
+[17:44:26.695330][info] AutomaticInitialPairChoice, test I: 136395905, J: 2146998783, nbCommonTracks: 224
+[17:44:26.715276][info] AutomaticInitialPairChoice, test I: 233907011, J: 401566863, nbCommonTracks: 178
+[17:44:26.716274][info] AutomaticInitialPairChoice, test I: 233907011, J: 460401179, nbCommonTracks: 130
+[17:44:26.728242][info] AutomaticInitialPairChoice, test I: 233907011, J: 580816557, nbCommonTracks: 215
+[17:44:26.740210][info] AutomaticInitialPairChoice, test I: 233907011, J: 742308222, nbCommonTracks: 108
+[17:44:26.743202][info] AutomaticInitialPairChoice, test I: 233907011, J: 789706637, nbCommonTracks: 546
+[17:44:26.751180][info] AutomaticInitialPairChoice, test I: 233907011, J: 962831950, nbCommonTracks: 362
+[17:44:26.757164][info] AutomaticInitialPairChoice, test I: 233907011, J: 1064082008, nbCommonTracks: 525
+[17:44:26.763148][info] AutomaticInitialPairChoice, test I: 233907011, J: 1347700863, nbCommonTracks: 347
+[17:44:26.797058][info] AutomaticInitialPairChoice, test I: 233907011, J: 1701417931, nbCommonTracks: 138
+*[17:44:26.803041][info] AutomaticInitialPairChoice, test I: 233907011, J: 1745211470, nbCommonTracks: 375
+[17:44:26.803041][info] AutomaticInitialPairChoice, test I: 233907011, J: 1811936640, nbCommonTracks: 336
+[17:44:26.817004][info] AutomaticInitialPairChoice, test I: 233907011, J: 1865606473, nbCommonTracks: 391
+[17:44:26.821991][info] AutomaticInitialPairChoice, test I: 233907011, J: 2124113243, nbCommonTracks: 104
+[17:44:26.839943][info] AutomaticInitialPairChoice, test I: 249725355, J: 278451837, nbCommonTracks: 682
+[17:44:26.841938][info] AutomaticInitialPairChoice, test I: 249725355, J: 401566863, nbCommonTracks: 71
+[17:44:26.844929][info] AutomaticInitialPairChoice, test I: 249725355, J: 670484749, nbCommonTracks: 156
+[17:44:26.857894][info] AutomaticInitialPairChoice, test I: 249725355, J: 856798745, nbCommonTracks: 92
+[17:44:26.861884][info] AutomaticInitialPairChoice, test I: 249725355, J: 874093608, nbCommonTracks: 115
+[17:44:26.870860][info] AutomaticInitialPairChoice, test I: 249725355, J: 1115818466, nbCommonTracks: 294
+[17:44:26.879836][info] AutomaticInitialPairChoice, test I: 249725355, J: 1228518096, nbCommonTracks: 70
+*[17:44:26.884823][info] AutomaticInitialPairChoice, test I: 249725355, J: 1279412758, nbCommonTracks: 117
+[17:44:26.901777][info] AutomaticInitialPairChoice, test I: 249725355, J: 1430327691, nbCommonTracks: 80
+[17:44:26.906764][info] AutomaticInitialPairChoice, test I: 249725355, J: 1636735110, nbCommonTracks: 371
+[17:44:26.906764][info] AutomaticInitialPairChoice, test I: 249725355, J: 2019709110, nbCommonTracks: 95
+[17:44:26.907761][info] AutomaticInitialPairChoice, test I: 249725355, J: 2124113243, nbCommonTracks: 102
+[17:44:26.923718][info] AutomaticInitialPairChoice, test I: 251570085, J: 579717169, nbCommonTracks: 158
+[17:44:26.929703][info] AutomaticInitialPairChoice, test I: 251570085, J: 670484749, nbCommonTracks: 134
+[17:44:26.931697][info] AutomaticInitialPairChoice, test I: 251570085, J: 936120456, nbCommonTracks: 119
+[17:44:26.946657][info] AutomaticInitialPairChoice, test I: 251570085, J: 1029832138, nbCommonTracks: 230
+[17:44:26.949649][info] AutomaticInitialPairChoice, test I: 251570085, J: 1150832366, nbCommonTracks: 670
+[17:44:26.954636][info] AutomaticInitialPairChoice, test I: 251570085, J: 1186326363, nbCommonTracks: 467
+[17:44:26.955633][info] AutomaticInitialPairChoice, test I: 251570085, J: 1474416471, nbCommonTracks: 724
+*[17:44:26.979569][info] AutomaticInitialPairChoice, test I: 251570085, J: 1523815439, nbCommonTracks: 669
+[17:44:27.001510][info] AutomaticInitialPairChoice, test I: 251570085, J: 1636735110, nbCommonTracks: 72
+[17:44:27.010487][info] AutomaticInitialPairChoice, test I: 251570085, J: 1643728630, nbCommonTracks: 99
+[17:44:27.020460][info] AutomaticInitialPairChoice, test I: 251570085, J: 1716575903, nbCommonTracks: 164
+[17:44:27.022454][info] AutomaticInitialPairChoice, test I: 251570085, J: 1785851268, nbCommonTracks: 674
+[17:44:27.031430][info] AutomaticInitialPairChoice, test I: 251570085, J: 1861578657, nbCommonTracks: 172
+[17:44:27.043399][info] AutomaticInitialPairChoice, test I: 251570085, J: 1906096636, nbCommonTracks: 797
+[17:44:27.047388][info] AutomaticInitialPairChoice, test I: 251570085, J: 2095558067, nbCommonTracks: 152
+[17:44:27.057361][info] AutomaticInitialPairChoice, test I: 278451837, J: 670484749, nbCommonTracks: 126
+[17:44:27.073318][info] AutomaticInitialPairChoice, test I: 278451837, J: 874093608, nbCommonTracks: 115
+[17:44:27.082294][info] AutomaticInitialPairChoice, test I: 278451837, J: 1115818466, nbCommonTracks: 261
+*[17:44:27.083291][info] AutomaticInitialPairChoice, test I: 278451837, J: 1279412758, nbCommonTracks: 111
+[17:44:27.099249][info] AutomaticInitialPairChoice, test I: 278451837, J: 1636735110, nbCommonTracks: 320
+[17:44:27.107227][info] AutomaticInitialPairChoice, test I: 278451837, J: 2019709110, nbCommonTracks: 77
+[17:44:27.112214][info] AutomaticInitialPairChoice, test I: 278451837, J: 2124113243, nbCommonTracks: 89
+[17:44:27.119195][info] AutomaticInitialPairChoice, test I: 304795499, J: 411685623, nbCommonTracks: 161
+[17:44:27.128171][info] AutomaticInitialPairChoice, test I: 304795499, J: 476880634, nbCommonTracks: 134
+[17:44:27.134155][info] AutomaticInitialPairChoice, test I: 304795499, J: 517252654, nbCommonTracks: 133
+[17:44:27.136150][info] AutomaticInitialPairChoice, test I: 304795499, J: 528510916, nbCommonTracks: 124
+[17:44:27.149115][info] AutomaticInitialPairChoice, test I: 304795499, J: 579717169, nbCommonTracks: 183
+[17:44:27.154102][info] AutomaticInitialPairChoice, test I: 304795499, J: 868876902, nbCommonTracks: 100
+[17:44:27.156097][info] AutomaticInitialPairChoice, test I: 304795499, J: 936120456, nbCommonTracks: 151
+*[17:44:27.161083][info] AutomaticInitialPairChoice, test I: 304795499, J: 1029832138, nbCommonTracks: 202
+[17:44:27.175046][info] AutomaticInitialPairChoice, test I: 304795499, J: 1186326363, nbCommonTracks: 145
+[17:44:27.179035][info] AutomaticInitialPairChoice, test I: 304795499, J: 1203176847, nbCommonTracks: 102
+[17:44:27.179035][info] AutomaticInitialPairChoice, test I: 304795499, J: 1228518096, nbCommonTracks: 220
+[17:44:27.189009][info] AutomaticInitialPairChoice, test I: 304795499, J: 1240301939, nbCommonTracks: 205
+[17:44:27.200977][info] AutomaticInitialPairChoice, test I: 304795499, J: 1358582240, nbCommonTracks: 150
+[17:44:27.200977][info] AutomaticInitialPairChoice, test I: 304795499, J: 1430327691, nbCommonTracks: 248
+[17:44:27.208956][info] AutomaticInitialPairChoice, test I: 304795499, J: 1523815439, nbCommonTracks: 116
+[17:44:27.220923][info] AutomaticInitialPairChoice, test I: 304795499, J: 1643728630, nbCommonTracks: 104
+[17:44:27.225911][info] AutomaticInitialPairChoice, test I: 304795499, J: 1716575903, nbCommonTracks: 191
+[17:44:27.230896][info] AutomaticInitialPairChoice, test I: 304795499, J: 1788219329, nbCommonTracks: 151
+[17:44:27.234886][info] AutomaticInitialPairChoice, test I: 304795499, J: 1799436415, nbCommonTracks: 376
+*[17:44:27.243862][info] AutomaticInitialPairChoice, test I: 304795499, J: 1861578657, nbCommonTracks: 270
+[17:44:27.254832][info] AutomaticInitialPairChoice, test I: 304795499, J: 2014127030, nbCommonTracks: 107
+[17:44:27.259820][info] AutomaticInitialPairChoice, test I: 304795499, J: 2045004962, nbCommonTracks: 315
+[17:44:27.279766][info] AutomaticInitialPairChoice, test I: 304795499, J: 2095558067, nbCommonTracks: 145
+[17:44:27.284753][info] AutomaticInitialPairChoice, test I: 304795499, J: 2130703568, nbCommonTracks: 347
+[17:44:27.285750][info] AutomaticInitialPairChoice, test I: 304795499, J: 2146998783, nbCommonTracks: 210
+[17:44:27.297718][info] AutomaticInitialPairChoice, test I: 356180607, J: 454164500, nbCommonTracks: 309
+[17:44:27.304699][info] AutomaticInitialPairChoice, test I: 356180607, J: 874093608, nbCommonTracks: 295
+[17:44:27.315670][info] AutomaticInitialPairChoice, test I: 356180607, J: 1146127176, nbCommonTracks: 142
+[17:44:27.325643][info] AutomaticInitialPairChoice, test I: 356180607, J: 1279412758, nbCommonTracks: 148
+[17:44:27.335616][info] AutomaticInitialPairChoice, test I: 356180607, J: 1973424357, nbCommonTracks: 264
+*[17:44:27.339606][info] AutomaticInitialPairChoice, test I: 401566863, J: 580816557, nbCommonTracks: 432
+[17:44:27.339606][info] AutomaticInitialPairChoice, test I: 401566863, J: 670484749, nbCommonTracks: 54
+[17:44:27.348582][info] AutomaticInitialPairChoice, test I: 401566863, J: 742308222, nbCommonTracks: 305
+[17:44:27.359553][info] AutomaticInitialPairChoice, test I: 401566863, J: 751210311, nbCommonTracks: 67
+[17:44:27.370523][info] AutomaticInitialPairChoice, test I: 401566863, J: 789706637, nbCommonTracks: 174
+[17:44:27.380496][info] AutomaticInitialPairChoice, test I: 401566863, J: 856798745, nbCommonTracks: 225
+[17:44:27.385483][info] AutomaticInitialPairChoice, test I: 401566863, J: 962831950, nbCommonTracks: 248
+[17:44:27.387478][info] AutomaticInitialPairChoice, test I: 401566863, J: 1064082008, nbCommonTracks: 154
+[17:44:27.397451][info] AutomaticInitialPairChoice, test I: 401566863, J: 1305823326, nbCommonTracks: 71
+[17:44:27.412411][info] AutomaticInitialPairChoice, test I: 401566863, J: 1347700863, nbCommonTracks: 123
+[17:44:27.416401][info] AutomaticInitialPairChoice, test I: 401566863, J: 1745211470, nbCommonTracks: 303
+[17:44:27.418395][info] AutomaticInitialPairChoice, test I: 401566863, J: 1811936640, nbCommonTracks: 352
+*[17:44:27.420390][info] AutomaticInitialPairChoice, test I: 401566863, J: 1865606473, nbCommonTracks: 288
+[17:44:27.435349][info] AutomaticInitialPairChoice, test I: 401566863, J: 2019709110, nbCommonTracks: 248
+[17:44:27.453301][info] AutomaticInitialPairChoice, test I: 401566863, J: 2124113243, nbCommonTracks: 321
+[17:44:27.454299][info] AutomaticInitialPairChoice, test I: 411685623, J: 476880634, nbCommonTracks: 164
+[17:44:27.457291][info] AutomaticInitialPairChoice, test I: 411685623, J: 528510916, nbCommonTracks: 170
+[17:44:27.467264][info] AutomaticInitialPairChoice, test I: 411685623, J: 561836557, nbCommonTracks: 207
+[17:44:27.481227][info] AutomaticInitialPairChoice, test I: 411685623, J: 751210311, nbCommonTracks: 101
+[17:44:27.485216][info] AutomaticInitialPairChoice, test I: 411685623, J: 856798745, nbCommonTracks: 164
+[17:44:27.493196][info] AutomaticInitialPairChoice, test I: 411685623, J: 868876902, nbCommonTracks: 139
+[17:44:27.496187][info] AutomaticInitialPairChoice, test I: 411685623, J: 936120456, nbCommonTracks: 120
+[17:44:27.502171][info] AutomaticInitialPairChoice, test I: 411685623, J: 1076394345, nbCommonTracks: 176
+*[17:44:27.513141][info] AutomaticInitialPairChoice, test I: 411685623, J: 1203176847, nbCommonTracks: 284
+[17:44:27.517130][info] AutomaticInitialPairChoice, test I: 411685623, J: 1228518096, nbCommonTracks: 500
+[17:44:27.518128][info] AutomaticInitialPairChoice, test I: 411685623, J: 1305823326, nbCommonTracks: 98
+[17:44:27.530096][info] AutomaticInitialPairChoice, test I: 411685623, J: 1358582240, nbCommonTracks: 334
+[17:44:27.539072][info] AutomaticInitialPairChoice, test I: 411685623, J: 1430327691, nbCommonTracks: 325
+[17:44:27.546053][info] AutomaticInitialPairChoice, test I: 411685623, J: 1689478995, nbCommonTracks: 133
+[17:44:27.566997][info] AutomaticInitialPairChoice, test I: 411685623, J: 1788219329, nbCommonTracks: 331
+[17:44:27.568992][info] AutomaticInitialPairChoice, test I: 411685623, J: 1799436415, nbCommonTracks: 117
+[17:44:27.568992][info] AutomaticInitialPairChoice, test I: 411685623, J: 2014127030, nbCommonTracks: 181
+[17:44:27.581957][info] AutomaticInitialPairChoice, test I: 411685623, J: 2045004962, nbCommonTracks: 287
+[17:44:27.592929][info] AutomaticInitialPairChoice, test I: 411685623, J: 2130703568, nbCommonTracks: 259
+*[17:44:27.594922][info] AutomaticInitialPairChoice, test I: 411685623, J: 2146998783, nbCommonTracks: 354
+[17:44:27.607888][info] AutomaticInitialPairChoice, test I: 454164500, J: 874093608, nbCommonTracks: 297
+[17:44:27.617861][info] AutomaticInitialPairChoice, test I: 454164500, J: 1146127176, nbCommonTracks: 96
+[17:44:27.624843][info] AutomaticInitialPairChoice, test I: 454164500, J: 1279412758, nbCommonTracks: 164
+[17:44:27.634816][info] AutomaticInitialPairChoice, test I: 454164500, J: 1973424357, nbCommonTracks: 179
+[17:44:27.638805][info] AutomaticInitialPairChoice, test I: 460401179, J: 789706637, nbCommonTracks: 124
+[17:44:27.643792][info] AutomaticInitialPairChoice, test I: 460401179, J: 1064082008, nbCommonTracks: 141
+[17:44:27.651770][info] AutomaticInitialPairChoice, test I: 460401179, J: 1347700863, nbCommonTracks: 194
+[17:44:27.660746][info] AutomaticInitialPairChoice, test I: 460401179, J: 1701417931, nbCommonTracks: 446
+[17:44:27.660746][info] AutomaticInitialPairChoice, test I: 460401179, J: 1811936640, nbCommonTracks: 119
+[17:44:27.668725][info] AutomaticInitialPairChoice, test I: 460401179, J: 1865606473, nbCommonTracks: 139
+[17:44:27.683685][info] AutomaticInitialPairChoice, test I: 463090087, J: 517252654, nbCommonTracks: 258
+*[17:44:27.696650][info] AutomaticInitialPairChoice, test I: 463090087, J: 1240301939, nbCommonTracks: 104
+[17:44:27.702634][info] AutomaticInitialPairChoice, test I: 463090087, J: 1716575903, nbCommonTracks: 63
+[17:44:27.704629][info] AutomaticInitialPairChoice, test I: 463090087, J: 1799436415, nbCommonTracks: 68
+[17:44:27.718591][info] AutomaticInitialPairChoice, test I: 463090087, J: 1861578657, nbCommonTracks: 70
+[17:44:27.720586][info] AutomaticInitialPairChoice, test I: 463090087, J: 2095558067, nbCommonTracks: 50
+[17:44:27.722581][info] AutomaticInitialPairChoice, test I: 476880634, J: 528510916, nbCommonTracks: 545
+[17:44:27.726571][info] AutomaticInitialPairChoice, test I: 476880634, J: 579717169, nbCommonTracks: 392
+[17:44:27.738538][info] AutomaticInitialPairChoice, test I: 476880634, J: 936120456, nbCommonTracks: 526
+[17:44:27.739536][info] AutomaticInitialPairChoice, test I: 476880634, J: 1029832138, nbCommonTracks: 237
+[17:44:27.766463][info] AutomaticInitialPairChoice, test I: 476880634, J: 1186326363, nbCommonTracks: 125
+[17:44:27.769455][info] AutomaticInitialPairChoice, test I: 476880634, J: 1203176847, nbCommonTracks: 109
+*[17:44:27.785413][info] AutomaticInitialPairChoice, test I: 476880634, J: 1228518096, nbCommonTracks: 190
+[17:44:27.790399][info] AutomaticInitialPairChoice, test I: 476880634, J: 1240301939, nbCommonTracks: 54
+[17:44:27.792394][info] AutomaticInitialPairChoice, test I: 476880634, J: 1358582240, nbCommonTracks: 140
+[17:44:27.793392][info] AutomaticInitialPairChoice, test I: 476880634, J: 1430327691, nbCommonTracks: 151
+[17:44:27.812341][info] AutomaticInitialPairChoice, test I: 476880634, J: 1474416471, nbCommonTracks: 100
+[17:44:27.813338][info] AutomaticInitialPairChoice, test I: 476880634, J: 1523815439, nbCommonTracks: 118
+[17:44:27.815333][info] AutomaticInitialPairChoice, test I: 476880634, J: 1716575903, nbCommonTracks: 71
+[17:44:27.819322][info] AutomaticInitialPairChoice, test I: 476880634, J: 1788219329, nbCommonTracks: 122
+[17:44:27.832287][info] AutomaticInitialPairChoice, test I: 476880634, J: 1799436415, nbCommonTracks: 100
+[17:44:27.836277][info] AutomaticInitialPairChoice, test I: 476880634, J: 1861578657, nbCommonTracks: 92
+[17:44:27.839268][info] AutomaticInitialPairChoice, test I: 476880634, J: 2014127030, nbCommonTracks: 400
+*[17:44:27.839268][info] AutomaticInitialPairChoice, test I: 476880634, J: 2045004962, nbCommonTracks: 193
+[17:44:27.854229][info] AutomaticInitialPairChoice, test I: 476880634, J: 2095558067, nbCommonTracks: 69
+[17:44:27.859216][info] AutomaticInitialPairChoice, test I: 476880634, J: 2130703568, nbCommonTracks: 163
+[17:44:27.866197][info] AutomaticInitialPairChoice, test I: 476880634, J: 2146998783, nbCommonTracks: 188
+[17:44:27.876171][info] AutomaticInitialPairChoice, test I: 517252654, J: 579717169, nbCommonTracks: 44
+[17:44:27.880159][info] AutomaticInitialPairChoice, test I: 517252654, J: 936120456, nbCommonTracks: 57
+[17:44:27.886143][info] AutomaticInitialPairChoice, test I: 517252654, J: 1186326363, nbCommonTracks: 77
+[17:44:27.894122][info] AutomaticInitialPairChoice, test I: 517252654, J: 1240301939, nbCommonTracks: 200
+[17:44:27.895119][info] AutomaticInitialPairChoice, test I: 517252654, J: 1474416471, nbCommonTracks: 77
+[17:44:27.902100][info] AutomaticInitialPairChoice, test I: 517252654, J: 1523815439, nbCommonTracks: 75
+[17:44:27.906090][info] AutomaticInitialPairChoice, test I: 517252654, J: 1643728630, nbCommonTracks: 62
+[17:44:27.913071][info] AutomaticInitialPairChoice, test I: 517252654, J: 1716575903, nbCommonTracks: 137
+*[17:44:27.923044][info] AutomaticInitialPairChoice, test I: 517252654, J: 1785851268, nbCommonTracks: 74
+[17:44:27.923044][info] AutomaticInitialPairChoice, test I: 517252654, J: 1799436415, nbCommonTracks: 156
+[17:44:27.927034][info] AutomaticInitialPairChoice, test I: 517252654, J: 1861578657, nbCommonTracks: 169
+[17:44:27.937007][info] AutomaticInitialPairChoice, test I: 517252654, J: 2095558067, nbCommonTracks: 100
+[17:44:27.945983][info] AutomaticInitialPairChoice, test I: 528510916, J: 579717169, nbCommonTracks: 302
+[17:44:27.947978][info] AutomaticInitialPairChoice, test I: 528510916, J: 868876902, nbCommonTracks: 99
+[17:44:27.953962][info] AutomaticInitialPairChoice, test I: 528510916, J: 936120456, nbCommonTracks: 429
+[17:44:27.960943][info] AutomaticInitialPairChoice, test I: 528510916, J: 1029832138, nbCommonTracks: 178
+[17:44:27.968922][info] AutomaticInitialPairChoice, test I: 528510916, J: 1186326363, nbCommonTracks: 94
+[17:44:27.981887][info] AutomaticInitialPairChoice, test I: 528510916, J: 1203176847, nbCommonTracks: 132
+[17:44:27.986874][info] AutomaticInitialPairChoice, test I: 528510916, J: 1228518096, nbCommonTracks: 192
+*[17:44:27.992858][info] AutomaticInitialPairChoice, test I: 528510916, J: 1240301939, nbCommonTracks: 49
+[17:44:27.999838][info] AutomaticInitialPairChoice, test I: 528510916, J: 1358582240, nbCommonTracks: 157
+[17:44:28.011807][info] AutomaticInitialPairChoice, test I: 528510916, J: 1430327691, nbCommonTracks: 146
+[17:44:28.014799][info] AutomaticInitialPairChoice, test I: 528510916, J: 1689478995, nbCommonTracks: 103
+[17:44:28.014799][info] AutomaticInitialPairChoice, test I: 528510916, J: 1788219329, nbCommonTracks: 136
+[17:44:28.026768][info] AutomaticInitialPairChoice, test I: 528510916, J: 1799436415, nbCommonTracks: 98
+[17:44:28.035743][info] AutomaticInitialPairChoice, test I: 528510916, J: 1861578657, nbCommonTracks: 85
+[17:44:28.035743][info] AutomaticInitialPairChoice, test I: 528510916, J: 2014127030, nbCommonTracks: 516
+[17:44:28.039732][info] AutomaticInitialPairChoice, test I: 528510916, J: 2045004962, nbCommonTracks: 194
+[17:44:28.047711][info] AutomaticInitialPairChoice, test I: 528510916, J: 2095558067, nbCommonTracks: 67
+[17:44:28.054692][info] AutomaticInitialPairChoice, test I: 528510916, J: 2130703568, nbCommonTracks: 174
+*[17:44:28.067657][info] AutomaticInitialPairChoice, test I: 528510916, J: 2146998783, nbCommonTracks: 208
+[17:44:28.069652][info] AutomaticInitialPairChoice, test I: 561836557, J: 751210311, nbCommonTracks: 210
+[17:44:28.081620][info] AutomaticInitialPairChoice, test I: 561836557, J: 856798745, nbCommonTracks: 238
+[17:44:28.087604][info] AutomaticInitialPairChoice, test I: 561836557, J: 868876902, nbCommonTracks: 171
+[17:44:28.095583][info] AutomaticInitialPairChoice, test I: 561836557, J: 1076394345, nbCommonTracks: 442
+[17:44:28.098575][info] AutomaticInitialPairChoice, test I: 561836557, J: 1203176847, nbCommonTracks: 352
+[17:44:28.116527][info] AutomaticInitialPairChoice, test I: 561836557, J: 1228518096, nbCommonTracks: 127
+[17:44:28.116527][info] AutomaticInitialPairChoice, test I: 561836557, J: 1305823326, nbCommonTracks: 182
+[17:44:28.136473][info] AutomaticInitialPairChoice, test I: 561836557, J: 1358582240, nbCommonTracks: 111
+[17:44:28.137471][info] AutomaticInitialPairChoice, test I: 561836557, J: 1430327691, nbCommonTracks: 94
+[17:44:28.143455][info] AutomaticInitialPairChoice, test I: 561836557, J: 1689478995, nbCommonTracks: 155
+[17:44:28.147444][info] AutomaticInitialPairChoice, test I: 561836557, J: 1788219329, nbCommonTracks: 128
+*[17:44:28.157417][info] AutomaticInitialPairChoice, test I: 561836557, J: 2014127030, nbCommonTracks: 89
+[17:44:28.160410][info] AutomaticInitialPairChoice, test I: 561836557, J: 2019709110, nbCommonTracks: 133
+[17:44:28.168388][info] AutomaticInitialPairChoice, test I: 561836557, J: 2045004962, nbCommonTracks: 121
+[17:44:28.172377][info] AutomaticInitialPairChoice, test I: 561836557, J: 2124113243, nbCommonTracks: 115
+[17:44:28.182350][info] AutomaticInitialPairChoice, test I: 561836557, J: 2146998783, nbCommonTracks: 132
+[17:44:28.183348][info] AutomaticInitialPairChoice, test I: 579717169, J: 936120456, nbCommonTracks: 599
+[17:44:28.193322][info] AutomaticInitialPairChoice, test I: 579717169, J: 1029832138, nbCommonTracks: 497
+[17:44:28.199306][info] AutomaticInitialPairChoice, test I: 579717169, J: 1150832366, nbCommonTracks: 129
+[17:44:28.207284][info] AutomaticInitialPairChoice, test I: 579717169, J: 1186326363, nbCommonTracks: 226
+[17:44:28.222244][info] AutomaticInitialPairChoice, test I: 579717169, J: 1228518096, nbCommonTracks: 109
+[17:44:28.244186][info] AutomaticInitialPairChoice, test I: 579717169, J: 1430327691, nbCommonTracks: 168
+*[17:44:28.244186][info] AutomaticInitialPairChoice, test I: 579717169, J: 1474416471, nbCommonTracks: 162
+[17:44:28.245183][info] AutomaticInitialPairChoice, test I: 579717169, J: 1523815439, nbCommonTracks: 186
+[17:44:28.251166][info] AutomaticInitialPairChoice, test I: 579717169, J: 1716575903, nbCommonTracks: 82
+[17:44:28.273107][info] AutomaticInitialPairChoice, test I: 579717169, J: 1785851268, nbCommonTracks: 125
+[17:44:28.281086][info] AutomaticInitialPairChoice, test I: 579717169, J: 1799436415, nbCommonTracks: 141
+[17:44:28.283081][info] AutomaticInitialPairChoice, test I: 579717169, J: 1861578657, nbCommonTracks: 96
+[17:44:28.283081][info] AutomaticInitialPairChoice, test I: 579717169, J: 1906096636, nbCommonTracks: 154
+[17:44:28.305023][info] AutomaticInitialPairChoice, test I: 579717169, J: 2014127030, nbCommonTracks: 201
+[17:44:28.305023][info] AutomaticInitialPairChoice, test I: 579717169, J: 2045004962, nbCommonTracks: 239
+[17:44:28.307017][info] AutomaticInitialPairChoice, test I: 579717169, J: 2095558067, nbCommonTracks: 86
+[17:44:28.309012][info] AutomaticInitialPairChoice, test I: 579717169, J: 2130703568, nbCommonTracks: 189
+[17:44:28.335939][info] AutomaticInitialPairChoice, test I: 579717169, J: 2146998783, nbCommonTracks: 117
+*[17:44:28.337934][info] AutomaticInitialPairChoice, test I: 580816557, J: 742308222, nbCommonTracks: 376
+[17:44:28.339929][info] AutomaticInitialPairChoice, test I: 580816557, J: 789706637, nbCommonTracks: 229
+[17:44:28.344915][info] AutomaticInitialPairChoice, test I: 580816557, J: 856798745, nbCommonTracks: 108
+[17:44:28.359876][info] AutomaticInitialPairChoice, test I: 580816557, J: 962831950, nbCommonTracks: 365
+[17:44:28.369849][info] AutomaticInitialPairChoice, test I: 580816557, J: 1064082008, nbCommonTracks: 216
+[17:44:28.372841][info] AutomaticInitialPairChoice, test I: 580816557, J: 1347700863, nbCommonTracks: 151
+[17:44:28.384809][info] AutomaticInitialPairChoice, test I: 580816557, J: 1689478995, nbCommonTracks: 43
+[17:44:28.395781][info] AutomaticInitialPairChoice, test I: 580816557, J: 1745211470, nbCommonTracks: 388
+[17:44:28.405753][info] AutomaticInitialPairChoice, test I: 580816557, J: 1811936640, nbCommonTracks: 328
+[17:44:28.405753][info] AutomaticInitialPairChoice, test I: 580816557, J: 1865606473, nbCommonTracks: 287
+[17:44:28.405753][info] AutomaticInitialPairChoice, test I: 580816557, J: 2019709110, nbCommonTracks: 141
+*[17:44:28.429688][info] AutomaticInitialPairChoice, test I: 580816557, J: 2124113243, nbCommonTracks: 141
+[17:44:28.435673][info] AutomaticInitialPairChoice, test I: 670484749, J: 856798745, nbCommonTracks: 75
+[17:44:28.438665][info] AutomaticInitialPairChoice, test I: 670484749, J: 1115818466, nbCommonTracks: 98
+[17:44:28.448638][info] AutomaticInitialPairChoice, test I: 670484749, J: 1150832366, nbCommonTracks: 125
+[17:44:28.454622][info] AutomaticInitialPairChoice, test I: 670484749, J: 1186326363, nbCommonTracks: 86
+[17:44:28.456617][info] AutomaticInitialPairChoice, test I: 670484749, J: 1474416471, nbCommonTracks: 131
+[17:44:28.459609][info] AutomaticInitialPairChoice, test I: 670484749, J: 1523815439, nbCommonTracks: 124
+[17:44:28.471576][info] AutomaticInitialPairChoice, test I: 670484749, J: 1636735110, nbCommonTracks: 270
+[17:44:28.476563][info] AutomaticInitialPairChoice, test I: 670484749, J: 1643728630, nbCommonTracks: 58
+[17:44:28.482547][info] AutomaticInitialPairChoice, test I: 670484749, J: 1716575903, nbCommonTracks: 112
+[17:44:28.482547][info] AutomaticInitialPairChoice, test I: 670484749, J: 1785851268, nbCommonTracks: 138
+*[17:44:28.497507][info] AutomaticInitialPairChoice, test I: 670484749, J: 1861578657, nbCommonTracks: 93
+[17:44:28.502494][info] AutomaticInitialPairChoice, test I: 670484749, J: 1906096636, nbCommonTracks: 142
+[17:44:28.504488][info] AutomaticInitialPairChoice, test I: 670484749, J: 2095558067, nbCommonTracks: 112
+[17:44:28.505486][info] AutomaticInitialPairChoice, test I: 742308222, J: 789706637, nbCommonTracks: 120
+[17:44:28.518451][info] AutomaticInitialPairChoice, test I: 742308222, J: 962831950, nbCommonTracks: 185
+[17:44:28.527428][info] AutomaticInitialPairChoice, test I: 742308222, J: 1689478995, nbCommonTracks: 44
+[17:44:28.527428][info] AutomaticInitialPairChoice, test I: 742308222, J: 1745211470, nbCommonTracks: 202
+[17:44:28.530419][info] AutomaticInitialPairChoice, test I: 742308222, J: 1811936640, nbCommonTracks: 170
+[17:44:28.544382][info] AutomaticInitialPairChoice, test I: 742308222, J: 1865606473, nbCommonTracks: 139
+[17:44:28.546377][info] AutomaticInitialPairChoice, test I: 742308222, J: 2019709110, nbCommonTracks: 117
+[17:44:28.552360][info] AutomaticInitialPairChoice, test I: 742308222, J: 2124113243, nbCommonTracks: 123
+[17:44:28.556350][info] AutomaticInitialPairChoice, test I: 751210311, J: 856798745, nbCommonTracks: 481
+*[17:44:28.568318][info] AutomaticInitialPairChoice, test I: 751210311, J: 868876902, nbCommonTracks: 256
+[17:44:28.570312][info] AutomaticInitialPairChoice, test I: 751210311, J: 1076394345, nbCommonTracks: 121
+[17:44:28.575299][info] AutomaticInitialPairChoice, test I: 751210311, J: 1203176847, nbCommonTracks: 260
+[17:44:28.596243][info] AutomaticInitialPairChoice, test I: 751210311, J: 1305823326, nbCommonTracks: 481
+[17:44:28.599235][info] AutomaticInitialPairChoice, test I: 751210311, J: 1689478995, nbCommonTracks: 259
+[17:44:28.602227][info] AutomaticInitialPairChoice, test I: 751210311, J: 2019709110, nbCommonTracks: 282
+[17:44:28.606216][info] AutomaticInitialPairChoice, test I: 751210311, J: 2045004962, nbCommonTracks: 115
+[17:44:28.630152][info] AutomaticInitialPairChoice, test I: 751210311, J: 2124113243, nbCommonTracks: 208
+[17:44:28.630152][info] AutomaticInitialPairChoice, test I: 751210311, J: 2146998783, nbCommonTracks: 116
+[17:44:28.637134][info] AutomaticInitialPairChoice, test I: 789706637, J: 962831950, nbCommonTracks: 369
+[17:44:28.647107][info] AutomaticInitialPairChoice, test I: 789706637, J: 1064082008, nbCommonTracks: 504
+*[17:44:28.651096][info] AutomaticInitialPairChoice, test I: 789706637, J: 1347700863, nbCommonTracks: 345
+[17:44:28.655085][info] AutomaticInitialPairChoice, test I: 789706637, J: 1701417931, nbCommonTracks: 131
+[17:44:28.674035][info] AutomaticInitialPairChoice, test I: 789706637, J: 1745211470, nbCommonTracks: 389
+[17:44:28.681016][info] AutomaticInitialPairChoice, test I: 789706637, J: 1811936640, nbCommonTracks: 356
+[17:44:28.690989][info] AutomaticInitialPairChoice, test I: 789706637, J: 1865606473, nbCommonTracks: 392
+[17:44:28.696973][info] AutomaticInitialPairChoice, test I: 789706637, J: 2124113243, nbCommonTracks: 105
+[17:44:28.715923][info] AutomaticInitialPairChoice, test I: 856798745, J: 868876902, nbCommonTracks: 213
+[17:44:28.717917][info] AutomaticInitialPairChoice, test I: 856798745, J: 936120456, nbCommonTracks: 72
+[17:44:28.718915][info] AutomaticInitialPairChoice, test I: 856798745, J: 1076394345, nbCommonTracks: 143
+[17:44:28.735869][info] AutomaticInitialPairChoice, test I: 856798745, J: 1203176847, nbCommonTracks: 314
+[17:44:28.738862][info] AutomaticInitialPairChoice, test I: 856798745, J: 1228518096, nbCommonTracks: 149
+*[17:44:28.741853][info] AutomaticInitialPairChoice, test I: 856798745, J: 1305823326, nbCommonTracks: 352
+[17:44:28.746840][info] AutomaticInitialPairChoice, test I: 856798745, J: 1636735110, nbCommonTracks: 83
+[17:44:28.762797][info] AutomaticInitialPairChoice, test I: 856798745, J: 1689478995, nbCommonTracks: 199
+[17:44:28.767784][info] AutomaticInitialPairChoice, test I: 856798745, J: 1811936640, nbCommonTracks: 121
+[17:44:28.772771][info] AutomaticInitialPairChoice, test I: 856798745, J: 2019709110, nbCommonTracks: 496
+[17:44:28.778755][info] AutomaticInitialPairChoice, test I: 856798745, J: 2045004962, nbCommonTracks: 127
+[17:44:28.789725][info] AutomaticInitialPairChoice, test I: 856798745, J: 2124113243, nbCommonTracks: 459
+[17:44:28.791720][info] AutomaticInitialPairChoice, test I: 856798745, J: 2130703568, nbCommonTracks: 148
+[17:44:28.802691][info] AutomaticInitialPairChoice, test I: 856798745, J: 2146998783, nbCommonTracks: 133
+[17:44:28.816653][info] AutomaticInitialPairChoice, test I: 868876902, J: 1203176847, nbCommonTracks: 319
+[17:44:28.817650][info] AutomaticInitialPairChoice, test I: 868876902, J: 1228518096, nbCommonTracks: 133
+[17:44:28.825629][info] AutomaticInitialPairChoice, test I: 868876902, J: 1305823326, nbCommonTracks: 330
+*[17:44:28.834605][info] AutomaticInitialPairChoice, test I: 868876902, J: 1430327691, nbCommonTracks: 106
+[17:44:28.855549][info] AutomaticInitialPairChoice, test I: 868876902, J: 1689478995, nbCommonTracks: 561
+[17:44:28.858541][info] AutomaticInitialPairChoice, test I: 868876902, J: 2014127030, nbCommonTracks: 109
+[17:44:28.860536][info] AutomaticInitialPairChoice, test I: 868876902, J: 2019709110, nbCommonTracks: 160
+[17:44:28.863528][info] AutomaticInitialPairChoice, test I: 868876902, J: 2045004962, nbCommonTracks: 137
+[17:44:28.882477][info] AutomaticInitialPairChoice, test I: 868876902, J: 2124113243, nbCommonTracks: 129
+[17:44:28.885469][info] AutomaticInitialPairChoice, test I: 868876902, J: 2130703568, nbCommonTracks: 151
+[17:44:28.886466][info] AutomaticInitialPairChoice, test I: 868876902, J: 2146998783, nbCommonTracks: 155
+[17:44:28.906413][info] AutomaticInitialPairChoice, test I: 874093608, J: 1146127176, nbCommonTracks: 103
+[17:44:28.910402][info] AutomaticInitialPairChoice, test I: 874093608, J: 1279412758, nbCommonTracks: 275
+[17:44:28.911400][info] AutomaticInitialPairChoice, test I: 874093608, J: 1973424357, nbCommonTracks: 225
+*[17:44:28.920376][info] AutomaticInitialPairChoice, test I: 936120456, J: 1029832138, nbCommonTracks: 355
+[17:44:28.929352][info] AutomaticInitialPairChoice, test I: 936120456, J: 1186326363, nbCommonTracks: 169
+[17:44:28.941320][info] AutomaticInitialPairChoice, test I: 936120456, J: 1203176847, nbCommonTracks: 91
+[17:44:28.946306][info] AutomaticInitialPairChoice, test I: 936120456, J: 1228518096, nbCommonTracks: 168
+[17:44:28.956279][info] AutomaticInitialPairChoice, test I: 936120456, J: 1358582240, nbCommonTracks: 135
+[17:44:28.958274][info] AutomaticInitialPairChoice, test I: 936120456, J: 1430327691, nbCommonTracks: 203
+[17:44:28.963261][info] AutomaticInitialPairChoice, test I: 936120456, J: 1474416471, nbCommonTracks: 145
+[17:44:28.974231][info] AutomaticInitialPairChoice, test I: 936120456, J: 1523815439, nbCommonTracks: 148
+[17:44:28.981213][info] AutomaticInitialPairChoice, test I: 936120456, J: 1643728630, nbCommonTracks: 76
+[17:44:28.987197][info] AutomaticInitialPairChoice, test I: 936120456, J: 1716575903, nbCommonTracks: 91
+[17:44:28.987197][info] AutomaticInitialPairChoice, test I: 936120456, J: 1788219329, nbCommonTracks: 105
+*[17:44:29.000162][info] AutomaticInitialPairChoice, test I: 936120456, J: 1799436415, nbCommonTracks: 112
+[17:44:29.001160][info] AutomaticInitialPairChoice, test I: 936120456, J: 1861578657, nbCommonTracks: 96
+[17:44:29.010136][info] AutomaticInitialPairChoice, test I: 936120456, J: 1906096636, nbCommonTracks: 124
+[17:44:29.011133][info] AutomaticInitialPairChoice, test I: 936120456, J: 2014127030, nbCommonTracks: 294
+[17:44:29.023101][info] AutomaticInitialPairChoice, test I: 936120456, J: 2045004962, nbCommonTracks: 266
+[17:44:29.024098][info] AutomaticInitialPairChoice, test I: 936120456, J: 2095558067, nbCommonTracks: 86
+[17:44:29.032077][info] AutomaticInitialPairChoice, test I: 936120456, J: 2130703568, nbCommonTracks: 215
+[17:44:29.045042][info] AutomaticInitialPairChoice, test I: 936120456, J: 2146998783, nbCommonTracks: 183
+[17:44:29.045042][info] AutomaticInitialPairChoice, test I: 962831950, J: 1064082008, nbCommonTracks: 320
+[17:44:29.061000][info] AutomaticInitialPairChoice, test I: 962831950, J: 1347700863, nbCommonTracks: 236
+[17:44:29.061997][info] AutomaticInitialPairChoice, test I: 962831950, J: 1745211470, nbCommonTracks: 384
+[17:44:29.071970][info] AutomaticInitialPairChoice, test I: 962831950, J: 1811936640, nbCommonTracks: 298
+*[17:44:29.080946][info] AutomaticInitialPairChoice, test I: 962831950, J: 1865606473, nbCommonTracks: 314
+[17:44:29.091916][info] AutomaticInitialPairChoice, test I: 962831950, J: 2124113243, nbCommonTracks: 84
+[17:44:29.103885][info] AutomaticInitialPairChoice, test I: 1029832138, J: 1150832366, nbCommonTracks: 195
+[17:44:29.106876][info] AutomaticInitialPairChoice, test I: 1029832138, J: 1186326363, nbCommonTracks: 359
+[17:44:29.113858][info] AutomaticInitialPairChoice, test I: 1029832138, J: 1240301939, nbCommonTracks: 86
+[17:44:29.113858][info] AutomaticInitialPairChoice, test I: 1029832138, J: 1430327691, nbCommonTracks: 103
+[17:44:29.130812][info] AutomaticInitialPairChoice, test I: 1029832138, J: 1474416471, nbCommonTracks: 245
+[17:44:29.133804][info] AutomaticInitialPairChoice, test I: 1029832138, J: 1523815439, nbCommonTracks: 275
+[17:44:29.134802][info] AutomaticInitialPairChoice, test I: 1029832138, J: 1716575903, nbCommonTracks: 92
+[17:44:29.150759][info] AutomaticInitialPairChoice, test I: 1029832138, J: 1785851268, nbCommonTracks: 193
+[17:44:29.158738][info] AutomaticInitialPairChoice, test I: 1029832138, J: 1799436415, nbCommonTracks: 172
+*[17:44:29.161730][info] AutomaticInitialPairChoice, test I: 1029832138, J: 1861578657, nbCommonTracks: 101
+[17:44:29.166716][info] AutomaticInitialPairChoice, test I: 1029832138, J: 1906096636, nbCommonTracks: 226
+[17:44:29.179682][info] AutomaticInitialPairChoice, test I: 1029832138, J: 2014127030, nbCommonTracks: 129
+[17:44:29.183671][info] AutomaticInitialPairChoice, test I: 1029832138, J: 2045004962, nbCommonTracks: 156
+[17:44:29.186663][info] AutomaticInitialPairChoice, test I: 1029832138, J: 2095558067, nbCommonTracks: 90
+[17:44:29.196636][info] AutomaticInitialPairChoice, test I: 1029832138, J: 2130703568, nbCommonTracks: 132
+[17:44:29.204615][info] AutomaticInitialPairChoice, test I: 1064082008, J: 1347700863, nbCommonTracks: 405
+[17:44:29.206610][info] AutomaticInitialPairChoice, test I: 1064082008, J: 1701417931, nbCommonTracks: 151
+[17:44:29.207607][info] AutomaticInitialPairChoice, test I: 1064082008, J: 1745211470, nbCommonTracks: 362
+[17:44:29.221569][info] AutomaticInitialPairChoice, test I: 1064082008, J: 1811936640, nbCommonTracks: 339
+[17:44:29.230545][info] AutomaticInitialPairChoice, test I: 1064082008, J: 1865606473, nbCommonTracks: 406
+*[17:44:29.246503][info] AutomaticInitialPairChoice, test I: 1076394345, J: 1203176847, nbCommonTracks: 209
+[17:44:29.248497][info] AutomaticInitialPairChoice, test I: 1076394345, J: 1228518096, nbCommonTracks: 128
+[17:44:29.263458][info] AutomaticInitialPairChoice, test I: 1076394345, J: 1305823326, nbCommonTracks: 93
+[17:44:29.271436][info] AutomaticInitialPairChoice, test I: 1076394345, J: 1358582240, nbCommonTracks: 109
+[17:44:29.271436][info] AutomaticInitialPairChoice, test I: 1076394345, J: 1788219329, nbCommonTracks: 126
+[17:44:29.274428][info] AutomaticInitialPairChoice, test I: 1115818466, J: 1636735110, nbCommonTracks: 274
+[17:44:29.286396][info] AutomaticInitialPairChoice, test I: 1146127176, J: 1973424357, nbCommonTracks: 233
+[17:44:29.295372][info] AutomaticInitialPairChoice, test I: 1150832366, J: 1186326363, nbCommonTracks: 401
+[17:44:29.297367][info] AutomaticInitialPairChoice, test I: 1150832366, J: 1474416471, nbCommonTracks: 602
+[17:44:29.308338][info] AutomaticInitialPairChoice, test I: 1150832366, J: 1523815439, nbCommonTracks: 526
+[17:44:29.320306][info] AutomaticInitialPairChoice, test I: 1150832366, J: 1636735110, nbCommonTracks: 73
+[17:44:29.334268][info] AutomaticInitialPairChoice, test I: 1150832366, J: 1643728630, nbCommonTracks: 104
+*[17:44:29.342247][info] AutomaticInitialPairChoice, test I: 1150832366, J: 1716575903, nbCommonTracks: 169
+[17:44:29.352220][info] AutomaticInitialPairChoice, test I: 1150832366, J: 1785851268, nbCommonTracks: 747
+[17:44:29.359201][info] AutomaticInitialPairChoice, test I: 1150832366, J: 1861578657, nbCommonTracks: 172
+[17:44:29.363191][info] AutomaticInitialPairChoice, test I: 1150832366, J: 1906096636, nbCommonTracks: 773
+[17:44:29.369175][info] AutomaticInitialPairChoice, test I: 1150832366, J: 2095558067, nbCommonTracks: 152
+[17:44:29.386129][info] AutomaticInitialPairChoice, test I: 1186326363, J: 1240301939, nbCommonTracks: 74
+[17:44:29.403084][info] AutomaticInitialPairChoice, test I: 1186326363, J: 1474416471, nbCommonTracks: 504
+[17:44:29.406076][info] AutomaticInitialPairChoice, test I: 1186326363, J: 1523815439, nbCommonTracks: 571
+[17:44:29.419041][info] AutomaticInitialPairChoice, test I: 1186326363, J: 1643728630, nbCommonTracks: 64
+[17:44:29.434999][info] AutomaticInitialPairChoice, test I: 1186326363, J: 1716575903, nbCommonTracks: 122
+[17:44:29.438988][info] AutomaticInitialPairChoice, test I: 1186326363, J: 1785851268, nbCommonTracks: 390
+*[17:44:29.454945][info] AutomaticInitialPairChoice, test I: 1186326363, J: 1799436415, nbCommonTracks: 114
+[17:44:29.458934][info] AutomaticInitialPairChoice, test I: 1186326363, J: 1861578657, nbCommonTracks: 173
+[17:44:29.460930][info] AutomaticInitialPairChoice, test I: 1186326363, J: 1906096636, nbCommonTracks: 444
+[17:44:29.477884][info] AutomaticInitialPairChoice, test I: 1186326363, J: 2095558067, nbCommonTracks: 97
+[17:44:29.479878][info] AutomaticInitialPairChoice, test I: 1203176847, J: 1228518096, nbCommonTracks: 233
+[17:44:29.487857][info] AutomaticInitialPairChoice, test I: 1203176847, J: 1305823326, nbCommonTracks: 256
+[17:44:29.500822][info] AutomaticInitialPairChoice, test I: 1203176847, J: 1358582240, nbCommonTracks: 146
+[17:44:29.503814][info] AutomaticInitialPairChoice, test I: 1203176847, J: 1430327691, nbCommonTracks: 162
+[17:44:29.507803][info] AutomaticInitialPairChoice, test I: 1203176847, J: 1689478995, nbCommonTracks: 318
+[17:44:29.520769][info] AutomaticInitialPairChoice, test I: 1203176847, J: 1788219329, nbCommonTracks: 164
+[17:44:29.523761][info] AutomaticInitialPairChoice, test I: 1203176847, J: 2014127030, nbCommonTracks: 163
+[17:44:29.537724][info] AutomaticInitialPairChoice, test I: 1203176847, J: 2019709110, nbCommonTracks: 206
+*[17:44:29.542710][info] AutomaticInitialPairChoice, test I: 1203176847, J: 2045004962, nbCommonTracks: 187
+[17:44:29.548694][info] AutomaticInitialPairChoice, test I: 1203176847, J: 2124113243, nbCommonTracks: 167
+[17:44:29.554678][info] AutomaticInitialPairChoice, test I: 1203176847, J: 2130703568, nbCommonTracks: 187
+[17:44:29.566646][info] AutomaticInitialPairChoice, test I: 1203176847, J: 2146998783, nbCommonTracks: 225
+[17:44:29.568641][info] AutomaticInitialPairChoice, test I: 1228518096, J: 1240301939, nbCommonTracks: 90
+[17:44:29.574625][info] AutomaticInitialPairChoice, test I: 1228518096, J: 1305823326, nbCommonTracks: 96
+[17:44:29.582604][info] AutomaticInitialPairChoice, test I: 1228518096, J: 1358582240, nbCommonTracks: 391
+[17:44:29.589585][info] AutomaticInitialPairChoice, test I: 1228518096, J: 1430327691, nbCommonTracks: 514
+[17:44:29.595569][info] AutomaticInitialPairChoice, test I: 1228518096, J: 1689478995, nbCommonTracks: 119
+[17:44:29.598561][info] AutomaticInitialPairChoice, test I: 1228518096, J: 1716575903, nbCommonTracks: 99
+*[17:44:29.620502][info] AutomaticInitialPairChoice, test I: 1228518096, J: 1799436415, nbCommonTracks: 157
+[17:44:29.620502][info] AutomaticInitialPairChoice, test I: 1228518096, J: 1788219329, nbCommonTracks: 378
+[17:44:29.621499][info] AutomaticInitialPairChoice, test I: 1228518096, J: 1861578657, nbCommonTracks: 113
+[17:44:29.645436][info] AutomaticInitialPairChoice, test I: 1228518096, J: 2014127030, nbCommonTracks: 172
+[17:44:29.646432][info] AutomaticInitialPairChoice, test I: 1228518096, J: 2045004962, nbCommonTracks: 423
+[17:44:29.648427][info] AutomaticInitialPairChoice, test I: 1228518096, J: 2130703568, nbCommonTracks: 363
+[17:44:29.661393][info] AutomaticInitialPairChoice, test I: 1228518096, J: 2146998783, nbCommonTracks: 434
+[17:44:29.672363][info] AutomaticInitialPairChoice, test I: 1240301939, J: 1358582240, nbCommonTracks: 83
+[17:44:29.686326][info] AutomaticInitialPairChoice, test I: 1240301939, J: 1430327691, nbCommonTracks: 132
+[17:44:29.686326][info] AutomaticInitialPairChoice, test I: 1240301939, J: 1716575903, nbCommonTracks: 95
+[17:44:29.693307][info] AutomaticInitialPairChoice, test I: 1240301939, J: 1788219329, nbCommonTracks: 90
+[17:44:29.705275][info] AutomaticInitialPairChoice, test I: 1240301939, J: 1799436415, nbCommonTracks: 326
+*[17:44:29.706273][info] AutomaticInitialPairChoice, test I: 1240301939, J: 1861578657, nbCommonTracks: 114
+[17:44:29.713254][info] AutomaticInitialPairChoice, test I: 1240301939, J: 2014127030, nbCommonTracks: 53
+[17:44:29.719238][info] AutomaticInitialPairChoice, test I: 1240301939, J: 2045004962, nbCommonTracks: 135
+[17:44:29.730209][info] AutomaticInitialPairChoice, test I: 1240301939, J: 2130703568, nbCommonTracks: 139
+[17:44:29.738187][info] AutomaticInitialPairChoice, test I: 1279412758, J: 1973424357, nbCommonTracks: 100
+[17:44:29.744172][info] AutomaticInitialPairChoice, test I: 1305823326, J: 1689478995, nbCommonTracks: 360
+[17:44:29.746166][info] AutomaticInitialPairChoice, test I: 1305823326, J: 2019709110, nbCommonTracks: 313
+[17:44:29.754144][info] AutomaticInitialPairChoice, test I: 1305823326, J: 2045004962, nbCommonTracks: 114
+[17:44:29.762123][info] AutomaticInitialPairChoice, test I: 1305823326, J: 2124113243, nbCommonTracks: 202
+[17:44:29.774091][info] AutomaticInitialPairChoice, test I: 1305823326, J: 2146998783, nbCommonTracks: 115
+[17:44:29.776086][info] AutomaticInitialPairChoice, test I: 1347700863, J: 1701417931, nbCommonTracks: 186
+[17:44:29.786059][info] AutomaticInitialPairChoice, test I: 13*47700863, J: 1745211470, nbCommonTracks: 248
+[17:44:29.786059][info] AutomaticInitialPairChoice, test I: 1347700863, J: 1811936640, nbCommonTracks: 279
+[17:44:29.800022][info] AutomaticInitialPairChoice, test I: 1347700863, J: 1865606473, nbCommonTracks: 363
+[17:44:29.805008][info] AutomaticInitialPairChoice, test I: 1358582240, J: 1430327691, nbCommonTracks: 428
+[17:44:29.817974][info] AutomaticInitialPairChoice, test I: 1358582240, J: 1799436415, nbCommonTracks: 159
+[17:44:29.817974][info] AutomaticInitialPairChoice, test I: 1358582240, J: 1788219329, nbCommonTracks: 606
+[17:44:29.842907][info] AutomaticInitialPairChoice, test I: 1358582240, J: 2014127030, nbCommonTracks: 123
+[17:44:29.847894][info] AutomaticInitialPairChoice, test I: 1358582240, J: 2045004962, nbCommonTracks: 319
+[17:44:29.861857][info] AutomaticInitialPairChoice, test I: 1358582240, J: 2130703568, nbCommonTracks: 229
+[17:44:29.868838][info] AutomaticInitialPairChoice, test I: 1358582240, J: 2146998783, nbCommonTracks: 263
+[17:44:29.882800][info] AutomaticInitialPairChoice, test I: 1430327691, J: 1788219329, nbCommonTracks: 381
+[17:44:29.883797][info] AutomaticInitialPairChoice, test I: 1430327691, J: 1799436415, nbCommonTracks: 217
+*[17:44:29.892773][info] AutomaticInitialPairChoice, test I: 1430327691, J: 1861578657, nbCommonTracks: 117
+[17:44:29.901750][info] AutomaticInitialPairChoice, test I: 1430327691, J: 2014127030, nbCommonTracks: 112
+[17:44:29.913717][info] AutomaticInitialPairChoice, test I: 1430327691, J: 2045004962, nbCommonTracks: 465
+[17:44:29.918704][info] AutomaticInitialPairChoice, test I: 1430327691, J: 2130703568, nbCommonTracks: 369
+[17:44:29.919702][info] AutomaticInitialPairChoice, test I: 1430327691, J: 2146998783, nbCommonTracks: 290
+[17:44:29.924688][info] AutomaticInitialPairChoice, test I: 1474416471, J: 1523815439, nbCommonTracks: 742
+[17:44:29.953610][info] AutomaticInitialPairChoice, test I: 1474416471, J: 1716575903, nbCommonTracks: 157
+[17:44:29.956602][info] AutomaticInitialPairChoice, test I: 1474416471, J: 1785851268, nbCommonTracks: 607
+[17:44:29.957600][info] AutomaticInitialPairChoice, test I: 1474416471, J: 1861578657, nbCommonTracks: 187
+[17:44:29.981536][info] AutomaticInitialPairChoice, test I: 1474416471, J: 1906096636, nbCommonTracks: 697
+[17:44:29.986522][info] AutomaticInitialPairChoice, test I: 1474416471, J: 2095558067, nbCommonTracks: 141
+*[17:44:29.991509][info] AutomaticInitialPairChoice, test I: 1523815439, J: 1716575903, nbCommonTracks: 145
+[17:44:30.010459][info] AutomaticInitialPairChoice, test I: 1523815439, J: 1785851268, nbCommonTracks: 552
+[17:44:30.012454][info] AutomaticInitialPairChoice, test I: 1523815439, J: 1861578657, nbCommonTracks: 182
+[17:44:30.018437][info] AutomaticInitialPairChoice, test I: 1523815439, J: 1906096636, nbCommonTracks: 632
+[17:44:30.038384][info] AutomaticInitialPairChoice, test I: 1523815439, J: 2095558067, nbCommonTracks: 129
+[17:44:30.051349][info] AutomaticInitialPairChoice, test I: 1636735110, J: 1785851268, nbCommonTracks: 69
+[17:44:30.065312][info] AutomaticInitialPairChoice, test I: 1636735110, J: 1906096636, nbCommonTracks: 81
+[17:44:30.066309][info] AutomaticInitialPairChoice, test I: 1636735110, J: 2019709110, nbCommonTracks: 71
+[17:44:30.071296][info] AutomaticInitialPairChoice, test I: 1636735110, J: 2124113243, nbCommonTracks: 81
+[17:44:30.084261][info] AutomaticInitialPairChoice, test I: 1643728630, J: 1716575903, nbCommonTracks: 297
+[17:44:30.086256][info] AutomaticInitialPairChoice, test I: 1643728630, J: 1785851268, nbCommonTracks: 102
+[17:44:30.087253][info] AutomaticInitialPairChoice, test I: 1643728630, J: 1861578657, nbCommonTracks: 175
+*[17:44:30.095232][info] AutomaticInitialPairChoice, test I: 1643728630, J: 1906096636, nbCommonTracks: 103
+[17:44:30.108197][info] AutomaticInitialPairChoice, test I: 1643728630, J: 2045004962, nbCommonTracks: 81
+[17:44:30.117173][info] AutomaticInitialPairChoice, test I: 1643728630, J: 2095558067, nbCommonTracks: 323
+[17:44:30.117173][info] AutomaticInitialPairChoice, test I: 1643728630, J: 2130703568, nbCommonTracks: 108
+[17:44:30.120165][info] AutomaticInitialPairChoice, test I: 1689478995, J: 2014127030, nbCommonTracks: 118
+[17:44:30.130138][info] AutomaticInitialPairChoice, test I: 1689478995, J: 2019709110, nbCommonTracks: 156
+[17:44:30.140112][info] AutomaticInitialPairChoice, test I: 1689478995, J: 2045004962, nbCommonTracks: 121
+[17:44:30.141109][info] AutomaticInitialPairChoice, test I: 1689478995, J: 2124113243, nbCommonTracks: 119
+[17:44:30.154074][info] AutomaticInitialPairChoice, test I: 1689478995, J: 2130703568, nbCommonTracks: 118
+[17:44:30.159061][info] AutomaticInitialPairChoice, test I: 1689478995, J: 2146998783, nbCommonTracks: 137
+[17:44:30.164048][info] AutomaticInitialPairChoice, test I: 1701417931, J: 1865606473, nbCommonTracks: 161
+*[17:44:30.168037][info] AutomaticInitialPairChoice, test I: 1716575903, J: 1785851268, nbCommonTracks: 165
+[17:44:30.175018][info] AutomaticInitialPairChoice, test I: 1716575903, J: 1799436415, nbCommonTracks: 136
+[17:44:30.182997][info] AutomaticInitialPairChoice, test I: 1716575903, J: 1861578657, nbCommonTracks: 436
+[17:44:30.188981][info] AutomaticInitialPairChoice, test I: 1716575903, J: 1906096636, nbCommonTracks: 175
+[17:44:30.192970][info] AutomaticInitialPairChoice, test I: 1716575903, J: 2095558067, nbCommonTracks: 442
+[17:44:30.201946][info] AutomaticInitialPairChoice, test I: 1716575903, J: 2130703568, nbCommonTracks: 146
+[17:44:30.216906][info] AutomaticInitialPairChoice, test I: 1716575903, J: 2146998783, nbCommonTracks: 89
+[17:44:30.225882][info] AutomaticInitialPairChoice, test I: 1745211470, J: 1811936640, nbCommonTracks: 532
+[17:44:30.229872][info] AutomaticInitialPairChoice, test I: 1745211470, J: 1865606473, nbCommonTracks: 424
+[17:44:30.236853][info] AutomaticInitialPairChoice, test I: 1745211470, J: 2019709110, nbCommonTracks: 88
+[17:44:30.238847][info] AutomaticInitialPairChoice, test I: 1745211470, J: 2124113243, nbCommonTracks: 115
+*[17:44:30.257797][info] AutomaticInitialPairChoice, test I: 1785851268, J: 1861578657, nbCommonTracks: 155
+[17:44:30.260789][info] AutomaticInitialPairChoice, test I: 1785851268, J: 1906096636, nbCommonTracks: 809
+[17:44:30.275749][info] AutomaticInitialPairChoice, test I: 1785851268, J: 2095558067, nbCommonTracks: 143
+[17:44:30.278741][info] AutomaticInitialPairChoice, test I: 1788219329, J: 1799436415, nbCommonTracks: 140
+[17:44:30.284725][info] AutomaticInitialPairChoice, test I: 1788219329, J: 2014127030, nbCommonTracks: 113
+[17:44:30.299685][info] AutomaticInitialPairChoice, test I: 1788219329, J: 2045004962, nbCommonTracks: 295
+[17:44:30.302676][info] AutomaticInitialPairChoice, test I: 1788219329, J: 2130703568, nbCommonTracks: 206
+[17:44:30.306666][info] AutomaticInitialPairChoice, test I: 1788219329, J: 2146998783, nbCommonTracks: 259
+[17:44:30.331599][info] AutomaticInitialPairChoice, test I: 1799436415, J: 1861578657, nbCommonTracks: 167
+[17:44:30.335588][info] AutomaticInitialPairChoice, test I: 1799436415, J: 2014127030, nbCommonTracks: 92
+[17:44:30.337583][info] AutomaticInitialPairChoice, test I: 1799436415, J: 2045004962, nbCommonTracks: 241
+[17:44:30.339578][info] AutomaticInitialPairChoice, test I: 1799436415, J: 2095558067, nbCommonTracks: 98
+*[17:44:30.357530][info] AutomaticInitialPairChoice, test I: 1799436415, J: 2130703568, nbCommonTracks: 228
+[17:44:30.358527][info] AutomaticInitialPairChoice, test I: 1799436415, J: 2146998783, nbCommonTracks: 154
+[17:44:30.362517][info] AutomaticInitialPairChoice, test I: 1811936640, J: 1865606473, nbCommonTracks: 682
+[17:44:30.372490][info] AutomaticInitialPairChoice, test I: 1811936640, J: 2019709110, nbCommonTracks: 119
+[17:44:30.385455][info] AutomaticInitialPairChoice, test I: 1811936640, J: 2124113243, nbCommonTracks: 186
+[17:44:30.389445][info] AutomaticInitialPairChoice, test I: 1861578657, J: 1906096636, nbCommonTracks: 187
+[17:44:30.405402][info] AutomaticInitialPairChoice, test I: 1861578657, J: 2014127030, nbCommonTracks: 75
+[17:44:30.414378][info] AutomaticInitialPairChoice, test I: 1861578657, J: 2045004962, nbCommonTracks: 119
+[17:44:30.416372][info] AutomaticInitialPairChoice, test I: 1861578657, J: 2095558067, nbCommonTracks: 312
+[17:44:30.428341][info] AutomaticInitialPairChoice, test I: 1861578657, J: 2130703568, nbCommonTracks: 179
+[17:44:30.431332][info] AutomaticInitialPairChoice, test I: 1861578657, J: 2146998783, nbCommonTracks: 120
+*[17:44:30.439311][info] AutomaticInitialPairChoice, test I: 1865606473, J: 2019709110, nbCommonTracks: 116
+[17:44:30.453273][info] AutomaticInitialPairChoice, test I: 1865606473, J: 2124113243, nbCommonTracks: 178
+[17:44:30.454271][info] AutomaticInitialPairChoice, test I: 1906096636, J: 2095558067, nbCommonTracks: 159
+[17:44:30.458260][info] AutomaticInitialPairChoice, test I: 2014127030, J: 2045004962, nbCommonTracks: 159
+[17:44:30.462250][info] AutomaticInitialPairChoice, test I: 2014127030, J: 2130703568, nbCommonTracks: 143
+[17:44:30.480202][info] AutomaticInitialPairChoice, test I: 2014127030, J: 2146998783, nbCommonTracks: 195
+[17:44:30.480202][info] AutomaticInitialPairChoice, test I: 2019709110, J: 2124113243, nbCommonTracks: 612
+[17:44:30.484191][info] AutomaticInitialPairChoice, test I: 2045004962, J: 2095558067, nbCommonTracks: 79
+[17:44:30.486185][info] AutomaticInitialPairChoice, test I: 2045004962, J: 2130703568, nbCommonTracks: 451
+[17:44:30.504138][info] AutomaticInitialPairChoice, test I: 2045004962, J: 2146998783, nbCommonTracks: 377
+[17:44:30.508127][info] AutomaticInitialPairChoice, test I: 2095558067, J: 2130703568, nbCommonTracks: 131
+[17:44:30.530069][info] AutomaticInitialPairChoice, test I: 2095558067, J: 2146998783, nbCommonTracks: 89
+*
+[17:44:30.534057][info] AutomaticInitialPairChoice, test I: 2130703568, J: 2146998783, nbCommonTracks: 426
+[17:44:30.574948][info] Initial pair is:
+  A - view id: 2095558067 - filepath: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1416.JPG
+  B - view id: 2130703568 - filepath: C:/Users/ethan/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic/IMG_1408.JPG
+[17:44:30.575945][info] 131 matches in the image pair for the initial pose estimation.
+[17:44:30.726542][info] Remove outliers: 
+	- # outliers residual error: 0
+	- # outliers angular error: 0
+[17:44:30.843230][info] Initial pair is: 2095558067, 2130703568
+[17:44:30.843230][info] Begin Incremental Reconstruction:
+	- mode: SfM augmentation
+	- # images in input: 67
+	- # images in resection: 65
+	- # landmarks in input: 127
+	- # cameras already calibrated: 2
+[17:44:30.845225][info] Update Reconstruction:
+	- resection id: 0
+	- # images in the resection group: 1
+	- # images remaining: 65
+[17:44:30.846222][info] Robust Resection of view: 1716575903
+[17:44:30.864174][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 6.34965
+	- # points used for resection: 88
+	- # points validated by robust resection: 86
+[17:44:30.988840][info] Remove outliers: 
+	- # outliers residual error: 0
+	- # outliers angular error: 1
+[17:44:30.988840][info] Update Reconstruction complete: 
+	- # cameras calibrated: 3
+	- # landmarks: 518
+[17:44:30.989837][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 64
+[17:44:30.990835][info] Robust Resection of view: 78293061
+[17:44:31.036712][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 8.19349
+	- # points used for resection: 240
+	- # points validated by robust resection: 232
+[17:44:31.082590][info] Remove outliers: 
+	- # outliers residual error: 10
+	- # outliers angular error: 0
+[17:44:31.082590][info] Update Reconstruction complete: 
+	- # cameras calibrated: 4
+	- # landmarks: 741
+[17:44:31.084584][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 63
+[17:44:31.084584][info] Robust Resection of view: 1861578657
+[17:44:31.146420][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 3.30765
+	- # points used for resection: 321
+	- # points validated by robust resection: 307
+[17:44:31.214238][info] Remove outliers: 
+	- # outliers residual error: 7
+	- # outliers angular error: 0
+[17:44:31.215234][info] Update Reconstruction complete: 
+	- # cameras calibrated: 5
+	- # landmarks: 1039
+[17:44:31.217230][info] Update Reconstruction:
+	- resection id: 3
+	- # images in the resection group: 1
+	- # images remaining: 62
+[17:44:31.217230][info] Robust Resection of view: 1643728630
+[17:44:31.282055][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 4.88792
+	- # points used for resection: 344
+	- # points validated by robust resection: 326
+[17:44:31.447613][info] Remove outliers: 
+	- # outliers residual error: 18
+	- # outliers angular error: 1
+[17:44:31.448611][info] Update Reconstruction complete: 
+	- # cameras calibrated: 6
+	- # landmarks: 1421
+[17:44:31.450605][info] Update Reconstruction:
+	- resection id: 4
+	- # images in the resection group: 1
+	- # images remaining: 61
+[17:44:31.450605][info] Robust Resection of view: 1906096636
+[17:44:31.490498][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 4.25825
+	- # points used for resection: 212
+	- # points validated by robust resection: 155
+[17:44:31.581255][info] Remove outliers: 
+	- # outliers residual error: 18
+	- # outliers angular error: 0
+[17:44:31.581255][info] Update Reconstruction complete: 
+	- # cameras calibrated: 7
+	- # landmarks: 1576
+[17:44:31.583250][info] Update Reconstruction:
+	- resection id: 5
+	- # images in the resection group: 1
+	- # images remaining: 60
+[17:44:31.584247][info] Robust Resection of view: 1474416471
+[17:44:31.641095][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 2.61798
+	- # points used for resection: 292
+	- # points validated by robust resection: 233
+[17:44:31.754791][info] Remove outliers: 
+	- # outliers residual error: 19
+	- # outliers angular error: 0
+[17:44:31.755788][info] Update Reconstruction complete: 
+	- # cameras calibrated: 8
+	- # landmarks: 2000
+[17:44:31.758780][info] Update Reconstruction:
+	- resection id: 6
+	- # images in the resection group: 1
+	- # images remaining: 59
+[17:44:31.759777][info] Robust Resection of view: 251570085
+[17:44:31.880455][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 2.41034
+	- # points used for resection: 614
+	- # points validated by robust resection: 562
+[17:44:32.088897][info] Remove outliers: 
+	- # outliers residual error: 23
+	- # outliers angular error: 3
+[17:44:32.089894][info] Update Reconstruction complete: 
+	- # cameras calibrated: 9
+	- # landmarks: 2038
+[17:44:32.092886][info] Update Reconstruction:
+	- resection id: 7
+	- # images in the resection group: 1
+	- # images remaining: 58
+[17:44:32.093884][info] Robust Resection of view: 1523815439
+[17:44:32.204587][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 4.58105
+	- # points used for resection: 579
+	- # points validated by robust resection: 530
+[17:44:32.386102][info] Remove outliers: 
+	- # outliers residual error: 26
+	- # outliers angular error: 1
+[17:44:32.387098][info] Update Reconstruction complete: 
+	- # cameras calibrated: 10
+	- # landmarks: 2273
+[17:44:32.389093][info] Update Reconstruction:
+	- resection id: 8
+	- # images in the resection group: 1
+	- # images remaining: 57
+[17:44:32.390090][info] Robust Resection of view: 1150832366
+[17:44:32.518747][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 4.21616
+	- # points used for resection: 661
+	- # points validated by robust resection: 609
+[17:44:32.775060][info] Remove outliers: 
+	- # outliers residual error: 53
+	- # outliers angular error: 2
+[17:44:32.929647][info] Remove outliers: 
+	- # outliers residual error: 2
+	- # outliers angular error: 0
+[17:44:32.930645][info] Update Reconstruction complete: 
+	- # cameras calibrated: 11
+	- # landmarks: 2458
+[17:44:32.934633][info] Update Reconstruction:
+	- resection id: 9
+	- # images in the resection group: 1
+	- # images remaining: 56
+[17:44:32.935631][info] Robust Resection of view: 1785851268
+[17:44:33.087225][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 2.75006
+	- # points used for resection: 773
+	- # points validated by robust resection: 723
+[17:44:33.464216][info] Remove outliers: 
+	- # outliers residual error: 59
+	- # outliers angular error: 2
+[17:44:33.645731][info] Remove outliers: 
+	- # outliers residual error: 4
+	- # outliers angular error: 0
+[17:44:33.646728][info] Update Reconstruction complete: 
+	- # cameras calibrated: 12
+	- # landmarks: 2544
+[17:44:33.649720][info] Update Reconstruction:
+	- resection id: 10
+	- # images in the resection group: 1
+	- # images remaining: 55
+[17:44:33.650717][info] Robust Resection of view: 115006752
+[17:44:33.779373][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 3.61727
+	- # points used for resection: 665
+	- # points validated by robust resection: 602
+[17:44:34.076577][info] Remove outliers: 
+	- # outliers residual error: 41
+	- # outliers angular error: 0
+[17:44:34.076577][info] Update Reconstruction complete: 
+	- # cameras calibrated: 13
+	- # landmarks: 2763
+[17:44:34.079570][info] Update Reconstruction:
+	- resection id: 11
+	- # images in the resection group: 1
+	- # images remaining: 54
+[17:44:34.080567][info] Robust Resection of view: 1186326363
+[17:44:34.211218][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 3.7268
+	- # points used for resection: 673
+	- # points validated by robust resection: 607
+[17:44:34.546321][info] Remove outliers: 
+	- # outliers residual error: 46
+	- # outliers angular error: 1
+[17:44:34.547318][info] Update Reconstruction complete: 
+	- # cameras calibrated: 14
+	- # landmarks: 2948
+[17:44:34.550311][info] Update Reconstruction:
+	- resection id: 12
+	- # images in the resection group: 1
+	- # images remaining: 53
+[17:44:34.551308][info] Robust Resection of view: 136395905
+[17:44:34.617131][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 2.40567
+	- # points used for resection: 348
+	- # points validated by robust resection: 292
+[17:44:34.938272][info] Remove outliers: 
+	- # outliers residual error: 35
+	- # outliers angular error: 2
+[17:44:34.939269][info] Update Reconstruction complete: 
+	- # cameras calibrated: 15
+	- # landmarks: 3231
+[17:44:34.942261][info] Update Reconstruction:
+	- resection id: 13
+	- # images in the resection group: 1
+	- # images remaining: 52
+[17:44:34.943258][info] Robust Resection of view: 304795499
+[17:44:35.039002][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 2.66085
+	- # points used for resection: 501
+	- # points validated by robust resection: 449
+[17:44:35.296313][info] Remove outliers: 
+	- # outliers residual error: 32
+	- # outliers angular error: 0
+[17:44:35.297311][info] Update Reconstruction complete: 
+	- # cameras calibrated: 16
+	- # landmarks: 3479
+[17:44:35.300304][info] Update Reconstruction:
+	- resection id: 14
+	- # images in the resection group: 1
+	- # images remaining: 51
+[17:44:35.301301][info] Robust Resection of view: 1029832138
+[17:44:35.393054][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 7.16948
+	- # points used for resection: 480
+	- # points validated by robust resection: 391
+[17:44:35.775033][info] Remove outliers: 
+	- # outliers residual error: 68
+	- # outliers angular error: 2
+[17:44:36.047304][info] Remove outliers: 
+	- # outliers residual error: 4
+	- # outliers angular error: 0
+[17:44:36.048301][info] Update Reconstruction complete: 
+	- # cameras calibrated: 17
+	- # landmarks: 3616
+[17:44:36.052291][info] Update Reconstruction:
+	- resection id: 15
+	- # images in the resection group: 1
+	- # images remaining: 50
+[17:44:36.053288][info] Robust Resection of view: 579717169
+[17:44:36.136067][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 6.75613
+	- # points used for resection: 433
+	- # points validated by robust resection: 343
+[17:44:36.602817][info] Remove outliers: 
+	- # outliers residual error: 59
+	- # outliers angular error: 1
+[17:44:36.870102][info] Remove outliers: 
+	- # outliers residual error: 5
+	- # outliers angular error: 0
+[17:44:36.871100][info] Update Reconstruction complete: 
+	- # cameras calibrated: 18
+	- # landmarks: 3899
+[17:44:36.874092][info] Update Reconstruction:
+	- resection id: 16
+	- # images in the resection group: 1
+	- # images remaining: 49
+[17:44:36.875089][info] Robust Resection of view: 936120456
+[17:44:36.969836][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 4.32815
+	- # points used for resection: 496
+	- # points validated by robust resection: 369
+[17:44:37.306934][info] Remove outliers: 
+	- # outliers residual error: 76
+	- # outliers angular error: 0
+[17:44:37.514378][info] Remove outliers: 
+	- # outliers residual error: 6
+	- # outliers angular error: 0
+[17:44:37.515376][info] Update Reconstruction complete: 
+	- # cameras calibrated: 19
+	- # landmarks: 4188
+[17:44:37.518368][info] Update Reconstruction:
+	- resection id: 17
+	- # images in the resection group: 1
+	- # images remaining: 48
+[17:44:37.519366][info] Robust Resection of view: 2045004962
+[17:44:37.611119][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 3.86205
+	- # points used for resection: 481
+	- # points validated by robust resection: 421
+[17:44:37.972154][info] Remove outliers: 
+	- # outliers residual error: 59
+	- # outliers angular error: 2
+[17:44:38.205529][info] Remove outliers: 
+	- # outliers residual error: 3
+	- # outliers angular error: 0
+[17:44:38.206526][info] Update Reconstruction complete: 
+	- # cameras calibrated: 20
+	- # landmarks: 4405
+[17:44:38.209518][info] Update Reconstruction:
+	- resection id: 18
+	- # images in the resection group: 1
+	- # images remaining: 47
+[17:44:38.211513][info] Robust Resection of view: 1430327691
+[17:44:38.299278][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 3.10271
+	- # points used for resection: 455
+	- # points validated by robust resection: 389
+[17:44:38.694221][info] Remove outliers: 
+	- # outliers residual error: 53
+	- # outliers angular error: 2
+[17:44:39.011372][info] Remove outliers: 
+	- # outliers residual error: 1
+	- # outliers angular error: 0
+[17:44:39.012369][info] Update Reconstruction complete: 
+	- # cameras calibrated: 21
+	- # landmarks: 4660
+[17:44:39.015362][info] Update Reconstruction:
+	- resection id: 19
+	- # images in the resection group: 1
+	- # images remaining: 46
+[17:44:39.016359][info] Robust Resection of view: 476880634
+[17:44:39.114097][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 3.59598
+	- # points used for resection: 514
+	- # points validated by robust resection: 371
+[17:44:39.601792][info] Remove outliers: 
+	- # outliers residual error: 79
+	- # outliers angular error: 2
+[17:44:39.966815][info] Remove outliers: 
+	- # outliers residual error: 2
+	- # outliers angular error: 0
+[17:44:39.967812][info] Update Reconstruction complete: 
+	- # cameras calibrated: 22
+	- # landmarks: 4828
+[17:44:39.971803][info] Update Reconstruction:
+	- resection id: 20
+	- # images in the resection group: 1
+	- # images remaining: 45
+[17:44:39.973797][info] Robust Resection of view: 1228518096
+[17:44:40.074528][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 3.42676
+	- # points used for resection: 520
+	- # points validated by robust resection: 467
+[17:44:40.453513][info] Remove outliers: 
+	- # outliers residual error: 68
+	- # outliers angular error: 1
+[17:44:40.755705][info] Remove outliers: 
+	- # outliers residual error: 3
+	- # outliers angular error: 0
+[17:44:40.757699][info] Update Reconstruction complete: 
+	- # cameras calibrated: 23
+	- # landmarks: 5105
+[17:44:40.760691][info] Update Reconstruction:
+	- resection id: 21
+	- # images in the resection group: 1
+	- # images remaining: 44
+[17:44:40.761688][info] Robust Resection of view: 528510916
+[17:44:40.860424][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 2.70336
+	- # points used for resection: 518
+	- # points validated by robust resection: 371
+[17:44:41.444864][info] Remove outliers: 
+	- # outliers residual error: 88
+	- # outliers angular error: 0
+[17:44:41.733092][info] Remove outliers: 
+	- # outliers residual error: 3
+	- # outliers angular error: 0
+[17:44:41.734090][info] Update Reconstruction complete: 
+	- # cameras calibrated: 24
+	- # landmarks: 5272
+[17:44:41.738079][info] Update Reconstruction:
+	- resection id: 22
+	- # images in the resection group: 1
+	- # images remaining: 43
+[17:44:41.740074][info] Robust Resection of view: 2146998783
+[17:44:41.851775][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 2.77593
+	- # points used for resection: 567
+	- # points validated by robust resection: 494
+[17:44:42.380360][info] Remove outliers: 
+	- # outliers residual error: 98
+	- # outliers angular error: 0
+[17:44:42.673576][info] Remove outliers: 
+	- # outliers residual error: 3
+	- # outliers angular error: 0
+[17:44:42.675572][info] Update Reconstruction complete: 
+	- # cameras calibrated: 25
+	- # landmarks: 5441
+[17:44:42.678562][info] Update Reconstruction:
+	- resection id: 23
+	- # images in the resection group: 1
+	- # images remaining: 42
+[17:44:42.680558][info] Robust Resection of view: 411685623
+[17:44:42.782285][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 3.49261
+	- # points used for resection: 519
+	- # points validated by robust resection: 455
+[17:44:43.205153][info] Remove outliers: 
+	- # outliers residual error: 67
+	- # outliers angular error: 1
+[17:44:43.569179][info] Remove outliers: 
+	- # outliers residual error: 2
+	- # outliers angular error: 0
+[17:44:43.571175][info] Update Reconstruction complete: 
+	- # cameras calibrated: 26
+	- # landmarks: 5659
+[17:44:43.575164][info] Update Reconstruction:
+	- resection id: 24
+	- # images in the resection group: 1
+	- # images remaining: 41
+[17:44:43.577159][info] Robust Resection of view: 1358582240
+[17:44:43.682876][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 4.28515
+	- # points used for resection: 547
+	- # points validated by robust resection: 485
+[17:44:44.367044][info] Remove outliers: 
+	- # outliers residual error: 97
+	- # outliers angular error: 0
+[17:44:44.734062][info] Remove outliers: 
+	- # outliers residual error: 0
+	- # outliers angular error: 0
+[17:44:44.735059][info] Update Reconstruction complete: 
+	- # cameras calibrated: 27
+	- # landmarks: 5820
+[17:44:44.740046][info] Update Reconstruction:
+	- resection id: 25
+	- # images in the resection group: 1
+	- # images remaining: 40
+[17:44:44.741043][info] Robust Resection of view: 1788219329
+[17:44:44.851747][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 3.38294
+	- # points used for resection: 570
+	- # points validated by robust resection: 519
+[17:44:45.330466][info] Remove outliers: 
+	- # outliers residual error: 100
+	- # outliers angular error: 1
+[17:44:45.757324][info] Remove outliers: 
+	- # outliers residual error: 2
+	- # outliers angular error: 0
+[17:44:45.759319][info] Update Reconstruction complete: 
+	- # cameras calibrated: 28
+	- # landmarks: 5901
+[17:44:45.762311][info] Update Reconstruction:
+	- resection id: 26
+	- # images in the resection group: 1
+	- # images remaining: 39
+[17:44:45.764305][info] Robust Resection of view: 2014127030
+[17:44:45.864038][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 4.55921
+	- # points used for resection: 518
+	- # points validated by robust resection: 378
+[17:44:46.565162][info] Remove outliers: 
+	- # outliers residual error: 119
+	- # outliers angular error: 1
+[17:44:47.046874][info] Remove outliers: 
+	- # outliers residual error: 10
+	- # outliers angular error: 0
+[17:44:47.048868][info] Update Reconstruction complete: 
+	- # cameras calibrated: 29
+	- # landmarks: 6051
+[17:44:47.051859][info] Update Reconstruction:
+	- resection id: 27
+	- # images in the resection group: 1
+	- # images remaining: 38
+[17:44:47.053854][info] Robust Resection of view: 1799436415
+[17:44:47.155582][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 3.83945
+	- # points used for resection: 523
+	- # points validated by robust resection: 429
+[17:44:47.730047][info] Remove outliers: 
+	- # outliers residual error: 89
+	- # outliers angular error: 2
+[17:44:48.098060][info] Remove outliers: 
+	- # outliers residual error: 2
+	- # outliers angular error: 0
+[17:44:48.100054][info] Update Reconstruction complete: 
+	- # cameras calibrated: 30
+	- # landmarks: 6173
+[17:44:48.103046][info] Update Reconstruction:
+	- resection id: 28
+	- # images in the resection group: 15
+	- # images remaining: 37
+[17:44:48.104044][info] Robust Resection of view: 1636735110
+[17:44:48.104044][info] Robust Resection of view: 1689478995
+[17:44:48.104044][info] Robust Resection of view: 1203176847
+[17:44:48.105042][info] Robust Resection of view: 1076394345
+[17:44:48.137953][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 3.59706
+	- # points used for resection: 155
+	- # points validated by robust resection: 90
+[17:44:48.141943][info] Robust Resection of view: 2124113243
+[17:44:48.146930][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 5.39551
+	- # points used for resection: 185
+	- # points validated by robust resection: 165
+[17:44:48.149921][info] Robust Resection of view: 1305823326
+[17:44:48.152913][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 5.07908
+	- # points used for resection: 253
+	- # points validated by robust resection: 225
+[17:44:48.156902][info] Robust Resection of view: 868876902
+[17:44:48.171862][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 5.39104
+	- # points used for resection: 145
+	- # points validated by robust resection: 131
+[17:44:48.174855][info] Robust Resection of view: 463090087
+[17:44:48.188817][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 3.9573
+	- # points used for resection: 427
+	- # points validated by robust resection: 379
+[17:44:48.190812][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 7.55053
+	- # points used for resection: 194
+	- # points validated by robust resection: 173
+[17:44:48.193804][info] Robust Resection of view: 856798745
+[17:44:48.193804][info] Robust Resection of view: 751210311
+[17:44:48.200785][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 6.2119
+	- # points used for resection: 112
+	- # points validated by robust resection: 84
+[17:44:48.214748][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 5.73374
+	- # points used for resection: 273
+	- # points validated by robust resection: 243
+[17:44:48.218737][info] Robust Resection of view: 561836557
+[17:44:48.229709][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 6.04315
+	- # points used for resection: 184
+	- # points validated by robust resection: 159
+[17:44:48.233698][info] Robust Resection of view: 2019709110
+[17:44:48.255638][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 4.92591
+	- # points used for resection: 290
+	- # points validated by robust resection: 256
+[17:44:48.259627][info] Robust Resection of view: 1240301939
+[17:44:48.268603][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 5.29464
+	- # points used for resection: 246
+	- # points validated by robust resection: 214
+[17:44:48.271595][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 6.32665
+	- # points used for resection: 159
+	- # points validated by robust resection: 146
+[17:44:48.272593][info] Robust Resection of view: 517252654
+[17:44:48.323457][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 5.0391
+	- # points used for resection: 322
+	- # points validated by robust resection: 260
+[17:44:48.324454][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 3.6585
+	- # points used for resection: 268
+	- # points validated by robust resection: 201
+[17:44:48.327447][info] Robust Resection of view: 670484749
+[17:44:48.384294][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 4.38155
+	- # points used for resection: 290
+	- # points validated by robust resection: 166
+[17:44:49.542196][info] Remove outliers: 
+	- # outliers residual error: 393
+	- # outliers angular error: 1
+[17:44:49.987006][info] Remove outliers: 
+	- # outliers residual error: 12
+	- # outliers angular error: 0
+[17:44:49.989998][info] Update Reconstruction complete: 
+	- # cameras calibrated: 45
+	- # landmarks: 8912
+[17:44:49.992990][info] Update Reconstruction:
+	- resection id: 29
+	- # images in the resection group: 8
+	- # images remaining: 22
+[17:44:49.994984][info] Robust Resection of view: 278451837
+[17:44:49.994984][info] Robust Resection of view: 401566863
+[17:44:49.994984][info] Robust Resection of view: 1115818466
+[17:44:49.994984][info] Robust Resection of view: 580816557
+[17:44:50.019917][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 2.8114
+	- # points used for resection: 119
+	- # points validated by robust resection: 91
+[17:44:50.023906][info] Robust Resection of view: 789706637
+[17:44:50.028893][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 5.92969
+	- # points used for resection: 160
+	- # points validated by robust resection: 144
+[17:44:50.035875][info] Robust Resection of view: 1811936640
+[17:44:50.045848][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 6.87297
+	- # points used for resection: 95
+	- # points validated by robust resection: 84
+[17:44:50.050835][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 3.92974
+	- # points used for resection: 193
+	- # points validated by robust resection: 163
+[17:44:50.054824][info] Robust Resection of view: 1865606473
+[17:44:50.059810][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 3.46751
+	- # points used for resection: 302
+	- # points validated by robust resection: 262
+[17:44:50.065795][info] Robust Resection of view: 249725355
+[17:44:50.069783][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 5.92142
+	- # points used for resection: 163
+	- # points validated by robust resection: 139
+[17:44:50.086738][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 5.74398
+	- # points used for resection: 154
+	- # points validated by robust resection: 128
+[17:44:50.115661][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 3.21517
+	- # points used for resection: 253
+	- # points validated by robust resection: 210
+[17:44:51.038192][info] Remove outliers: 
+	- # outliers residual error: 85
+	- # outliers angular error: 0
+[17:44:51.562789][info] Remove outliers: 
+	- # outliers residual error: 4
+	- # outliers angular error: 0
+[17:44:51.567775][info] Update Reconstruction complete: 
+	- # cameras calibrated: 53
+	- # landmarks: 10941
+[17:44:51.571764][info] Update Reconstruction:
+	- resection id: 30
+	- # images in the resection group: 8
+	- # images remaining: 14
+[17:44:51.573759][info] Robust Resection of view: 1701417931
+[17:44:51.573759][info] Robust Resection of view: 233907011
+[17:44:51.573759][info] Robust Resection of view: 742308222
+[17:44:51.575754][info] Robust Resection of view: 962831950
+[17:44:51.636591][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 7.38146
+	- # points used for resection: 151
+	- # points validated by robust resection: 137
+[17:44:51.645566][info] Robust Resection of view: 460401179
+[17:44:51.651551][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 3.73586
+	- # points used for resection: 347
+	- # points validated by robust resection: 309
+[17:44:51.657535][info] Robust Resection of view: 1347700863
+[17:44:51.674489][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 5.80167
+	- # points used for resection: 133
+	- # points validated by robust resection: 120
+[17:44:51.680474][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 3.67508
+	- # points used for resection: 462
+	- # points validated by robust resection: 434
+[17:44:51.689450][info] Robust Resection of view: 1745211470
+[17:44:51.702415][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 3.96126
+	- # points used for resection: 453
+	- # points validated by robust resection: 423
+[17:44:51.709396][info] Robust Resection of view: 1064082008
+[17:44:51.733333][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 4.38549
+	- # points used for resection: 364
+	- # points validated by robust resection: 341
+[17:44:51.798159][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 3.13109
+	- # points used for resection: 453
+	- # points validated by robust resection: 411
+[17:44:51.808132][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 3.1303
+	- # points used for resection: 587
+	- # points validated by robust resection: 547
+[17:44:53.132588][info] Remove outliers: 
+	- # outliers residual error: 153
+	- # outliers angular error: 2
+[17:44:53.741957][info] Remove outliers: 
+	- # outliers residual error: 5
+	- # outliers angular error: 0
+[17:44:53.746943][info] Update Reconstruction complete: 
+	- # cameras calibrated: 61
+	- # landmarks: 12168
+[17:44:53.749935][info] Update Reconstruction:
+	- resection id: 31
+	- # images in the resection group: 1
+	- # images remaining: 6
+[17:44:53.752928][info] Robust Resection of view: 1279412758
+[17:44:53.775866][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 4.23715
+	- # points used for resection: 104
+	- # points validated by robust resection: 95
+[17:44:54.418148][info] Remove outliers: 
+	- # outliers residual error: 7
+	- # outliers angular error: 1
+[17:44:54.423135][info] Update Reconstruction complete: 
+	- # cameras calibrated: 62
+	- # landmarks: 12196
+[17:44:54.426127][info] Update Reconstruction:
+	- resection id: 32
+	- # images in the resection group: 1
+	- # images remaining: 5
+[17:44:54.429119][info] Robust Resection of view: 874093608
+[17:44:54.454052][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 2.64371
+	- # points used for resection: 120
+	- # points validated by robust resection: 110
+[17:44:55.248924][info] Remove outliers: 
+	- # outliers residual error: 2
+	- # outliers angular error: 0
+[17:44:55.253912][info] Update Reconstruction complete: 
+	- # cameras calibrated: 63
+	- # landmarks: 12426
+[17:44:55.257901][info] Update Reconstruction:
+	- resection id: 33
+	- # images in the resection group: 2
+	- # images remaining: 4
+[17:44:55.260893][info] Robust Resection of view: 454164500
+[17:44:55.260893][info] Robust Resection of view: 356180607
+[17:44:55.288818][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 4.27949
+	- # points used for resection: 142
+	- # points validated by robust resection: 131
+[17:44:55.292807][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 4.32067
+	- # points used for resection: 154
+	- # points validated by robust resection: 146
+[17:44:56.015872][info] Remove outliers: 
+	- # outliers residual error: 14
+	- # outliers angular error: 0
+[17:44:56.021857][info] Update Reconstruction complete: 
+	- # cameras calibrated: 65
+	- # landmarks: 12804
+[17:44:56.024848][info] Update Reconstruction:
+	- resection id: 34
+	- # images in the resection group: 1
+	- # images remaining: 2
+[17:44:56.027840][info] Robust Resection of view: 1973424357
+[17:44:56.073717][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 3.23194
+	- # points used for resection: 225
+	- # points validated by robust resection: 219
+[17:44:56.739935][info] Remove outliers: 
+	- # outliers residual error: 1
+	- # outliers angular error: 0
+[17:44:56.743924][info] Update Reconstruction complete: 
+	- # cameras calibrated: 66
+	- # landmarks: 12951
+[17:44:56.746916][info] Update Reconstruction:
+	- resection id: 35
+	- # images in the resection group: 1
+	- # images remaining: 1
+[17:44:56.749908][info] Robust Resection of view: 1146127176
+[17:44:56.781822][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 2.65626
+	- # points used for resection: 160
+	- # points validated by robust resection: 149
+[17:44:57.455022][info] Remove outliers: 
+	- # outliers residual error: 2
+	- # outliers angular error: 0
+[17:44:57.460008][info] Update Reconstruction complete: 
+	- # cameras calibrated: 67
+	- # landmarks: 13083
+[17:44:57.479954][info] Structure from Motion statistics:
+	- # input images: 67
+	- # cameras calibrated: 67
+	- # landmarks: 13083
+	- elapsed time: 26.616
+	- residual RMSE: 0.698279
+[17:44:57.507881][info] Histogram of residuals:
+
+8.96e-07	|	59609
+0.396	|	23501
+0.793	|	9436
+1.19	|	4174
+1.59	|	2104
+1.98	|	1207
+2.38	|	634
+2.77	|	348
+3.17	|	196
+3.57	|	69
+3.96
+
+[17:44:57.508877][info] # tracks: 13083
+[17:44:57.508877][info] Tracks Length min: 2
+[17:44:57.508877][info] Tracks Length median: 3
+[17:44:57.508877][info] Tracks Length max: 32
+[17:44:57.508877][info] Tracks Length mean: 3.8706
+[17:44:57.509874][info] Histogram of tracks length:
+
+2	|	5843
+3	|	2605
+4	|	1413
+5	|	899
+6	|	608
+7	|	418
+8	|	325
+9	|	246
+10	|	177
+11	|	131
+12	|	93
+13	|	72
+14	|	64
+15	|	49
+16	|	29
+17	|	29
+18	|	13
+19	|	14
+20	|	12
+21	|	6
+22	|	14
+23	|	8
+24	|	4
+25	|	4
+26	|	3
+27	|	0
+28	|	0
+29	|	2
+30	|	1
+31	|	0
+32	|	1
+33
+
+
+Compute scene structure color
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+[17:44:59.816703][info] Structure from motion took (s): 33.730000
+[17:44:59.816703][info] Generating HTML report...
+[17:44:59.863576][info] Export SfMData to disk: C:/Users/ethan/Documents/GitHub/RoamerPipeline/Alice/Ethan1/MeshroomCache/StructureFromMotion/28fcc3c44026c9fd90ce411f360fac00604fdac4/sfm.abc
+[17:45:00.040103][info] Structure from Motion results:
+	- # input images: 67
+	- # cameras calibrated: 67
+	- # landmarks: 13083
