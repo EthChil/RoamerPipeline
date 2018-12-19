@@ -1,0 +1,86 @@
+Program called with the following parameters:
+ * describerPreset = "normal"
+ * describerTypes = "sift"
+ * forceCpuExtraction = 1
+ * input = "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/CameraInit/90d34af1735c95658c3e5046b09b8be0c0a7013f/cameraInit.sfm"
+ * maxThreads = 0 (default)
+ * output = "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/FeatureExtraction/861dcb06f4eace6ec8e052627b1f2698395ef4a7"
+ * rangeSize = 38
+ * rangeStart = 40
+ * verboseLevel = "info"
+
+[22:36:06.943544][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1450.JPG' [cpu]
+[22:36:06.951552][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1465.JPG' [cpu]
+[22:36:06.953553][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1455.JPG' [cpu]
+[22:36:06.964564][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1496.JPG' [cpu]
+[22:36:06.967566][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1439.JPG' [cpu]
+[22:36:06.970569][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1457.JPG' [cpu]
+[22:36:06.972571][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1484.JPG' [cpu]
+[22:36:06.973571][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1449.JPG' [cpu]
+[22:36:06.975573][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1434.JPG' [cpu]
+[22:36:06.976574][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1464.JPG' [cpu]
+[22:36:06.976574][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1425.JPG' [cpu]
+[22:36:06.985583][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1444.JPG' [cpu]
+[22:36:08.174665][info]       2020 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1450.JPG'
+[22:36:08.234721][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1426.JPG' [cpu]
+[22:36:08.250735][info]       2669 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1484.JPG'
+[22:36:08.252738][info]       2557 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1455.JPG'
+[22:36:08.289773][info]       2162 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1496.JPG'
+[22:36:08.300781][info]       1728 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1444.JPG'
+[22:36:08.305786][info]       2073 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1449.JPG'
+[22:36:08.309789][info]       1260 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1434.JPG'
+[22:36:08.318797][info]       1596 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1425.JPG'
+[22:36:08.336813][info]       1864 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1465.JPG'
+[22:36:08.352829][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1475.JPG' [cpu]
+[22:36:08.380856][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1443.JPG' [cpu]
+[22:36:08.433904][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1481.JPG' [cpu]
+[22:36:08.436905][info]       1258 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1464.JPG'
+[22:36:08.436905][info]       924 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1457.JPG'
+[22:36:08.438907][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1448.JPG' [cpu]
+[22:36:08.450917][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1438.JPG' [cpu]
+[22:36:08.451919][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1487.JPG' [cpu]
+[22:36:08.452920][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1458.JPG' [cpu]
+[22:36:08.461927][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1474.JPG' [cpu]
+[22:36:08.491955][info]       1027 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1439.JPG'
+[22:36:08.504967][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1430.JPG' [cpu]
+[22:36:08.538998][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1433.JPG' [cpu]
+[22:36:08.563020][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1428.JPG' [cpu]
+[22:36:09.301693][info]       2680 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1426.JPG'
+[22:36:09.499873][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1432.JPG' [cpu]
+[22:36:09.533904][info]       1363 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1443.JPG'
+[22:36:09.589956][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1451.JPG' [cpu]
+[22:36:09.684041][info]       874 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1458.JPG'
+[22:36:09.709064][info]       1889 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1438.JPG'
+[22:36:09.720074][info]       4696 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1475.JPG'
+[22:36:09.727080][info]       1195 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1428.JPG'
+[22:36:09.786135][info]       1823 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1433.JPG'
+[22:36:09.807153][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1424.JPG' [cpu]
+[22:36:09.814160][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1473.JPG' [cpu]
+[22:36:09.842186][info]       1274 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1430.JPG'
+[22:36:09.843188][info]       1673 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1487.JPG'
+[22:36:09.842186][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1445.JPG' [cpu]
+[22:36:09.861202][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1463.JPG' [cpu]
+[22:36:09.867208][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1467.JPG' [cpu]
+[22:36:09.880220][info]       4188 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1481.JPG'
+[22:36:09.892231][info]       2759 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1448.JPG'
+[22:36:09.914251][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1447.JPG' [cpu]
+[22:36:09.947281][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1493.JPG' [cpu]
+[22:36:09.960294][info]       4760 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1474.JPG'
+[22:36:09.964297][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1429.JPG' [cpu]
+[22:36:09.970302][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1490.JPG' [cpu]
+[22:36:10.039365][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1441.JPG' [cpu]
+[22:36:10.568850][info]       1973 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1432.JPG'
+[22:36:10.720986][info]       2297 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1451.JPG'
+[22:36:10.856109][info]       1712 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1445.JPG'
+[22:36:10.921168][info]       1521 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1463.JPG'
+[22:36:10.957202][info]       1632 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1473.JPG'
+[22:36:11.050286][info]       917 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1467.JPG'
+[22:36:11.063298][info]       1160 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1441.JPG'
+[22:36:11.070305][info]       1908 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1493.JPG'
+[22:36:11.072306][info]       1801 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1424.JPG'
+[22:36:11.085318][info]       991 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1429.JPG'
+[22:36:11.090323][info]       1869 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1447.JPG'
+[22:36:11.107338][info]       1720 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1490.JPG'
+[22:36:11.132361][info] Extracting sift features from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1470.JPG' [cpu]
+[22:36:11.673854][info]       1319 sift features extracted from view 'C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1470.JPG'
+[22:36:11.674855][info] Task done in (s): 4.970000

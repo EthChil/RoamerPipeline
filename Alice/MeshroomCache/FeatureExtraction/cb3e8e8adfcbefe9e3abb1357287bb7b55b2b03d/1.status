@@ -1,0 +1,18 @@
+{
+    "status": "SUCCESS",
+    "execMode": "LOCAL",
+    "nodeName": "FeatureExtraction_1",
+    "nodeType": "FeatureExtraction",
+    "packageName": "aliceVision",
+    "packageVersion": null,
+    "graph": "",
+    "commandLine": "aliceVision_featureExtraction  --input \"C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/CameraInit/fc7fbec3a6b5c0e1a8903c5b5da9aba8898dea0d/cameraInit.sfm\" --describerTypes sift --describerPreset normal --forceCpuExtraction True --verboseLevel info --output \"C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/FeatureExtraction/cb3e8e8adfcbefe9e3abb1357287bb7b55b2b03d\" --rangeStart 40 --rangeSize 28",
+    "env": null,
+    "startDateTime": "2018-12-18 22:15:41.606052",
+    "endDateTime": "2018-12-18 22:15:45.664751",
+    "elapsedTime": 4.0586981773376465,
+    "hostname": "DESKTOP-370SOTQ",
+    "sessionUid": "ea3295ae-0337-11e9-97b8-309c2328df18",
+    "returnCode": 0,
+    "elapsedTimeStr": "0:00:04.058698"
+}

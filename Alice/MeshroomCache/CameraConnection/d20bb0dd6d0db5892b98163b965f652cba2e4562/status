@@ -1,0 +1,18 @@
+{
+    "status": "SUCCESS",
+    "execMode": "LOCAL",
+    "nodeName": "CameraConnection_1",
+    "nodeType": "CameraConnection",
+    "packageName": "aliceVision",
+    "packageVersion": null,
+    "graph": "",
+    "commandLine": "aliceVision_cameraConnection  --ini \"C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/PrepareDenseScene/dd02cc14a6a395e682212418832c01d65134f138/mvs.ini\" --verboseLevel info ",
+    "env": null,
+    "startDateTime": "2018-12-18 22:38:03.230504",
+    "endDateTime": "2018-12-18 22:38:04.631779",
+    "elapsedTime": 1.401275396347046,
+    "hostname": "DESKTOP-370SOTQ",
+    "sessionUid": "ea3295ae-0337-11e9-97b8-309c2328df18",
+    "returnCode": 0,
+    "elapsedTimeStr": "0:00:01.401275"
+}

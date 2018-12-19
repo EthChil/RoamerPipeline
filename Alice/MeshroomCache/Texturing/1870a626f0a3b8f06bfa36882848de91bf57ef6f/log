@@ -1,0 +1,120 @@
+Program called with the following parameters:
+ * angleHardThreshold = 90
+ * bestScoreThreshold = 0
+ * downscale =  Unknown Type "unsigned int"
+ * fillHoles = 0
+ * flipNormals = 0
+ * forceVisibleByAllVertices = 0
+ * ini = "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/PrepareDenseScene/cc2d749d50c272d73e04976cb1abe62b6c6bda20/mvs.ini"
+ * inputDenseReconstruction = "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/Meshing/2940d647d496bfb6c2fc67035f6ab411aad4da35/denseReconstruction.bin"
+ * inputMesh = "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/MeshFiltering/c9c65df3e4afe264fc2cc8b08446635c5d94e0fe/mesh.obj"
+ * maxNbImagesForFusion = 3
+ * output = "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/Texturing/1870a626f0a3b8f06bfa36882848de91bf57ef6f"
+ * outputTextureFileType = "png"
+ * padding =  Unknown Type "unsigned int"
+ * textureSide =  Unknown Type "unsigned int"
+ * unwrapMethod = "Basic"
+ * verboseLevel = "info"
+ * visibilityRemappingMethod = "PullPush"
+
+[22:31:56.497345][info] Found 1 image dimension(s): 
+[22:31:56.498346][info]  - [1080x1440]
+[22:31:56.563406][info] Overall maximum dimension: [1080x1440]
+[22:31:56.621458][info] Loading mesh from obj file: C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/MeshFiltering/c9c65df3e4afe264fc2cc8b08446635c5d94e0fe/mesh.obj
+[22:31:56.897710][info] 	- # vertices: 168116
+	- # normals: 0
+	- # uv coordinates: 0
+	- # triangles: 304894
+[22:31:57.593344][info] Mesh loaded: 
+	- #points: 168116
+	- # triangles: 304894
+[22:31:57.682425][info] remapMeshVisibility based on triangles start.
+[22:31:58.241934][info] remapMeshVisibility done.
+[22:31:58.270961][info] Input mesh has no UV coordinates, start unwrapping (Basic)
+[22:31:58.271962][info] Generating UVs (textureSide: 8192; padding: 15).
+[22:31:58.271962][info] Creating texture charts.
+[22:31:59.022646][info] Packing texture charts (304894 charts).
+[22:32:00.022558][info] Finalize packed charts (842 charts).
+[22:32:00.038572][info] Creating texture atlases.
+[22:32:00.039572][info] 	- texture atlas 1
+[22:32:00.042575][info] Filled with 842 charts.
+[22:32:00.534024][info] Unwrapping done.
+[22:32:00.534024][info] Writing obj and mtl file.
+[22:32:01.338757][info] Writing done: 
+	- obj file: C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/Texturing/1870a626f0a3b8f06bfa36882848de91bf57ef6f\texturedMesh.obj
+	- mtl file: C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/Texturing/1870a626f0a3b8f06bfa36882848de91bf57ef6f\texturedMesh.mtl
+[22:32:01.340759][info] Generate textures.
+[22:32:01.514917][info] Generating texture for atlas 1/1 (304894 triangles).
+[22:32:04.494632][info] Reading pixel color.
+[22:32:04.999092][info]  - camera 1/67 (27859 triangles)
+[22:32:05.130210][info]  - camera 2/67 (18754 triangles)
+[22:32:05.240311][info]  - camera 3/67 (16674 triangles)
+[22:32:05.331394][info]  - camera 4/67 (15565 triangles)
+[22:32:05.429483][info]  - camera 5/67 (22023 triangles)
+[22:32:05.529575][info]  - camera 6/67 (23920 triangles)
+[22:32:05.618656][info]  - camera 7/67 (20641 triangles)
+[22:32:05.744770][info]  - camera 8/67 (13472 triangles)
+[22:32:05.863879][info]  - camera 9/67 (17758 triangles)
+[22:32:05.992997][info]  - camera 10/67 (29279 triangles)
+[22:32:06.110104][info]  - camera 11/67 (8162 triangles)
+[22:32:06.215199][info]  - camera 12/67 (12702 triangles)
+[22:32:06.331305][info]  - camera 13/67 (13054 triangles)
+[22:32:06.427393][info]  - camera 14/67 (8213 triangles)
+[22:32:06.541497][info]  - camera 15/67 (22286 triangles)
+[22:32:06.671615][info]  - camera 16/67 (9658 triangles)
+[22:32:06.771706][info]  - camera 17/67 (19235 triangles)
+[22:32:06.862789][info]  - camera 18/67 (13053 triangles)
+[22:32:06.949868][info]  - camera 19/67 (26955 triangles)
+[22:32:07.062972][info]  - camera 20/67 (30175 triangles)
+[22:32:07.167066][info]  - camera 21/67 (17147 triangles)
+[22:32:07.269160][info]  - camera 22/67 (26535 triangles)
+[22:32:07.385265][info]  - camera 23/67 (25609 triangles)
+[22:32:07.477349][info]  - camera 24/67 (9086 triangles)
+[22:32:07.563428][info]  - camera 25/67 (33897 triangles)
+[22:32:07.690543][info]  - camera 26/67 (24527 triangles)
+[22:32:07.781626][info]  - camera 27/67 (16859 triangles)
+[22:32:07.898733][info]  - camera 28/67 (26833 triangles)
+[22:32:08.007833][info]  - camera 29/67 (25304 triangles)
+[22:32:08.126942][info]  - camera 30/67 (24185 triangles)
+[22:32:08.243049][info]  - camera 31/67 (11959 triangles)
+[22:32:08.353147][info]  - camera 32/67 (10321 triangles)
+[22:32:08.458243][info]  - camera 33/67 (21249 triangles)
+[22:32:08.583357][info]  - camera 34/67 (9623 triangles)
+[22:32:08.697461][info]  - camera 35/67 (13529 triangles)
+[22:32:08.802557][info]  - camera 36/67 (19535 triangles)
+[22:32:08.910655][info]  - camera 37/67 (14080 triangles)
+[22:32:09.014750][info]  - camera 38/67 (11044 triangles)
+[22:32:09.122848][info]  - camera 39/67 (8766 triangles)
+[22:32:09.233950][info]  - camera 40/67 (14966 triangles)
+[22:32:09.362066][info]  - camera 41/67 (23955 triangles)
+[22:32:09.466161][info]  - camera 42/67 (13616 triangles)
+[22:32:09.591275][info]  - camera 43/67 (12828 triangles)
+[22:32:09.698373][info]  - camera 44/67 (17578 triangles)
+[22:32:09.821485][info]  - camera 45/67 (21687 triangles)
+[22:32:09.930585][info]  - camera 46/67 (17926 triangles)
+[22:32:10.034679][info]  - camera 47/67 (17207 triangles)
+[22:32:10.146781][info]  - camera 48/67 (22100 triangles)
+[22:32:10.258884][info]  - camera 49/67 (25053 triangles)
+[22:32:10.351969][info]  - camera 50/67 (13387 triangles)
+[22:32:10.465071][info]  - camera 51/67 (11543 triangles)
+[22:32:10.578175][info]  - camera 52/67 (18377 triangles)
+[22:32:10.697283][info]  - camera 53/67 (21301 triangles)
+[22:32:10.807384][info]  - camera 54/67 (10965 triangles)
+[22:32:10.909477][info]  - camera 55/67 (12248 triangles)
+[22:32:11.013571][info]  - camera 56/67 (23706 triangles)
+[22:32:11.127675][info]  - camera 57/67 (11675 triangles)
+[22:32:11.231770][info]  - camera 58/67 (13862 triangles)
+[22:32:11.338868][info]  - camera 59/67 (27717 triangles)
+[22:32:11.456975][info]  - camera 60/67 (13797 triangles)
+[22:32:11.580087][info]  - camera 61/67 (15929 triangles)
+[22:32:11.684182][info]  - camera 62/67 (26708 triangles)
+[22:32:11.809297][info]  - camera 63/67 (10405 triangles)
+[22:32:11.910389][info]  - camera 64/67 (10387 triangles)
+[22:32:12.050516][info]  - camera 65/67 (25554 triangles)
+[22:32:12.194648][info]  - camera 66/67 (15351 triangles)
+[22:32:12.344784][info]  - camera 67/67 (9005 triangles)
+[22:32:12.470921][info] Edge padding (15 pixels).
+[22:32:17.248253][info] Computing final (average) color.
+[22:32:17.963905][info] Writing texture file: C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/Texturing/1870a626f0a3b8f06bfa36882848de91bf57ef6f\texture_0.png
+[22:32:17.963905][info] Downscaling texture (2x).
+[22:32:22.731249][info] Task done in (s): 26.237000

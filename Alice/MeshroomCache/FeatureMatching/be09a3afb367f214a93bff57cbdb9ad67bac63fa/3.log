@@ -1,0 +1,340 @@
+Program called with the following parameters:
+ * describerTypes = "sift"
+ * distanceRatio = 0.8
+ * exportDebugFiles = 0
+ * featuresFolders =  = [C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/FeatureExtraction/861dcb06f4eace6ec8e052627b1f2698395ef4a7]
+ * geometricError = 0 (default)
+ * geometricEstimator = "acransac"
+ * geometricFilterType = "fundamental_matrix"
+ * guidedMatching = 0
+ * imagePairsList = "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt"
+ * input = "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/CameraInit/90d34af1735c95658c3e5046b09b8be0c0a7013f/cameraInit.sfm"
+ * matchFilePerImage = 1 (default)
+ * maxIteration = 2048
+ * maxMatches = 0
+ * output = "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/FeatureMatching/be09a3afb367f214a93bff57cbdb9ad67bac63fa"
+ * photometricMatchingMethod = "ANN_L2"
+ * rangeSize = 18
+ * rangeStart = 60
+ * savePutativeMatches = 0
+ * useGridSort = 1 (default)
+ * verboseLevel = "info"
+
+[22:37:03.586157][info] Load pair list from file: C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt
+[22:37:03.588158][info] loadPairs: image pair (1742181051, 1795513753) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.589159][info] loadPairs: image pair (1742181051, 1816125058) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.590160][info] loadPairs: image pair (1742181051, 1846734614) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.590160][info] loadPairs: image pair (1742181051, 1861925312) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.591161][info] loadPairs: image pair (1742181051, 1866976262) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.592162][info] loadPairs: image pair (1742181051, 1887534972) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.593163][info] loadPairs: image pair (1742181051, 1889038201) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.593163][info] loadPairs: image pair (1742181051, 1969897084) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.594164][info] loadPairs: image pair (1742181051, 2025875319) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.595165][info] loadPairs: image pair (1742181051, 2030751971) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.596165][info] loadPairs: image pair (1742181051, 2048594538) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.597167][info] loadPairs: image pair (1742181051, 2075366909) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.597167][info] loadPairs: image pair (1742181051, 2076392030) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.598167][info] loadPairs: image pair (1742181051, 2096417223) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.599168][info] loadPairs: image pair (1742181051, 2121696221) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.600169][info] loadPairs: image pair (1742181051, 2140944369) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.601170][info] loadPairs: image pair (1795513753, 1816125058) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.601170][info] loadPairs: image pair (1795513753, 1846734614) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.602171][info] loadPairs: image pair (1795513753, 1861925312) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.603172][info] loadPairs: image pair (1795513753, 1866976262) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.604173][info] loadPairs: image pair (1795513753, 1887534972) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.604173][info] loadPairs: image pair (1795513753, 1889038201) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.605173][info] loadPairs: image pair (1795513753, 1969897084) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.606175][info] loadPairs: image pair (1795513753, 2025875319) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.607175][info] loadPairs: image pair (1795513753, 2030751971) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.607175][info] loadPairs: image pair (1795513753, 2048594538) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.608176][info] loadPairs: image pair (1795513753, 2075366909) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.609177][info] loadPairs: image pair (1795513753, 2076392030) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.610178][info] loadPairs: image pair (1795513753, 2096417223) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.611179][info] loadPairs: image pair (1795513753, 2121696221) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.611179][info] loadPairs: image pair (1795513753, 2140944369) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.612180][info] loadPairs: image pair (1816125058, 1846734614) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.613181][info] loadPairs: image pair (1816125058, 1861925312) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.614182][info] loadPairs: image pair (1816125058, 1866976262) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.615183][info] loadPairs: image pair (1816125058, 1887534972) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.615183][info] loadPairs: image pair (1816125058, 1889038201) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.616183][info] loadPairs: image pair (1816125058, 1969897084) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.617185][info] loadPairs: image pair (1816125058, 2025875319) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.618185][info] loadPairs: image pair (1816125058, 2030751971) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.618185][info] loadPairs: image pair (1816125058, 2048594538) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.619187][info] loadPairs: image pair (1816125058, 2075366909) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.620187][info] loadPairs: image pair (1816125058, 2076392030) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.621188][info] loadPairs: image pair (1816125058, 2096417223) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.621188][info] loadPairs: image pair (1816125058, 2121696221) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.622189][info] loadPairs: image pair (1816125058, 2140944369) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.623190][info] loadPairs: image pair (1846734614, 1861925312) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.624191][info] loadPairs: image pair (1846734614, 1866976262) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.625192][info] loadPairs: image pair (1846734614, 1887534972) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.625192][info] loadPairs: image pair (1846734614, 1889038201) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.626192][info] loadPairs: image pair (1846734614, 1969897084) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.627194][info] loadPairs: image pair (1846734614, 2025875319) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.628195][info] loadPairs: image pair (1846734614, 2030751971) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.628195][info] loadPairs: image pair (1846734614, 2048594538) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.629196][info] loadPairs: image pair (1846734614, 2075366909) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.630197][info] loadPairs: image pair (1846734614, 2076392030) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.631197][info] loadPairs: image pair (1846734614, 2096417223) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.632198][info] loadPairs: image pair (1846734614, 2121696221) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.632198][info] loadPairs: image pair (1846734614, 2140944369) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.633199][info] loadPairs: image pair (1861925312, 1866976262) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.634200][info] loadPairs: image pair (1861925312, 1887534972) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.635201][info] loadPairs: image pair (1861925312, 1889038201) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.635201][info] loadPairs: image pair (1861925312, 1969897084) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.636202][info] loadPairs: image pair (1861925312, 2025875319) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.637203][info] loadPairs: image pair (1861925312, 2030751971) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.638203][info] loadPairs: image pair (1861925312, 2048594538) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.639204][info] loadPairs: image pair (1861925312, 2075366909) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.639204][info] loadPairs: image pair (1861925312, 2076392030) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.640206][info] loadPairs: image pair (1861925312, 2096417223) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.641206][info] loadPairs: image pair (1861925312, 2121696221) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.642207][info] loadPairs: image pair (1861925312, 2140944369) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.642207][info] loadPairs: image pair (1866976262, 1887534972) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.643208][info] loadPairs: image pair (1866976262, 1889038201) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.644209][info] loadPairs: image pair (1866976262, 1969897084) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.645211][info] loadPairs: image pair (1866976262, 2025875319) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.646210][info] loadPairs: image pair (1866976262, 2030751971) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.646210][info] loadPairs: image pair (1866976262, 2048594538) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.647212][info] loadPairs: image pair (1866976262, 2075366909) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.648213][info] loadPairs: image pair (1866976262, 2076392030) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.649214][info] loadPairs: image pair (1866976262, 2096417223) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.649214][info] loadPairs: image pair (1866976262, 2121696221) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.650215][info] loadPairs: image pair (1866976262, 2140944369) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.651215][info] loadPairs: image pair (1887534972, 1889038201) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.652217][info] loadPairs: image pair (1887534972, 1969897084) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.653218][info] loadPairs: image pair (1887534972, 2025875319) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.653218][info] loadPairs: image pair (1887534972, 2030751971) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.654218][info] loadPairs: image pair (1887534972, 2048594538) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.655219][info] loadPairs: image pair (1887534972, 2075366909) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.656220][info] loadPairs: image pair (1887534972, 2076392030) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.656220][info] loadPairs: image pair (1887534972, 2096417223) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.657221][info] loadPairs: image pair (1887534972, 2121696221) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.658222][info] loadPairs: image pair (1887534972, 2140944369) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.659223][info] loadPairs: image pair (1889038201, 1969897084) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.660223][info] loadPairs: image pair (1889038201, 2025875319) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.660223][info] loadPairs: image pair (1889038201, 2030751971) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.661225][info] loadPairs: image pair (1889038201, 2048594538) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.662225][info] loadPairs: image pair (1889038201, 2075366909) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.663227][info] loadPairs: image pair (1889038201, 2076392030) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.663227][info] loadPairs: image pair (1889038201, 2096417223) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.664227][info] loadPairs: image pair (1889038201, 2121696221) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.665228][info] loadPairs: image pair (1889038201, 2140944369) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.666229][info] loadPairs: image pair (1969897084, 2025875319) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.666229][info] loadPairs: image pair (1969897084, 2030751971) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.667230][info] loadPairs: image pair (1969897084, 2048594538) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.668230][info] loadPairs: image pair (1969897084, 2075366909) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.669232][info] loadPairs: image pair (1969897084, 2076392030) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.670233][info] loadPairs: image pair (1969897084, 2096417223) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.670233][info] loadPairs: image pair (1969897084, 2121696221) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.671234][info] loadPairs: image pair (1969897084, 2140944369) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.672235][info] loadPairs: image pair (2025875319, 2030751971) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.673236][info] loadPairs: image pair (2025875319, 2048594538) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.673236][info] loadPairs: image pair (2025875319, 2075366909) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.674237][info] loadPairs: image pair (2025875319, 2076392030) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.675237][info] loadPairs: image pair (2025875319, 2096417223) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.676238][info] loadPairs: image pair (2025875319, 2121696221) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.677239][info] loadPairs: image pair (2025875319, 2140944369) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.677239][info] loadPairs: image pair (2030751971, 2048594538) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.678240][info] loadPairs: image pair (2030751971, 2075366909) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.679242][info] loadPairs: image pair (2030751971, 2076392030) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.680242][info] loadPairs: image pair (2030751971, 2096417223) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.681243][info] loadPairs: image pair (2030751971, 2121696221) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.681243][info] loadPairs: image pair (2030751971, 2140944369) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.682243][info] loadPairs: image pair (2048594538, 2075366909) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.683245][info] loadPairs: image pair (2048594538, 2076392030) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.684245][info] loadPairs: image pair (2048594538, 2096417223) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.684245][info] loadPairs: image pair (2048594538, 2121696221) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.685246][info] loadPairs: image pair (2048594538, 2140944369) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.686247][info] loadPairs: image pair (2075366909, 2076392030) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.687248][info] loadPairs: image pair (2075366909, 2096417223) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.687248][info] loadPairs: image pair (2075366909, 2121696221) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.688249][info] loadPairs: image pair (2075366909, 2140944369) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.689250][info] loadPairs: image pair (2076392030, 2096417223) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.690251][info] loadPairs: image pair (2076392030, 2121696221) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.691252][info] loadPairs: image pair (2076392030, 2140944369) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.691252][info] loadPairs: image pair (2096417223, 2121696221) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.692253][info] loadPairs: image pair (2096417223, 2140944369) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.693254][info] loadPairs: image pair (2121696221, 2140944369) added. File: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt".
+[22:37:03.694255][info] Number of pairs: 136
+[22:37:03.694255][info] Putative matches
+[22:37:03.694255][info] There are 77 views and 136 image pairs.
+Loading regions
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+************[22:37:03.790341][info] sift Regions Matching
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+[22:37:05.574967][info] 136 putative image pair matches
+[22:37:05.575968][info] 	- image pair (1742181051, 1795513753) contains 48 putative matches.
+[22:37:05.575968][info] 	- image pair (1742181051, 1816125058) contains 52 putative matches.
+[22:37:05.575968][info] 	- image pair (1742181051, 1846734614) contains 42 putative matches.
+[22:37:05.576969][info] 	- image pair (1742181051, 1861925312) contains 90 putative matches.
+[22:37:05.576969][info] 	- image pair (1742181051, 1866976262) contains 85 putative matches.
+[22:37:05.576969][info] 	- image pair (1742181051, 1887534972) contains 35 putative matches.
+[22:37:05.577970][info] 	- image pair (1742181051, 1889038201) contains 33 putative matches.
+[22:37:05.577970][info] 	- image pair (1742181051, 1969897084) contains 22 putative matches.
+[22:37:05.577970][info] 	- image pair (1742181051, 2025875319) contains 45 putative matches.
+[22:37:05.578971][info] 	- image pair (1742181051, 2030751971) contains 30 putative matches.
+[22:37:05.578971][info] 	- image pair (1742181051, 2048594538) contains 34 putative matches.
+[22:37:05.578971][info] 	- image pair (1742181051, 2075366909) contains 29 putative matches.
+[22:37:05.579972][info] 	- image pair (1742181051, 2076392030) contains 38 putative matches.
+[22:37:05.579972][info] 	- image pair (1742181051, 2096417223) contains 37 putative matches.
+[22:37:05.579972][info] 	- image pair (1742181051, 2121696221) contains 69 putative matches.
+[22:37:05.580973][info] 	- image pair (1742181051, 2140944369) contains 26 putative matches.
+[22:37:05.580973][info] 	- image pair (1795513753, 1816125058) contains 99 putative matches.
+[22:37:05.580973][info] 	- image pair (1795513753, 1846734614) contains 27 putative matches.
+[22:37:05.581974][info] 	- image pair (1795513753, 1861925312) contains 71 putative matches.
+[22:37:05.581974][info] 	- image pair (1795513753, 1866976262) contains 288 putative matches.
+[22:37:05.581974][info] 	- image pair (1795513753, 1887534972) contains 34 putative matches.
+[22:37:05.582974][info] 	- image pair (1795513753, 1889038201) contains 21 putative matches.
+[22:37:05.582974][info] 	- image pair (1795513753, 1969897084) contains 16 putative matches.
+[22:37:05.582974][info] 	- image pair (1795513753, 2025875319) contains 28 putative matches.
+[22:37:05.583975][info] 	- image pair (1795513753, 2030751971) contains 39 putative matches.
+[22:37:05.583975][info] 	- image pair (1795513753, 2048594538) contains 36 putative matches.
+[22:37:05.583975][info] 	- image pair (1795513753, 2075366909) contains 35 putative matches.
+[22:37:05.584976][info] 	- image pair (1795513753, 2076392030) contains 76 putative matches.
+[22:37:05.584976][info] 	- image pair (1795513753, 2096417223) contains 34 putative matches.
+[22:37:05.584976][info] 	- image pair (1795513753, 2121696221) contains 245 putative matches.
+[22:37:05.585977][info] 	- image pair (1795513753, 2140944369) contains 26 putative matches.
+[22:37:05.585977][info] 	- image pair (1816125058, 1846734614) contains 23 putative matches.
+[22:37:05.585977][info] 	- image pair (1816125058, 1861925312) contains 69 putative matches.
+[22:37:05.585977][info] 	- image pair (1816125058, 1866976262) contains 120 putative matches.
+[22:37:05.586978][info] 	- image pair (1816125058, 1887534972) contains 44 putative matches.
+[22:37:05.586978][info] 	- image pair (1816125058, 1889038201) contains 29 putative matches.
+[22:37:05.586978][info] 	- image pair (1816125058, 1969897084) contains 18 putative matches.
+[22:37:05.587979][info] 	- image pair (1816125058, 2025875319) contains 42 putative matches.
+[22:37:05.587979][info] 	- image pair (1816125058, 2030751971) contains 51 putative matches.
+[22:37:05.587979][info] 	- image pair (1816125058, 2048594538) contains 43 putative matches.
+[22:37:05.588980][info] 	- image pair (1816125058, 2075366909) contains 26 putative matches.
+[22:37:05.588980][info] 	- image pair (1816125058, 2076392030) contains 57 putative matches.
+[22:37:05.588980][info] 	- image pair (1816125058, 2096417223) contains 61 putative matches.
+[22:37:05.589981][info] 	- image pair (1816125058, 2121696221) contains 280 putative matches.
+[22:37:05.589981][info] 	- image pair (1816125058, 2140944369) contains 27 putative matches.
+[22:37:05.589981][info] 	- image pair (1846734614, 1861925312) contains 26 putative matches.
+[22:37:05.590982][info] 	- image pair (1846734614, 1866976262) contains 34 putative matches.
+[22:37:05.590982][info] 	- image pair (1846734614, 1887534972) contains 70 putative matches.
+[22:37:05.590982][info] 	- image pair (1846734614, 1889038201) contains 19 putative matches.
+[22:37:05.591983][info] 	- image pair (1846734614, 1969897084) contains 22 putative matches.
+[22:37:05.591983][info] 	- image pair (1846734614, 2025875319) contains 18 putative matches.
+[22:37:05.591983][info] 	- image pair (1846734614, 2030751971) contains 26 putative matches.
+[22:37:05.592984][info] 	- image pair (1846734614, 2048594538) contains 29 putative matches.
+[22:37:05.592984][info] 	- image pair (1846734614, 2075366909) contains 39 putative matches.
+[22:37:05.592984][info] 	- image pair (1846734614, 2076392030) contains 55 putative matches.
+[22:37:05.593985][info] 	- image pair (1846734614, 2096417223) contains 32 putative matches.
+[22:37:05.593985][info] 	- image pair (1846734614, 2121696221) contains 24 putative matches.
+[22:37:05.593985][info] 	- image pair (1846734614, 2140944369) contains 13 putative matches.
+[22:37:05.594986][info] 	- image pair (1861925312, 1866976262) contains 73 putative matches.
+[22:37:05.594986][info] 	- image pair (1861925312, 1887534972) contains 28 putative matches.
+[22:37:05.594986][info] 	- image pair (1861925312, 1889038201) contains 52 putative matches.
+[22:37:05.595986][info] 	- image pair (1861925312, 1969897084) contains 20 putative matches.
+[22:37:05.595986][info] 	- image pair (1861925312, 2025875319) contains 67 putative matches.
+[22:37:05.595986][info] 	- image pair (1861925312, 2030751971) contains 42 putative matches.
+[22:37:05.596987][info] 	- image pair (1861925312, 2048594538) contains 16 putative matches.
+[22:37:05.596987][info] 	- image pair (1861925312, 2075366909) contains 21 putative matches.
+[22:37:05.596987][info] 	- image pair (1861925312, 2076392030) contains 27 putative matches.
+[22:37:05.597988][info] 	- image pair (1861925312, 2096417223) contains 35 putative matches.
+[22:37:05.597988][info] 	- image pair (1861925312, 2121696221) contains 63 putative matches.
+[22:37:05.597988][info] 	- image pair (1861925312, 2140944369) contains 23 putative matches.
+[22:37:05.598989][info] 	- image pair (1866976262, 1887534972) contains 30 putative matches.
+[22:37:05.598989][info] 	- image pair (1866976262, 1889038201) contains 30 putative matches.
+[22:37:05.598989][info] 	- image pair (1866976262, 1969897084) contains 30 putative matches.
+[22:37:05.599990][info] 	- image pair (1866976262, 2025875319) contains 39 putative matches.
+[22:37:05.599990][info] 	- image pair (1866976262, 2030751971) contains 34 putative matches.
+[22:37:05.599990][info] 	- image pair (1866976262, 2048594538) contains 36 putative matches.
+[22:37:05.600991][info] 	- image pair (1866976262, 2075366909) contains 24 putative matches.
+[22:37:05.600991][info] 	- image pair (1866976262, 2076392030) contains 77 putative matches.
+[22:37:05.600991][info] 	- image pair (1866976262, 2096417223) contains 27 putative matches.
+[22:37:05.601992][info] 	- image pair (1866976262, 2121696221) contains 170 putative matches.
+[22:37:05.601992][info] 	- image pair (1866976262, 2140944369) contains 25 putative matches.
+[22:37:05.601992][info] 	- image pair (1887534972, 1889038201) contains 14 putative matches.
+[22:37:05.602993][info] 	- image pair (1887534972, 1969897084) contains 14 putative matches.
+[22:37:05.602993][info] 	- image pair (1887534972, 2025875319) contains 15 putative matches.
+[22:37:05.602993][info] 	- image pair (1887534972, 2030751971) contains 20 putative matches.
+[22:37:05.602993][info] 	- image pair (1887534972, 2048594538) contains 21 putative matches.
+[22:37:05.603994][info] 	- image pair (1887534972, 2075366909) contains 104 putative matches.
+[22:37:05.603994][info] 	- image pair (1887534972, 2076392030) contains 23 putative matches.
+[22:37:05.603994][info] 	- image pair (1887534972, 2096417223) contains 21 putative matches.
+[22:37:05.604995][info] 	- image pair (1887534972, 2121696221) contains 21 putative matches.
+[22:37:05.604995][info] 	- image pair (1887534972, 2140944369) contains 14 putative matches.
+[22:37:05.604995][info] 	- image pair (1889038201, 1969897084) contains 37 putative matches.
+[22:37:05.605995][info] 	- image pair (1889038201, 2025875319) contains 228 putative matches.
+[22:37:05.605995][info] 	- image pair (1889038201, 2030751971) contains 37 putative matches.
+[22:37:05.605995][info] 	- image pair (1889038201, 2048594538) contains 31 putative matches.
+[22:37:05.606996][info] 	- image pair (1889038201, 2075366909) contains 36 putative matches.
+[22:37:05.606996][info] 	- image pair (1889038201, 2076392030) contains 31 putative matches.
+[22:37:05.606996][info] 	- image pair (1889038201, 2096417223) contains 38 putative matches.
+[22:37:05.607997][info] 	- image pair (1889038201, 2121696221) contains 48 putative matches.
+[22:37:05.607997][info] 	- image pair (1889038201, 2140944369) contains 23 putative matches.
+[22:37:05.607997][info] 	- image pair (1969897084, 2025875319) contains 44 putative matches.
+[22:37:05.608998][info] 	- image pair (1969897084, 2030751971) contains 33 putative matches.
+[22:37:05.608998][info] 	- image pair (1969897084, 2048594538) contains 31 putative matches.
+[22:37:05.608998][info] 	- image pair (1969897084, 2075366909) contains 33 putative matches.
+[22:37:05.609999][info] 	- image pair (1969897084, 2076392030) contains 23 putative matches.
+[22:37:05.609999][info] 	- image pair (1969897084, 2096417223) contains 41 putative matches.
+[22:37:05.609999][info] 	- image pair (1969897084, 2121696221) contains 34 putative matches.
+[22:37:05.611000][info] 	- image pair (1969897084, 2140944369) contains 72 putative matches.
+[22:37:05.611000][info] 	- image pair (2025875319, 2030751971) contains 43 putative matches.
+[22:37:05.611000][info] 	- image pair (2025875319, 2048594538) contains 24 putative matches.
+[22:37:05.612001][info] 	- image pair (2025875319, 2075366909) contains 37 putative matches.
+[22:37:05.612001][info] 	- image pair (2025875319, 2076392030) contains 32 putative matches.
+[22:37:05.612001][info] 	- image pair (2025875319, 2096417223) contains 34 putative matches.
+[22:37:05.613002][info] 	- image pair (2025875319, 2121696221) contains 58 putative matches.
+[22:37:05.613002][info] 	- image pair (2025875319, 2140944369) contains 27 putative matches.
+[22:37:05.613002][info] 	- image pair (2030751971, 2048594538) contains 35 putative matches.
+[22:37:05.614003][info] 	- image pair (2030751971, 2075366909) contains 40 putative matches.
+[22:37:05.614003][info] 	- image pair (2030751971, 2076392030) contains 33 putative matches.
+[22:37:05.614003][info] 	- image pair (2030751971, 2096417223) contains 83 putative matches.
+[22:37:05.615004][info] 	- image pair (2030751971, 2121696221) contains 51 putative matches.
+[22:37:05.615004][info] 	- image pair (2030751971, 2140944369) contains 25 putative matches.
+[22:37:05.615004][info] 	- image pair (2048594538, 2075366909) contains 97 putative matches.
+[22:37:05.616005][info] 	- image pair (2048594538, 2076392030) contains 264 putative matches.
+[22:37:05.616005][info] 	- image pair (2048594538, 2096417223) contains 27 putative matches.
+[22:37:05.616005][info] 	- image pair (2048594538, 2121696221) contains 32 putative matches.
+[22:37:05.617005][info] 	- image pair (2048594538, 2140944369) contains 15 putative matches.
+[22:37:05.617005][info] 	- image pair (2075366909, 2076392030) contains 55 putative matches.
+[22:37:05.617005][info] 	- image pair (2075366909, 2096417223) contains 23 putative matches.
+[22:37:05.618006][info] 	- image pair (2075366909, 2121696221) contains 13 putative matches.
+[22:37:05.618006][info] 	- image pair (2075366909, 2140944369) contains 16 putative matches.
+[22:37:05.618006][info] 	- image pair (2076392030, 2096417223) contains 43 putative matches.
+[22:37:05.618006][info] 	- image pair (2076392030, 2121696221) contains 68 putative matches.
+[22:37:05.619007][info] 	- image pair (2076392030, 2140944369) contains 28 putative matches.
+[22:37:05.619007][info] 	- image pair (2096417223, 2121696221) contains 39 putative matches.
+[22:37:05.620008][info] 	- image pair (2096417223, 2140944369) contains 24 putative matches.
+[22:37:05.620008][info] 	- image pair (2121696221, 2140944369) contains 25 putative matches.
+[22:37:05.620008][info] Task (Regions Matching) done in (s): 1.830000
+[22:37:05.621010][info] Geometric filtering: using fundamental_matrix
+Robust Model Estimation
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+[22:37:06.610911][info] 11 geometric image pair matches:
+[22:37:06.610911][info] 	- image pair (1795513753, 1816125058) contains 57 geometric matches.
+[22:37:06.611912][info] 	- image pair (1795513753, 1866976262) contains 214 geometric matches.
+[22:37:06.611912][info] 	- image pair (1795513753, 2121696221) contains 190 geometric matches.
+[22:37:06.612913][info] 	- image pair (1816125058, 1866976262) contains 55 geometric matches.
+[22:37:06.612913][info] 	- image pair (1816125058, 2121696221) contains 198 geometric matches.
+[22:37:06.612913][info] 	- image pair (1866976262, 2076392030) contains 54 geometric matches.
+[22:37:06.613914][info] 	- image pair (1866976262, 2121696221) contains 131 geometric matches.
+[22:37:06.613914][info] 	- image pair (1887534972, 2075366909) contains 67 geometric matches.
+[22:37:06.614915][info] 	- image pair (1889038201, 2025875319) contains 169 geometric matches.
+[22:37:06.614915][info] 	- image pair (2048594538, 2075366909) contains 63 geometric matches.
+[22:37:06.614915][info] 	- image pair (2048594538, 2076392030) contains 233 geometric matches.
+[22:37:06.615916][info] Grid filtering
+[22:37:06.616917][info] After grid filtering:
+[22:37:06.616917][info] 	- image pair (1795513753, 1816125058) contains 57 geometric matches.
+[22:37:06.616917][info] 	- image pair (1795513753, 1866976262) contains 214 geometric matches.
+[22:37:06.617917][info] 	- image pair (1795513753, 2121696221) contains 190 geometric matches.
+[22:37:06.617917][info] 	- image pair (1816125058, 1866976262) contains 55 geometric matches.
+[22:37:06.617917][info] 	- image pair (1816125058, 2121696221) contains 198 geometric matches.
+[22:37:06.618918][info] 	- image pair (1866976262, 2076392030) contains 54 geometric matches.
+[22:37:06.618918][info] 	- image pair (1866976262, 2121696221) contains 131 geometric matches.
+[22:37:06.619919][info] 	- image pair (1887534972, 2075366909) contains 67 geometric matches.
+[22:37:06.619919][info] 	- image pair (1889038201, 2025875319) contains 169 geometric matches.
+[22:37:06.619919][info] 	- image pair (2048594538, 2075366909) contains 63 geometric matches.
+[22:37:06.620920][info] 	- image pair (2048594538, 2076392030) contains 233 geometric matches.
+[22:37:06.620920][info] Save geometric matches.
+[22:37:06.662960][info] Task done in (s): 1.042000

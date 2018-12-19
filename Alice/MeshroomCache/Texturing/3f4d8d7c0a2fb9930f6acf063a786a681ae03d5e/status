@@ -1,0 +1,18 @@
+{
+    "status": "SUCCESS",
+    "execMode": "LOCAL",
+    "nodeName": "Texturing_1",
+    "nodeType": "Texturing",
+    "packageName": "aliceVision",
+    "packageVersion": null,
+    "graph": "",
+    "commandLine": "aliceVision_texturing  --ini \"C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/PrepareDenseScene/dd02cc14a6a395e682212418832c01d65134f138/mvs.ini\" --inputDenseReconstruction \"C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/Meshing/7adb25fe34b08dcfcdd4a6c561e9395ffef53aa5/denseReconstruction.bin\" --inputMesh \"C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/MeshFiltering/6b4f589b73b8ebe5196a62a98737c22ec032b440/mesh.obj\" --textureSide 8192 --downscale 2 --outputTextureFileType png --unwrapMethod Basic --fillHoles False --padding 15 --maxNbImagesForFusion 3 --bestScoreThreshold 0.0 --angleHardThreshold 90.0 --forceVisibleByAllVertices False --flipNormals False --visibilityRemappingMethod PullPush --verboseLevel info --output \"C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/Texturing/3f4d8d7c0a2fb9930f6acf063a786a681ae03d5e\" ",
+    "env": null,
+    "startDateTime": "2018-12-18 22:52:04.354912",
+    "endDateTime": "2018-12-18 22:52:31.667796",
+    "elapsedTime": 27.31288504600525,
+    "hostname": "DESKTOP-370SOTQ",
+    "sessionUid": "ea3295ae-0337-11e9-97b8-309c2328df18",
+    "returnCode": 0,
+    "elapsedTimeStr": "0:00:27.312885"
+}

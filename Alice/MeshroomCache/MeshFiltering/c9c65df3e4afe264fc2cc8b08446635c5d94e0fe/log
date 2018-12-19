@@ -1,0 +1,44 @@
+Program called with the following parameters:
+ * input = "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/Meshing/2940d647d496bfb6c2fc67035f6ab411aad4da35/mesh.obj"
+ * iterations = 5
+ * keepLargestMeshOnly = 1
+ * lambda = 1
+ * output = "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/MeshFiltering/c9c65df3e4afe264fc2cc8b08446635c5d94e0fe/mesh.obj"
+ * removeLargeTrianglesFactor = 60
+ * verboseLevel = "info"
+
+[22:31:52.176410][info] Loading mesh from obj file: C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/Meshing/2940d647d496bfb6c2fc67035f6ab411aad4da35/mesh.obj
+[22:31:52.432641][info] 	- # vertices: 168116
+	- # normals: 0
+	- # uv coordinates: 0
+	- # triangles: 336157
+[22:31:53.175318][info] Mesh loaded: 
+	- #points: 168116
+	- # triangles: 336157
+[22:31:53.178321][info] Mesh file: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/Meshing/2940d647d496bfb6c2fc67035f6ab411aad4da35/mesh.obj" loaded.
+[22:31:53.179322][info] Input mesh: 168116 vertices and 336157 facets.
+[22:31:53.206347][info] Mesh after large triangles removal: 168116 vertices and 336157 facets.
+[22:31:53.206347][info] Start mesh filtering.
+[22:31:54.664675][info] cleanMesh:
+	- # wrong points: 0
+	- # new points: 0
+[22:31:55.010991][info] Optimizing mesh smooth: 
+	- lamda: 1
+	- niters: 5
+
+[22:31:55.011992][info] Optimizing mesh smooth: iteration 0
+[22:31:55.036013][info] Optimizing mesh smooth: iteration 1
+[22:31:55.057032][info] Optimizing mesh smooth: iteration 2
+[22:31:55.075049][info] Optimizing mesh smooth: iteration 3
+[22:31:55.096068][info] Optimizing mesh smooth: iteration 4
+[22:31:55.120090][info] Mesh filtering done: 168116 vertices and 336157 facets.
+[22:31:55.623549][warning] getLargestConnectedComponentTrisIds: bad condition.
+[22:31:55.668590][info] Mesh after keepLargestMeshOnly: 168116 vertices and 304894 facets.
+Output mesh: 168116 vertices and 336157 facets.
+[22:31:55.676597][info] Save mesh.
+[22:31:55.677598][info] Save mesh to obj: C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/MeshFiltering/c9c65df3e4afe264fc2cc8b08446635c5d94e0fe/mesh.obj
+[22:31:55.677598][info] Nb points: 168116
+[22:31:55.677598][info] Nb triangles: 304894
+[22:31:56.186063][info] Save mesh to obj done.
+[22:31:56.186063][info] Mesh file: "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/MeshFiltering/c9c65df3e4afe264fc2cc8b08446635c5d94e0fe/mesh.obj" saved.
+[22:31:56.186063][info] Task done in (s): 4.011000
