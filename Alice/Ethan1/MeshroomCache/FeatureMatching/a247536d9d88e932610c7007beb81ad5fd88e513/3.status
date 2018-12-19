@@ -1,0 +1,18 @@
+{
+    "status": "SUCCESS",
+    "execMode": "LOCAL",
+    "nodeName": "FeatureMatching_1",
+    "nodeType": "FeatureMatching",
+    "packageName": "aliceVision",
+    "packageVersion": null,
+    "graph": "",
+    "commandLine": "aliceVision_featureMatching  --input \"C:/Users/ethan/Documents/GitHub/RoamerPipeline/Alice/Ethan1/MeshroomCache/CameraInit/8704707052153a072419b2c9b883e65390d9d839/cameraInit.sfm\" --featuresFolders \"C:/Users/ethan/Documents/GitHub/RoamerPipeline/Alice/Ethan1/MeshroomCache/FeatureExtraction/0473eb77f8082d04efbf26b60856110717a9d7a7\" --imagePairsList \"C:/Users/ethan/Documents/GitHub/RoamerPipeline/Alice/Ethan1/MeshroomCache/ImageMatching/28bb8fb4980ba80932c9e0b6e5e3ae689cf09a00/imageMatches.txt\" --describerTypes sift --photometricMatchingMethod ANN_L2 --geometricEstimator acransac --geometricFilterType fundamental_matrix --distanceRatio 0.8 --maxIteration 2048 --maxMatches 0 --savePutativeMatches False --guidedMatching False --exportDebugFiles False --verboseLevel info --output \"C:/Users/ethan/Documents/GitHub/RoamerPipeline/Alice/Ethan1/MeshroomCache/FeatureMatching/a247536d9d88e932610c7007beb81ad5fd88e513\" --rangeStart 60 --rangeSize 8",
+    "env": null,
+    "startDateTime": "2018-12-18 17:44:23.812565",
+    "endDateTime": "2018-12-18 17:44:24.977829",
+    "elapsedTime": 1.16526460647583,
+    "hostname": "DESKTOP-537DUK7",
+    "sessionUid": "12bc1f5c-0316-11e9-a053-001a7dda7113",
+    "returnCode": 0,
+    "elapsedTimeStr": "0:00:01.165265"
+}

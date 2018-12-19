@@ -1,0 +1,15 @@
+Program called with the following parameters:
+ * featuresFolders =  = [C:/Users/ethan/Documents/GitHub/RoamerPipeline/Alice/Ethan1/MeshroomCache/FeatureExtraction/0473eb77f8082d04efbf26b60856110717a9d7a7]
+ * input = "C:/Users/ethan/Documents/GitHub/RoamerPipeline/Alice/Ethan1/MeshroomCache/CameraInit/8704707052153a072419b2c9b883e65390d9d839/cameraInit.sfm"
+ * matchingMode = "a/a" (default)
+ * maxDescriptors = 500
+ * minNbImages = 200
+ * nbMatches = 50
+ * output = "C:/Users/ethan/Documents/GitHub/RoamerPipeline/Alice/Ethan1/MeshroomCache/ImageMatching/28bb8fb4980ba80932c9e0b6e5e3ae689cf09a00/imageMatches.txt"
+ * outputCombinedSfM = "" (default)
+ * tree = "C:\Users\ethan\Downloads\Meshroom-2018.1.0-win64\Meshroom-2018.1.0\aliceVision\share\aliceVision\vlfeat_K80L3.SIFT.tree"
+ * verboseLevel = "info"
+ * weights = ""
+
+[17:43:16.079861][info] Brute force generation
+[17:43:16.095818][info] pairList exported in: C:/Users/ethan/Documents/GitHub/RoamerPipeline/Alice/Ethan1/MeshroomCache/ImageMatching/28bb8fb4980ba80932c9e0b6e5e3ae689cf09a00/imageMatches.txt
