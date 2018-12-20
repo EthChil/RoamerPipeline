@@ -1,0 +1,16 @@
+14:13:16 [App     ] Build date: Nov 23 2017, 15:35:04
+14:13:16 [App     ] CPU: Intel(R) Core(TM) i7-4750HQ CPU @ 2.00GHz
+14:13:16 [App     ] RAM: 8.00GB Physical Memory 8.00GB Virtual Memory
+14:13:16 [App     ] OS: Darwin 18.0.0 (x86_64)
+14:13:16 [App     ] SSE & AVX compatible CPU & OS detected
+14:13:16 [App     ] Command line: -i /Users/Kratos/Desktop/ThatsAllFolks/MVS/output_dense_mesh_refine.mvs
+14:13:16 [App     ] Scene loaded (176ms):
+	48 images (48 calibrated) with a total of 71.19 MPixels (1.48 MPixels/image)
+	0 points, 137974 vertices, 274369 faces
+14:14:51 [App     ] Assigning the best view to each face completed: 274369 faces (1m34s416ms)
+14:15:19 [App     ] Generating texture atlas and image completed: 4139 patches, 8192 image size (28s364ms)
+14:15:19 [App     ] Mesh texturing completed: 137974 vertices, 274369 faces (2m2s821ms)
+14:15:30 [App     ] Scene saved (11s56ms):
+	48 images (48 calibrated)
+	0 points, 137974 vertices, 274369 faces
+14:15:39 [App     ] Mesh saved: 137974 vertices, 274369 faces (9s250ms)
