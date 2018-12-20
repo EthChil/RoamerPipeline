@@ -1,0 +1,18 @@
+{
+    "status": "SUCCESS",
+    "execMode": "LOCAL",
+    "nodeName": "FeatureMatching_1",
+    "nodeType": "FeatureMatching",
+    "packageName": "aliceVision",
+    "packageVersion": null,
+    "graph": "",
+    "commandLine": "aliceVision_featureMatching  --input \"C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/CameraInit/90d34af1735c95658c3e5046b09b8be0c0a7013f/cameraInit.sfm\" --featuresFolders \"C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/FeatureExtraction/861dcb06f4eace6ec8e052627b1f2698395ef4a7\" --imagePairsList \"C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/ImageMatching/4c949cdf32e7fc2f562312fa6ac0556ee2afce92/imageMatches.txt\" --describerTypes sift --photometricMatchingMethod ANN_L2 --geometricEstimator acransac --geometricFilterType fundamental_matrix --distanceRatio 0.8 --maxIteration 2048 --maxMatches 0 --savePutativeMatches False --guidedMatching False --exportDebugFiles False --verboseLevel info --output \"C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/FeatureMatching/be09a3afb367f214a93bff57cbdb9ad67bac63fa\" --rangeStart 0 --rangeSize 20",
+    "env": null,
+    "startDateTime": "2018-12-18 22:36:12.070217",
+    "endDateTime": "2018-12-18 22:36:36.528502",
+    "elapsedTime": 24.458284378051758,
+    "hostname": "DESKTOP-370SOTQ",
+    "sessionUid": "ea3295ae-0337-11e9-97b8-309c2328df18",
+    "returnCode": 0,
+    "elapsedTimeStr": "0:00:24.458284"
+}

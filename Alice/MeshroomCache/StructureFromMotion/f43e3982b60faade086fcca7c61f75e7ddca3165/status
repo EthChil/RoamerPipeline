@@ -1,0 +1,18 @@
+{
+    "status": "SUCCESS",
+    "execMode": "LOCAL",
+    "nodeName": "StructureFromMotion_1",
+    "nodeType": "StructureFromMotion",
+    "packageName": "aliceVision",
+    "packageVersion": null,
+    "graph": "",
+    "commandLine": "aliceVision_incrementalSfM  --input \"C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/CameraInit/90d34af1735c95658c3e5046b09b8be0c0a7013f/cameraInit.sfm\" --featuresFolders \"C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/FeatureExtraction/861dcb06f4eace6ec8e052627b1f2698395ef4a7\" --matchesFolders \"C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/FeatureMatching/be09a3afb367f214a93bff57cbdb9ad67bac63fa\" --describerTypes sift --localizerEstimator acransac --lockScenePreviouslyReconstructed False --useLocalBA True --localBAGraphDistance 1 --maxNumberOfMatches 0 --minInputTrackLength 2 --minNumberOfObservationsForTriangulation 2 --minAngleForTriangulation 3.0 --minAngleForLandmark 2.0 --maxReprojectionError 4.0 --minAngleInitialPair 5.0 --maxAngleInitialPair 40.0 --useOnlyMatchesFromInputFolder False --initialPairA \"\" --initialPairB \"\" --interFileExtension .abc --verboseLevel info --output \"C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/StructureFromMotion/f43e3982b60faade086fcca7c61f75e7ddca3165/sfm.abc\" --outputViewsAndPoses \"C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/StructureFromMotion/f43e3982b60faade086fcca7c61f75e7ddca3165/cameras.sfm\" --extraInfoFolder \"C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/StructureFromMotion/f43e3982b60faade086fcca7c61f75e7ddca3165\" ",
+    "env": null,
+    "startDateTime": "2018-12-18 22:37:06.714006",
+    "endDateTime": "2018-12-18 22:37:52.424657",
+    "elapsedTime": 45.71065139770508,
+    "hostname": "DESKTOP-370SOTQ",
+    "sessionUid": "ea3295ae-0337-11e9-97b8-309c2328df18",
+    "returnCode": 0,
+    "elapsedTimeStr": "0:00:45.710651"
+}

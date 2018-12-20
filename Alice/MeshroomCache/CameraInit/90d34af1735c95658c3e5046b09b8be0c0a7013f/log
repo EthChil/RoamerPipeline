@@ -1,0 +1,18 @@
+Program called with the following parameters:
+ * allowIncompleteOutput = 0 (default)
+ * allowSingleView = 1
+ * defaultCameraModel = "" (default)
+ * defaultFieldOfView = 45
+ * defaultFocalLengthPix = -1 (default)
+ * defaultIntrinsic = "" (default)
+ * groupCameraModel = 2 (default)
+ * imageFolder = "" (default)
+ * input = "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/CameraInit/90d34af1735c95658c3e5046b09b8be0c0a7013f//viewpoints.sfm"
+ * output = "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/CameraInit/90d34af1735c95658c3e5046b09b8be0c0a7013f/cameraInit.sfm"
+ * sensorDatabase = "C:\Users\maxch\Downloads\Meshroom-2018.1.0-win64\Meshroom-2018.1.0\aliceVision\share\aliceVision\cameraSensors.db"
+ * verboseLevel = "info"
+
+[22:36:00.567734][info] CameraInit report:
+	- # views listed in SfMData: 77
+	- # views with an initialized intrinsic listed in SfMData: 77
+	- # intrinsics listed in SfMData: 1

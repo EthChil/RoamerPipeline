@@ -1,0 +1,1523 @@
+Program called with the following parameters:
+ * describerTypes = "sift"
+ * extraInfoFolder = "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/StructureFromMotion/f43e3982b60faade086fcca7c61f75e7ddca3165"
+ * featuresFolders =  = [C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/FeatureExtraction/861dcb06f4eace6ec8e052627b1f2698395ef4a7]
+ * initialPairA = ""
+ * initialPairB = ""
+ * input = "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/CameraInit/90d34af1735c95658c3e5046b09b8be0c0a7013f/cameraInit.sfm"
+ * interFileExtension = ".abc"
+ * localBAGraphDistance = 1
+ * localizerEstimator = "acransac"
+ * lockScenePreviouslyReconstructed = 0
+ * matchesFolders =  = [C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/FeatureMatching/be09a3afb367f214a93bff57cbdb9ad67bac63fa]
+ * maxAngleInitialPair = 40
+ * maxNumberOfMatches = 0
+ * maxReprojectionError = 4
+ * minAngleForLandmark = 2
+ * minAngleForTriangulation = 3
+ * minAngleInitialPair = 5
+ * minInputTrackLength = 2
+ * minNumberOfObservationsForTriangulation = 2
+ * output = "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/StructureFromMotion/f43e3982b60faade086fcca7c61f75e7ddca3165/sfm.abc"
+ * outputViewsAndPoses = "C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/StructureFromMotion/f43e3982b60faade086fcca7c61f75e7ddca3165/cameras.sfm"
+ * refineIntrinsics = 1 (default)
+ * useLocalBA = 1
+ * useOnlyMatchesFromInputFolder = 0
+ * useTrackFiltering = 1 (default)
+ * verboseLevel = "info"
+
+Loading features
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+[22:37:09.099178][info] Fuse matches into tracks: 
+	- # tracks: 15607
+	- # images in tracks: 74
+[22:37:09.100179][info] TrackLength, Occurrence
+[22:37:09.100179][info] 	2	9333
+[22:37:09.100179][info] 	3	2966
+[22:37:09.101180][info] 	4	1342
+[22:37:09.101180][info] 	5	785
+[22:37:09.101180][info] 	6	407
+[22:37:09.101180][info] 	7	273
+[22:37:09.101180][info] 	8	174
+[22:37:09.101180][info] 	9	102
+[22:37:09.101180][info] 	10	73
+[22:37:09.102181][info] 	11	44
+[22:37:09.102181][info] 	12	40
+[22:37:09.102181][info] 	13	20
+[22:37:09.102181][info] 	14	13
+[22:37:09.102181][info] 	15	13
+[22:37:09.102181][info] 	16	5
+[22:37:09.102181][info] 	17	6
+[22:37:09.103182][info] 	18	4
+[22:37:09.103182][info] 	19	3
+[22:37:09.103182][info] 	20	2
+[22:37:09.103182][info] 	21	1
+[22:37:09.103182][info] 	23	1
+Automatic selection of an initial pair:
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+**[22:37:09.104183][info] AutomaticInitialPairChoice, test I: 20630899, J: 766245630, nbCommonTracks: 64
+[22:37:09.104183][info] AutomaticInitialPairChoice, test I: 107064801, J: 1889038201, nbCommonTracks: 65
+[22:37:09.104183][info] AutomaticInitialPairChoice, test I: 20630899, J: 1101473849, nbCommonTracks: 45
+[22:37:09.104183][info] AutomaticInitialPairChoice, test I: 107064801, J: 2025875319, nbCommonTracks: 64
+[22:37:09.104183][info] AutomaticInitialPairChoice, test I: 20630899, J: 2076392030, nbCommonTracks: 67
+[22:37:09.104183][info] AutomaticInitialPairChoice, test I: 20630899, J: 436115058, nbCommonTracks: 76
+[22:37:09.104183][info] AutomaticInitialPairChoice, test I: 20630899, J: 1861925312, nbCommonTracks: 68
+[22:37:09.104183][info] AutomaticInitialPairChoice, test I: 20630899, J: 1718489166, nbCommonTracks: 75
+[22:37:09.104183][info] AutomaticInitialPairChoice, test I: 20630899, J: 1866976262, nbCommonTracks: 77
+[22:37:09.104183][info] AutomaticInitialPairChoice, test I: 20630899, J: 1481597607, nbCommonTracks: 42
+[22:37:09.105184][info] AutomaticInitialPairChoice, test I: 121147830, J: 265695382, nbCommonTracks: 342
+[22:37:09.105184][info] AutomaticInitialPairChoice, test I: 121147830, J: 414432701, nbCommonTracks: 452
+*[22:37:09.130207][info] AutomaticInitialPairChoice, test I: 121147830, J: 704502137, nbCommonTracks: 567
+[22:37:09.132209][info] AutomaticInitialPairChoice, test I: 121147830, J: 705256877, nbCommonTracks: 153
+[22:37:09.133209][info] AutomaticInitialPairChoice, test I: 121147830, J: 983357929, nbCommonTracks: 219
+[22:37:09.134210][info] AutomaticInitialPairChoice, test I: 121147830, J: 1059548076, nbCommonTracks: 242
+[22:37:09.135211][info] AutomaticInitialPairChoice, test I: 121147830, J: 1081171077, nbCommonTracks: 234*
+[22:37:09.135211][info] AutomaticInitialPairChoice, test I: 121147830, J: 1261438133, nbCommonTracks: 157
+[22:37:09.136212][info] AutomaticInitialPairChoice, test I: 121147830, J: 1481597607, nbCommonTracks: 127
+[22:37:09.152227][info] AutomaticInitialPairChoice, test I: 121147830, J: 1580303157, nbCommonTracks: 106
+[22:37:09.156230][info] AutomaticInitialPairChoice, test I: 121147830, J: 1887534972, nbCommonTracks: 290
+[22:37:09.157232][info] AutomaticInitialPairChoice, test I: 121147830, J: 2048594538, nbCommonTracks: 134
+[22:37:09.160234][info] AutomaticInitialPairChoice, test I: 121147830, J: 2075366909, nbCommonTracks: 304
+[22:37:09.163237][info] AutomaticInitialPairChoice, test I: 184172299, J: 1101473849, nbCommonTracks: 49
+[22:37:09.166239][info] AutomaticInitialPairChoice, test I: 184172299, J: 1387747476, nbCommonTracks: 53
+*[22:37:09.168241][info] AutomaticInitialPairChoice, test I: 215382873, J: 218127765, nbCommonTracks: 110
+[22:37:09.171244][info] AutomaticInitialPairChoice, test I: 215382873, J: 382546242, nbCommonTracks: 72
+[22:37:09.172245][info] AutomaticInitialPairChoice, test I: 215382873, J: 405082748, nbCommonTracks: 88
+[22:37:09.174247][info] AutomaticInitialPairChoice, test I: 215382873, J: 453803718, nbCommonTracks: 87
+[22:37:09.181253][info] AutomaticInitialPairChoice, test I: 215382873, J: 577743018, nbCommonTracks: 212
+[22:37:09.182254][info] AutomaticInitialPairChoice, test I: 215382873, J: 798973218, nbCommonTracks: 98
+*[22:37:09.192263][info] AutomaticInitialPairChoice, test I: 215382873, J: 1494270653, nbCommonTracks: 110
+[22:37:09.193265][info] AutomaticInitialPairChoice, test I: 215382873, J: 1499966861, nbCommonTracks: 111
+[22:37:09.198269][info] AutomaticInitialPairChoice, test I: 218127765, J: 382546242, nbCommonTracks: 162
+[22:37:09.198269][info] AutomaticInitialPairChoice, test I: 218127765, J: 405082748, nbCommonTracks: 56
+[22:37:09.200270][info] AutomaticInitialPairChoice, test I: 218127765, J: 453803718, nbCommonTracks: 247
+[22:37:09.202272][info] AutomaticInitialPairChoice, test I: 218127765, J: 766245630, nbCommonTracks: 180
+[22:37:09.202272][info] AutomaticInitialPairChoice, test I: 218127765, J: 577743018, nbCommonTracks: 260
+*[22:37:09.204274][info] AutomaticInitialPairChoice, test I: 218127765, J: 965715659, nbCommonTracks: 60
+[22:37:09.206276][info] AutomaticInitialPairChoice, test I: 218127765, J: 1392468951, nbCommonTracks: 44
+[22:37:09.209279][info] AutomaticInitialPairChoice, test I: 218127765, J: 1444320462, nbCommonTracks: 70
+[22:37:09.210280][info] AutomaticInitialPairChoice, test I: 218127765, J: 1481597607, nbCommonTracks: 51
+[22:37:09.219288][info] AutomaticInitialPairChoice, test I: 218127765, J: 1494270653, nbCommonTracks: 239
+[22:37:09.221290][info] AutomaticInitialPairChoice, test I: 218127765, J: 1499966861, nbCommonTracks: 103
+[22:37:09.223292][info] AutomaticInitialPairChoice, test I: 218127765, J: 1816125058, nbCommonTracks: 107
+*[22:37:09.224292][info] AutomaticInitialPairChoice, test I: 218127765, J: 1866976262, nbCommonTracks: 77
+[22:37:09.231299][info] AutomaticInitialPairChoice, test I: 218127765, J: 2121696221, nbCommonTracks: 99
+[22:37:09.232300][info] AutomaticInitialPairChoice, test I: 222897565, J: 414432701, nbCommonTracks: 195
+[22:37:09.233301][info] AutomaticInitialPairChoice, test I: 222897565, J: 485519614, nbCommonTracks: 117
+[22:37:09.235302][info] AutomaticInitialPairChoice, test I: 222897565, J: 705256877, nbCommonTracks: 77
+[22:37:09.238305][info] AutomaticInitialPairChoice, test I: 222897565, J: 744178710, nbCommonTracks: 158
+*[22:37:09.241308][info] AutomaticInitialPairChoice, test I: 222897565, J: 983357929, nbCommonTracks: 93
+[22:37:09.241308][info] AutomaticInitialPairChoice, test I: 222897565, J: 1059548076, nbCommonTracks: 96
+[22:37:09.241308][info] AutomaticInitialPairChoice, test I: 222897565, J: 1114184231, nbCommonTracks: 297
+[22:37:09.250316][info] AutomaticInitialPairChoice, test I: 222897565, J: 1216237916, nbCommonTracks: 239
+[22:37:09.251317][info] AutomaticInitialPairChoice, test I: 222897565, J: 1261438133, nbCommonTracks: 103
+[22:37:09.254320][info] AutomaticInitialPairChoice, test I: 222897565, J: 1481597607, nbCommonTracks: 60
+*[22:37:09.261326][info] AutomaticInitialPairChoice, test I: 222897565, J: 1580303157, nbCommonTracks: 323
+[22:37:09.261326][info] AutomaticInitialPairChoice, test I: 222897565, J: 1969897084, nbCommonTracks: 93
+[22:37:09.263328][info] AutomaticInitialPairChoice, test I: 222897565, J: 2075366909, nbCommonTracks: 246
+[22:37:09.268333][info] AutomaticInitialPairChoice, test I: 265695382, J: 404557507, nbCommonTracks: 143
+[22:37:09.268333][info] AutomaticInitialPairChoice, test I: 265695382, J: 414432701, nbCommonTracks: 227
+[22:37:09.271335][info] AutomaticInitialPairChoice, test I: 265695382, J: 485519614, nbCommonTracks: 145
+*[22:37:09.272336][info] AutomaticInitialPairChoice, test I: 265695382, J: 705256877, nbCommonTracks: 87
+[22:37:09.273337][info] AutomaticInitialPairChoice, test I: 265695382, J: 704502137, nbCommonTracks: 1091
+[22:37:09.281344][info] AutomaticInitialPairChoice, test I: 265695382, J: 798973218, nbCommonTracks: 93
+[22:37:09.285351][info] AutomaticInitialPairChoice, test I: 265695382, J: 983357929, nbCommonTracks: 499
+[22:37:09.288351][info] AutomaticInitialPairChoice, test I: 265695382, J: 1059548076, nbCommonTracks: 397
+[22:37:09.291353][info] AutomaticInitialPairChoice, test I: 265695382, J: 1081171077, nbCommonTracks: 662
+[22:37:09.291353][info] AutomaticInitialPairChoice, test I: 265695382, J: 1261438133, nbCommonTracks: 410
+[22:37:09.301363][info] AutomaticInitialPairChoice, test I: 265695382, J: 14815*97607, nbCommonTracks: 171
+[22:37:09.302363][info] AutomaticInitialPairChoice, test I: 265695382, J: 1593085527, nbCommonTracks: 111
+[22:37:09.304365][info] AutomaticInitialPairChoice, test I: 265695382, J: 1887534972, nbCommonTracks: 459
+[22:37:09.306367][info] AutomaticInitialPairChoice, test I: 265695382, J: 2075366909, nbCommonTracks: 289
+[22:37:09.309370][info] AutomaticInitialPairChoice, test I: 382546242, J: 453803718, nbCommonTracks: 431
+[22:37:09.309370][info] AutomaticInitialPairChoice, test I: 382546242, J: 577743018, nbCommonTracks: 159
+[22:37:09.310371][info] AutomaticInitialPairChoice, test I: 382546242, J: 766245630, nbCommonTracks: 220
+*[22:37:09.335393][info] AutomaticInitialPairChoice, test I: 382546242, J: 1481597607, nbCommonTracks: 45
+[22:37:09.335393][info] AutomaticInitialPairChoice, test I: 382546242, J: 1494270653, nbCommonTracks: 245
+[22:37:09.337395][info] AutomaticInitialPairChoice, test I: 382546242, J: 1541257274, nbCommonTracks: 101
+[22:37:09.344402][info] AutomaticInitialPairChoice, test I: 382546242, J: 1718489166, nbCommonTracks: 152
+[22:37:09.346404][info] AutomaticInitialPairChoice, test I: 382546242, J: 1795513753, nbCommonTracks: 125
+[22:37:09.347405][info] AutomaticInitialPairChoice, test I: 382546242, J: 1816125058, nbCommonTracks: 224
+[22:37:09.347405][info] AutomaticInitialPairChoice, test I: 382546242, J: 1861925312, nbCommonTracks: 67
+*[22:37:09.351408][info] AutomaticInitialPairChoice, test I: 382546242, J: 1866976262, nbCommonTracks: 107
+[22:37:09.361417][info] AutomaticInitialPairChoice, test I: 382546242, J: 2121696221, nbCommonTracks: 154
+[22:37:09.363419][info] AutomaticInitialPairChoice, test I: 404557507, J: 405082748, nbCommonTracks: 87
+[22:37:09.363419][info] AutomaticInitialPairChoice, test I: 404557507, J: 485519614, nbCommonTracks: 86
+[22:37:09.364420][info] AutomaticInitialPairChoice, test I: 404557507, J: 734492105, nbCommonTracks: 61
+[22:37:09.366422][info] AutomaticInitialPairChoice, test I: 404557507, J: 771224007, nbCommonTracks: 155
+[22:37:09.373428][info] AutomaticInitialPairChoice, test I: 404557507, J: 798973218, nbCommonTracks: 209
+*[22:37:09.376432][info] AutomaticInitialPairChoice, test I: 404557507, J: 1481597607, nbCommonTracks: 167
+[22:37:09.376432][info] AutomaticInitialPairChoice, test I: 404557507, J: 1261438133, nbCommonTracks: 193
+[22:37:09.376432][info] AutomaticInitialPairChoice, test I: 404557507, J: 1564394763, nbCommonTracks: 114
+[22:37:09.382436][info] AutomaticInitialPairChoice, test I: 404557507, J: 1593085527, nbCommonTracks: 194
+[22:37:09.387441][info] AutomaticInitialPairChoice, test I: 404557507, J: 2030751971, nbCommonTracks: 126
+*[22:37:09.392446][info] AutomaticInitialPairChoice, test I: 404557507, J: 2075366909, nbCommonTracks: 148
+[22:37:09.393447][info] AutomaticInitialPairChoice, test I: 404557507, J: 2048594538, nbCommonTracks: 178
+[22:37:09.395449][info] AutomaticInitialPairChoice, test I: 404557507, J: 2076392030, nbCommonTracks: 88
+[22:37:09.396449][info] AutomaticInitialPairChoice, test I: 405082748, J: 577743018, nbCommonTracks: 95
+[22:37:09.396449][info] AutomaticInitialPairChoice, test I: 405082748, J: 771224007, nbCommonTracks: 113
+[22:37:09.399452][info] AutomaticInitialPairChoice, test I: 405082748, J: 798973218, nbCommonTracks: 247
+[22:37:09.407459][info] AutomaticInitialPairChoice, test I: 405082748, J: 1593085527, nbCommonTracks: 86
+[22:37:09.411463][info] AutomaticInitialPairChoice, test I: 405082748, J: 2030751971, nbCommonTracks: 73*
+[22:37:09.412464][info] AutomaticInitialPairChoice, test I: 405082748, J: 2096417223, nbCommonTracks: 60
+[22:37:09.418469][info] AutomaticInitialPairChoice, test I: 414432701, J: 485519614, nbCommonTracks: 219
+[22:37:09.419470][info] AutomaticInitialPairChoice, test I: 414432701, J: 704502137, nbCommonTracks: 296
+[22:37:09.420471][info] AutomaticInitialPairChoice, test I: 414432701, J: 705256877, nbCommonTracks: 105
+[22:37:09.424475][info] AutomaticInitialPairChoice, test I: 414432701, J: 771224007, nbCommonTracks: 106
+[22:37:09.425476][info] AutomaticInitialPairChoice, test I: 414432701, J: 983357929, nbCommonTracks: 276
+*[22:37:09.427478][info] AutomaticInitialPairChoice, test I: 414432701, J: 1059548076, nbCommonTracks: 373
+[22:37:09.429479][info] AutomaticInitialPairChoice, test I: 414432701, J: 1081171077, nbCommonTracks: 285
+[22:37:09.433483][info] AutomaticInitialPairChoice, test I: 414432701, J: 1216237916, nbCommonTracks: 134
+[22:37:09.438487][info] AutomaticInitialPairChoice, test I: 414432701, J: 1261438133, nbCommonTracks: 343
+[22:37:09.439488][info] AutomaticInitialPairChoice, test I: 414432701, J: 1481597607, nbCommonTracks: 109
+[22:37:09.439488][info] AutomaticInitialPairChoice, test I: 414432701, J: 1580303157, nbCommonTracks: 237
+[22:37:09.440489][info] AutomaticInitialPairChoice, test I: 414432701, J: 1887534972, nbCommonTracks: 298
+*[22:37:09.450499][info] AutomaticInitialPairChoice, test I: 414432701, J: 2048594538, nbCommonTracks: 152
+[22:37:09.456504][info] AutomaticInitialPairChoice, test I: 414432701, J: 2075366909, nbCommonTracks: 708
+[22:37:09.457505][info] AutomaticInitialPairChoice, test I: 436115058, J: 485519614, nbCommonTracks: 129
+[22:37:09.461509][info] AutomaticInitialPairChoice, test I: 436115058, J: 1159701109, nbCommonTracks: 68
+[22:37:09.466513][info] AutomaticInitialPairChoice, test I: 436115058, J: 1216237916, nbCommonTracks: 96
+[22:37:09.467514][info] AutomaticInitialPairChoice, test I: 436115058, J: 1261438133, nbCommonTracks: 125
+[22:37:09.472519][info] AutomaticInitialPairChoice, test I: 436115058, J: 1593085527, nbCommonTracks: 63
+*[22:37:09.473519][info] AutomaticInitialPairChoice, test I: 436115058, J: 1866976262, nbCommonTracks: 53
+[22:37:09.481527][info] AutomaticInitialPairChoice, test I: 436115058, J: 2048594538, nbCommonTracks: 115
+[22:37:09.485530][info] AutomaticInitialPairChoice, test I: 436115058, J: 2075366909, nbCommonTracks: 76
+[22:37:09.486531][info] AutomaticInitialPairChoice, test I: 436115058, J: 2076392030, nbCommonTracks: 294
+[22:37:09.486531][info] AutomaticInitialPairChoice, test I: 441998772, J: 1444320462, nbCommonTracks: 98
+[22:37:09.488533][info] AutomaticInitialPairChoice, test I: 453803718, J: 577743018, nbCommonTracks: 165
+*[22:37:09.491537][info] AutomaticInitialPairChoice, test I: 453803718, J: 766245630, nbCommonTracks: 374
+[22:37:09.492538][info] AutomaticInitialPairChoice, test I: 453803718, J: 1101473849, nbCommonTracks: 52
+[22:37:09.495540][info] AutomaticInitialPairChoice, test I: 453803718, J: 1444320462, nbCommonTracks: 56
+[22:37:09.499543][info] AutomaticInitialPairChoice, test I: 453803718, J: 1494270653, nbCommonTracks: 319
+[22:37:09.499543][info] AutomaticInitialPairChoice, test I: 453803718, J: 1541257274, nbCommonTracks: 140
+[22:37:09.502546][info] AutomaticInitialPairChoice, test I: 453803718, J: 1718489166, nbCommonTracks: 165
+[22:37:09.511554][info] AutomaticInitialPairChoice, test I: 453803718, J: 1795513753, nbCommonTracks: 105
+*[22:37:09.514557][info] AutomaticInitialPairChoice, test I: 453803718, J: 1816125058, nbCommonTracks: 362
+[22:37:09.517560][info] AutomaticInitialPairChoice, test I: 453803718, J: 1866976262, nbCommonTracks: 154
+[22:37:09.522564][info] AutomaticInitialPairChoice, test I: 453803718, J: 2121696221, nbCommonTracks: 181
+[22:37:09.523565][info] AutomaticInitialPairChoice, test I: 461490285, J: 1117478728, nbCommonTracks: 74
+[22:37:09.528570][info] AutomaticInitialPairChoice, test I: 461490285, J: 1259837869, nbCommonTracks: 142
+[22:37:09.531572][info] AutomaticInitialPairChoice, test I: 461490285, J: 1474642507, nbCommonTracks: 55
+*[22:37:09.537578][info] AutomaticInitialPairChoice, test I: 485519614, J: 704502137, nbCommonTracks: 137
+[22:37:09.537578][info] AutomaticInitialPairChoice, test I: 485519614, J: 771224007, nbCommonTracks: 100
+[22:37:09.537578][info] AutomaticInitialPairChoice, test I: 485519614, J: 983357929, nbCommonTracks: 206
+[22:37:09.539580][info] AutomaticInitialPairChoice, test I: 485519614, J: 1059548076, nbCommonTracks: 197
+[22:37:09.541581][info] AutomaticInitialPairChoice, test I: 485519614, J: 1159701109, nbCommonTracks: 117
+[22:37:09.544584][info] AutomaticInitialPairChoice, test I: 485519614, J: 1216237916, nbCommonTracks: 124
+[22:37:09.550590][info] AutomaticInitialPairChoice, test I: 485519614, J: 1261438133, nbCommonTracks: 335
+*[22:37:09.551590][info] AutomaticInitialPairChoice, test I: 485519614, J: 2048594538, nbCommonTracks: 192
+[22:37:09.558597][info] AutomaticInitialPairChoice, test I: 537605326, J: 1259837869, nbCommonTracks: 64
+[22:37:09.559599][info] AutomaticInitialPairChoice, test I: 485519614, J: 2075366909, nbCommonTracks: 366
+[22:37:09.561600][info] AutomaticInitialPairChoice, test I: 537605326, J: 1846734614, nbCommonTracks: 159
+[22:37:09.562601][info] AutomaticInitialPairChoice, test I: 577743018, J: 766245630, nbCommonTracks: 120
+[22:37:09.566604][info] AutomaticInitialPairChoice, test I: 577743018, J: 1494270653, nbCommonTracks: 197
+*[22:37:09.570608][info] AutomaticInitialPairChoice, test I: 577743018, J: 1499966861, nbCommonTracks: 94
+[22:37:09.571609][info] AutomaticInitialPairChoice, test I: 577743018, J: 1816125058, nbCommonTracks: 91
+[22:37:09.574612][info] AutomaticInitialPairChoice, test I: 577743018, J: 2121696221, nbCommonTracks: 105
+[22:37:09.576614][info] AutomaticInitialPairChoice, test I: 669291969, J: 1114184231, nbCommonTracks: 104
+[22:37:09.581618][info] AutomaticInitialPairChoice, test I: 669291969, J: 1969897084, nbCommonTracks: 104
+[22:37:09.586622][info] AutomaticInitialPairChoice, test I: 674892340, J: 1114184231, nbCommonTracks: 62
+[22:37:09.587623][info] AutomaticInitialPairChoice, test I: 675634977, J: 1101473849, nbCommonTracks: 50
+*[22:37:09.593629][info] AutomaticInitialPairChoice, test I: 675634977, J: 1444320462, nbCommonTracks: 55
+[22:37:09.593629][info] AutomaticInitialPairChoice, test I: 675634977, J: 1481597607, nbCommonTracks: 49
+[22:37:09.595631][info] AutomaticInitialPairChoice, test I: 675634977, J: 2030751971, nbCommonTracks: 119
+[22:37:09.598633][info] AutomaticInitialPairChoice, test I: 676757260, J: 705256877, nbCommonTracks: 122
+[22:37:09.599634][info] AutomaticInitialPairChoice, test I: 676757260, J: 1889038201, nbCommonTracks: 72
+[22:37:09.603638][info] AutomaticInitialPairChoice, test I: 676757260, J: 2025875319, nbCommonTracks: 84
+[22:37:09.604639][info] AutomaticInitialPairChoice, test I: 704502137, J: 705256877, nbCommonTracks: 147
+*[22:37:09.606641][info] AutomaticInitialPairChoice, test I: 704502137, J: 983357929, nbCommonTracks: 386
+[22:37:09.606641][info] AutomaticInitialPairChoice, test I: 704502137, J: 1059548076, nbCommonTracks: 332
+[22:37:09.614648][info] AutomaticInitialPairChoice, test I: 704502137, J: 1081171077, nbCommonTracks: 543
+[22:37:09.615649][info] AutomaticInitialPairChoice, test I: 704502137, J: 1261438133, nbCommonTracks: 365
+[22:37:09.626659][info] AutomaticInitialPairChoice, test I: 704502137, J: 1481597607, nbCommonTracks: 285
+[22:37:09.626659][info] AutomaticInitialPairChoice, test I: 704502137, J: 1564394763, nbCommonTracks: 139
+*[22:37:09.628661][info] AutomaticInitialPairChoice, test I: 704502137, J: 1593085527, nbCommonTracks: 88
+[22:37:09.632664][info] AutomaticInitialPairChoice, test I: 704502137, J: 1887534972, nbCommonTracks: 417
+[22:37:09.636668][info] AutomaticInitialPairChoice, test I: 704502137, J: 2048594538, nbCommonTracks: 193
+[22:37:09.637669][info] AutomaticInitialPairChoice, test I: 704502137, J: 2075366909, nbCommonTracks: 417
+[22:37:09.643676][info] AutomaticInitialPairChoice, test I: 705256877, J: 771224007, nbCommonTracks: 80
+[22:37:09.644676][info] AutomaticInitialPairChoice, test I: 705256877, J: 1101473849, nbCommonTracks: 184
+[22:37:09.650681][info] AutomaticInitialPairChoice, test I: 705256877, J: 1117478728, nbCommonTracks: 71
+*[22:37:09.657687][info] AutomaticInitialPairChoice, test I: 705256877, J: 1216237916, nbCommonTracks: 112
+[22:37:09.658689][info] AutomaticInitialPairChoice, test I: 705256877, J: 1474642507, nbCommonTracks: 93
+[22:37:09.659689][info] AutomaticInitialPairChoice, test I: 705256877, J: 1481597607, nbCommonTracks: 394
+[22:37:09.667696][info] AutomaticInitialPairChoice, test I: 705256877, J: 1564394763, nbCommonTracks: 143
+[22:37:09.670700][info] AutomaticInitialPairChoice, test I: 705256877, J: 1567680639, nbCommonTracks: 78
+[22:37:09.671700][info] AutomaticInitialPairChoice, test I: 705256877, J: 1580303157, nbCommonTracks: 154
+*[22:37:09.677706][info] AutomaticInitialPairChoice, test I: 705256877, J: 1593085527, nbCommonTracks: 100
+[22:37:09.678707][info] AutomaticInitialPairChoice, test I: 705256877, J: 1861925312, nbCommonTracks: 50
+[22:37:09.680708][info] AutomaticInitialPairChoice, test I: 705256877, J: 1887534972, nbCommonTracks: 78
+[22:37:09.681709][info] AutomaticInitialPairChoice, test I: 705256877, J: 1889038201, nbCommonTracks: 94
+[22:37:09.687715][info] AutomaticInitialPairChoice, test I: 705256877, J: 2025875319, nbCommonTracks: 270
+[22:37:09.689717][info] AutomaticInitialPairChoice, test I: 705256877, J: 2075366909, nbCommonTracks: 135
+[22:37:09.691718][info] AutomaticInitialPairChoice, test I: 734492105, J: 1117478728, nbCommonTracks: 88
+*[22:37:09.693720][info] AutomaticInitialPairChoice, test I: 734492105, J: 1481597607, nbCommonTracks: 123
+[22:37:09.698725][info] AutomaticInitialPairChoice, test I: 734492105, J: 1564394763, nbCommonTracks: 93
+[22:37:09.703729][info] AutomaticInitialPairChoice, test I: 734492105, J: 1567680639, nbCommonTracks: 100
+[22:37:09.705731][info] AutomaticInitialPairChoice, test I: 734492105, J: 1593085527, nbCommonTracks: 72
+[22:37:09.706732][info] AutomaticInitialPairChoice, test I: 734492105, J: 1861925312, nbCommonTracks: 172
+[22:37:09.706732][info] AutomaticInitialPairChoice, test I: 734492105, J: 2030751971, nbCommonTracks: 71
+*[22:37:09.711737][info] AutomaticInitialPairChoice, test I: 744178710, J: 1101473849, nbCommonTracks: 51
+[22:37:09.712738][info] AutomaticInitialPairChoice, test I: 744178710, J: 1114184231, nbCommonTracks: 187
+[22:37:09.712738][info] AutomaticInitialPairChoice, test I: 744178710, J: 1969897084, nbCommonTracks: 151
+[22:37:09.721746][info] AutomaticInitialPairChoice, test I: 766245630, J: 1101473849, nbCommonTracks: 53
+[22:37:09.722747][info] AutomaticInitialPairChoice, test I: 766245630, J: 1444320462, nbCommonTracks: 60
+[22:37:09.724748][info] AutomaticInitialPairChoice, test I: 766245630, J: 1494270653, nbCommonTracks: 175
+[22:37:09.728752][info] AutomaticInitialPairChoice, test I: 766245630, J: 1499966861, nbCommonTracks: 88
+*[22:37:09.733757][info] AutomaticInitialPairChoice, test I: 766245630, J: 1541257274, nbCommonTracks: 187
+[22:37:09.734757][info] AutomaticInitialPairChoice, test I: 766245630, J: 1567680639, nbCommonTracks: 46
+[22:37:09.735759][info] AutomaticInitialPairChoice, test I: 766245630, J: 1718489166, nbCommonTracks: 181
+[22:37:09.739762][info] AutomaticInitialPairChoice, test I: 766245630, J: 1795513753, nbCommonTracks: 111
+[22:37:09.740763][info] AutomaticInitialPairChoice, test I: 766245630, J: 1816125058, nbCommonTracks: 266
+[22:37:09.743766][info] AutomaticInitialPairChoice, test I: 766245630, J: 1861925312, nbCommonTracks: 78
+*[22:37:09.748770][info] AutomaticInitialPairChoice, test I: 766245630, J: 1866976262, nbCommonTracks: 231
+[22:37:09.748770][info] AutomaticInitialPairChoice, test I: 766245630, J: 2121696221, nbCommonTracks: 215
+[22:37:09.749771][info] AutomaticInitialPairChoice, test I: 771224007, J: 798973218, nbCommonTracks: 100
+[22:37:09.757778][info] AutomaticInitialPairChoice, test I: 771224007, J: 896192825, nbCommonTracks: 86
+[22:37:09.757778][info] AutomaticInitialPairChoice, test I: 771224007, J: 983357929, nbCommonTracks: 91
+[22:37:09.768789][info] AutomaticInitialPairChoice, test I: 771224007, J: 2075366909, nbCommonTracks: 225
+[22:37:09.770790][info*] AutomaticInitialPairChoice, test I: 771224007, J: 2096417223, nbCommonTracks: 174
+[22:37:09.770790][info] AutomaticInitialPairChoice, test I: 798973218, J: 1481597607, nbCommonTracks: 110
+[22:37:09.770790][info] AutomaticInitialPairChoice, test I: 798973218, J: 1499966861, nbCommonTracks: 86
+[22:37:09.772792][info] AutomaticInitialPairChoice, test I: 798973218, J: 1593085527, nbCommonTracks: 295
+[22:37:09.778798][info] AutomaticInitialPairChoice, test I: 798973218, J: 2030751971, nbCommonTracks: 98
+[22:37:09.781800][info] AutomaticInitialPairChoice, test I: 896192825, J: 1481597607, nbCommonTracks: 102
+[22:37:09.785804][info] AutomaticInitialPairChoice, test I: 965715659, J: 1444320462, nbCommonTracks: 94
+*[22:37:09.786805][info] AutomaticInitialPairChoice, test I: 983357929, J: 1059548076, nbCommonTracks: 964
+[22:37:09.787806][info] AutomaticInitialPairChoice, test I: 983357929, J: 1081171077, nbCommonTracks: 278
+[22:37:09.789808][info] AutomaticInitialPairChoice, test I: 983357929, J: 1261438133, nbCommonTracks: 336
+[22:37:09.792811][info] AutomaticInitialPairChoice, test I: 983357929, J: 1846734614, nbCommonTracks: 72
+[22:37:09.800818][info] AutomaticInitialPairChoice, test I: 983357929, J: 1887534972, nbCommonTracks: 294
+[22:37:09.801819][info] AutomaticInitialPairChoice, test I: 983357929, J: 2048594538, nbCommonTracks: 136
+*[22:37:09.806823][info] AutomaticInitialPairChoice, test I: 983357929, J: 2075366909, nbCommonTracks: 489
+[22:37:09.807824][info] AutomaticInitialPairChoice, test I: 1059548076, J: 1081171077, nbCommonTracks: 275
+[22:37:09.810827][info] AutomaticInitialPairChoice, test I: 1059548076, J: 1259837869, nbCommonTracks: 87
+[22:37:09.812829][info] AutomaticInitialPairChoice, test I: 1059548076, J: 1261438133, nbCommonTracks: 304
+[22:37:09.814830][info] AutomaticInitialPairChoice, test I: 1059548076, J: 1580303157, nbCommonTracks: 89
+[22:37:09.816832][info] AutomaticInitialPairChoice, test I: 1059548076, J: 1846734614, nbCommonTracks: 96
+[22:37:09.820836][info] AutomaticInitialPairChoice, test I: 1059548076, J: 1887534972, nbCommonTracks: 384
+[22:37:09.826842][info] AutomaticInitialPairChoice, test I: 1059548076, J: 2075366909, nbCommonTracks: 522
+*[22:37:09.834849][info] AutomaticInitialPairChoice, test I: 1081171077, J: 1261438133, nbCommonTracks: 210
+[22:37:09.839853][info] AutomaticInitialPairChoice, test I: 1081171077, J: 1481597607, nbCommonTracks: 76
+[22:37:09.841855][info] AutomaticInitialPairChoice, test I: 1081171077, J: 1887534972, nbCommonTracks: 685
+[22:37:09.842856][info] AutomaticInitialPairChoice, test I: 1081171077, J: 2075366909, nbCommonTracks: 154
+[22:37:09.844858][info] AutomaticInitialPairChoice, test I: 1101473849, J: 1861925312, nbCommonTracks: 71
+[22:37:09.847861][info] AutomaticInitialPairChoice, test I: 1101473849, J: 1889038201, nbCommonTracks: 94
+[22:37:09.848862][info] AutomaticInitialPairChoice, test I: 1101473849, J: 2025875319, nbCommonTracks: 154
+*[22:37:09.859871][info] AutomaticInitialPairChoice, test I: 1114184231, J: 1580303157, nbCommonTracks: 54
+[22:37:09.866878][info] AutomaticInitialPairChoice, test I: 1114184231, J: 1969897084, nbCommonTracks: 213
+[22:37:09.866878][info] AutomaticInitialPairChoice, test I: 1114184231, J: 2140944369, nbCommonTracks: 79
+[22:37:09.872883][info] AutomaticInitialPairChoice, test I: 1117478728, J: 1474642507, nbCommonTracks: 185
+[22:37:09.872883][info] AutomaticInitialPairChoice, test I: 1117478728, J: 1481597607, nbCommonTracks: 69
+[22:37:09.874885][info] AutomaticInitialPairChoice, test I: 1117478728, J: 1564394763, nbCommonTracks: 86
+*[22:37:09.875886][info] AutomaticInitialPairChoice, test I: 1117478728, J: 2025875319, nbCommonTracks: 85
+[22:37:09.876887][info] AutomaticInitialPairChoice, test I: 1159701109, J: 1742181051, nbCommonTracks: 49
+[22:37:09.878889][info] AutomaticInitialPairChoice, test I: 1202276389, J: 1257965185, nbCommonTracks: 93
+[22:37:09.884894][info] AutomaticInitialPairChoice, test I: 1202276389, J: 1567680639, nbCommonTracks: 105
+[22:37:09.886896][info] AutomaticInitialPairChoice, test I: 1216237916, J: 1261438133, nbCommonTracks: 105
+[22:37:09.895904][info] AutomaticInitialPairChoice, test I: 1216237916, J: 1392468951, nbCommonTracks: 83
+[22:37:09.896905][info] AutomaticInitialPairChoice, test I: 1216237916, J: 1481597607, nbCommonTracks: 112
+*[22:37:09.899908][info] AutomaticInitialPairChoice, test I: 1216237916, J: 1580303157, nbCommonTracks: 152
+[22:37:09.901910][info] AutomaticInitialPairChoice, test I: 1216237916, J: 2075366909, nbCommonTracks: 185
+[22:37:09.901910][info] AutomaticInitialPairChoice, test I: 1257965185, J: 1593085527, nbCommonTracks: 62
+[22:37:09.902911][info] AutomaticInitialPairChoice, test I: 1259837869, J: 1580303157, nbCommonTracks: 96
+[22:37:09.902911][info] AutomaticInitialPairChoice, test I: 1259837869, J: 1846734614, nbCommonTracks: 171
+[22:37:09.906914][info] AutomaticInitialPairChoice, test I: 1259837869, J: 1887534972, nbCommonTracks: 93
+*[22:37:09.910918][info] AutomaticInitialPairChoice, test I: 1261438133, J: 1481597607, nbCommonTracks: 98
+[22:37:09.914922][info] AutomaticInitialPairChoice, test I: 1261438133, J: 1866976262, nbCommonTracks: 73
+[22:37:09.916923][info] AutomaticInitialPairChoice, test I: 1261438133, J: 1887534972, nbCommonTracks: 147
+[22:37:09.922929][info] AutomaticInitialPairChoice, test I: 1261438133, J: 2048594538, nbCommonTracks: 203
+[22:37:09.926933][info] AutomaticInitialPairChoice, test I: 1261438133, J: 2075366909, nbCommonTracks: 691
+[22:37:09.927934][info] AutomaticInitialPairChoice, test I: 1261438133, J: 2076392030, nbCommonTracks: 96
+[22:37:09.928934][info] AutomaticInitialPairChoice, test I: 1387747476, J: 1481597607, nbCommonTracks: 49
+*[22:37:09.932938][info] AutomaticInitialPairChoice, test I: 1387747476, J: 1718489166, nbCommonTracks: 42
+[22:37:09.934940][info] AutomaticInitialPairChoice, test I: 1387747476, J: 1861925312, nbCommonTracks: 53
+[22:37:09.935941][info] AutomaticInitialPairChoice, test I: 1387747476, J: 1866976262, nbCommonTracks: 38
+[22:37:09.938944][info] AutomaticInitialPairChoice, test I: 1392468951, J: 1861925312, nbCommonTracks: 61
+[22:37:09.939945][info] AutomaticInitialPairChoice, test I: 1392468951, J: 1866976262, nbCommonTracks: 57
+*[22:37:09.941946][info] AutomaticInitialPairChoice, test I: 1474642507, J: 1564394763, nbCommonTracks: 100
+[22:37:09.941946][info] AutomaticInitialPairChoice, test I: 1474642507, J: 1887534972, nbCommonTracks: 79
+[22:37:09.948953][info] AutomaticInitialPairChoice, test I: 1481597607, J: 1499966861, nbCommonTracks: 57
+[22:37:09.955959][info] AutomaticInitialPairChoice, test I: 1481597607, J: 1564394763, nbCommonTracks: 213
+[22:37:09.956960][info] AutomaticInitialPairChoice, test I: 1481597607, J: 1567680639, nbCommonTracks: 353
+[22:37:09.957961][info] AutomaticInitialPairChoice, test I: 1481597607, J: 1580303157, nbCommonTracks: 115
+[22:37:09.962965][info] AutomaticInitialPairChoice, test I: 1481597607, J: 1593085527, nbCommonTracks: 233
+[22:37:09.963967][info] AutomaticInitialPairChoice, test I: 1481597607, J: 1861925312, nbCommonTracks: 103
+*[22:37:09.966969][info] AutomaticInitialPairChoice, test I: 1481597607, J: 2025875319, nbCommonTracks: 58
+[22:37:09.969972][info] AutomaticInitialPairChoice, test I: 1481597607, J: 2048594538, nbCommonTracks: 119
+[22:37:09.971974][info] AutomaticInitialPairChoice, test I: 1481597607, J: 2075366909, nbCommonTracks: 180
+[22:37:09.975977][info] AutomaticInitialPairChoice, test I: 1481597607, J: 2076392030, nbCommonTracks: 76
+[22:37:09.983985][info] AutomaticInitialPairChoice, test I: 1494270653, J: 1795513753, nbCommonTracks: 90
+[22:37:09.989990][info] AutomaticInitialPairChoice, test I: 1494270653, J: 1816125058, nbCommonTracks: 174
+[22:37:09.989990][info] AutomaticInitialPairChoice, test I: 1494270653, J: 2121696221, nbCommonTracks: 201
+*[22:37:09.993994][info] AutomaticInitialPairChoice, test I: 1499966861, J: 1861925312, nbCommonTracks: 62
+[22:37:09.994995][info] AutomaticInitialPairChoice, test I: 1499966861, J: 1866976262, nbCommonTracks: 55
+[22:37:09.996997][info] AutomaticInitialPairChoice, test I: 1541257274, J: 1718489166, nbCommonTracks: 224
+[22:37:10.002001][info] AutomaticInitialPairChoice, test I: 1541257274, J: 1795513753, nbCommonTracks: 156
+[22:37:10.004003][info] AutomaticInitialPairChoice, test I: 1541257274, J: 1816125058, nbCommonTracks: 223
+[22:37:10.005004][info] AutomaticInitialPairChoice, test I: 1541257274, J: 1866976262, nbCommonTracks: 202*
+[22:37:10.006005][info] AutomaticInitialPairChoice, test I: 1541257274, J: 2076392030, nbCommonTracks: 84
+[22:37:10.010008][info] AutomaticInitialPairChoice, test I: 1541257274, J: 2121696221, nbCommonTracks: 277
+[22:37:10.011010][info] AutomaticInitialPairChoice, test I: 1564394763, J: 1593085527, nbCommonTracks: 107
+[22:37:10.012011][info] AutomaticInitialPairChoice, test I: 1564394763, J: 2075366909, nbCommonTracks: 118
+[22:37:10.020018][info] AutomaticInitialPairChoice, test I: 1567680639, J: 1861925312, nbCommonTracks: 91
+[22:37:10.022019][info] AutomaticInitialPairChoice, test I: 1567680639, J: 2025875319, nbCommonTracks: 92
+[22:37:10.025022][info] AutomaticInitialPairChoice, test I: 1580303157, J: 1846734614, nbCommonTracks: 67
+*[22:37:10.029026][info] AutomaticInitialPairChoice, test I: 1580303157, J: 2075366909, nbCommonTracks: 198
+[22:37:10.033029][info] AutomaticInitialPairChoice, test I: 1593085527, J: 2030751971, nbCommonTracks: 71
+[22:37:10.034030][info] AutomaticInitialPairChoice, test I: 1593085527, J: 2048594538, nbCommonTracks: 111
+[22:37:10.035031][info] AutomaticInitialPairChoice, test I: 1593085527, J: 2075366909, nbCommonTracks: 82
+[22:37:10.044040][info] AutomaticInitialPairChoice, test I: 1593085527, J: 2076392030, nbCommonTracks: 88*
+[22:37:10.044040][info] AutomaticInitialPairChoice, test I: 1718489166, J: 1816125058, nbCommonTracks: 135
+[22:37:10.044040][info] AutomaticInitialPairChoice, test I: 1718489166, J: 1795513753, nbCommonTracks: 484
+[22:37:10.046041][info] AutomaticInitialPairChoice, test I: 1718489166, J: 1866976262, nbCommonTracks: 537
+[22:37:10.048043][info] AutomaticInitialPairChoice, test I: 1718489166, J: 2076392030, nbCommonTracks: 78
+[22:37:10.051046][info] AutomaticInitialPairChoice, test I: 1718489166, J: 2121696221, nbCommonTracks: 214
+[22:37:10.051046][info] AutomaticInitialPairChoice, test I: 1795513753, J: 1816125058, nbCommonTracks: 92
+[22:37:10.052047][info] AutomaticInitialPairChoice, test I: 1795513753, J: 1866976262, nbCommonTracks: 239
+[22:37:10.058052][info] AutomaticInitialPairChoice, test I: 1795513753, J: 2121696221, nbCommonTracks: 194
+*[22:37:10.063057][info] AutomaticInitialPairChoice, test I: 1816125058, J: 1866976262, nbCommonTracks: 118
+[22:37:10.065059][info] AutomaticInitialPairChoice, test I: 1816125058, J: 2121696221, nbCommonTracks: 208
+[22:37:10.067061][info] AutomaticInitialPairChoice, test I: 1866976262, J: 2076392030, nbCommonTracks: 58
+[22:37:10.074067][info] AutomaticInitialPairChoice, test I: 1866976262, J: 2121696221, nbCommonTracks: 175
+[22:37:10.075067][info] AutomaticInitialPairChoice, test I: 1889038201, J: 2025875319, nbCommonTracks: 176
+[22:37:10.075067][info] AutomaticInitialPairChoice, test I: 1887534972, J: 2075366909, nbCommonTracks: 141
+[22:37:10.080072][info] AutomaticInitialPairChoice, test I: 2048594538, J: 2075366909, nbCommonTracks: 201
+*
+[22:37:10.088080][info] AutomaticInitialPairChoice, test I: 2048594538, J: 2076392030, nbCommonTracks: 253
+[22:37:10.129117][info] Initial pair is:
+  A - view id: 414432701 - filepath: C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1476.JPG
+  B - view id: 2075366909 - filepath: C:/Users/maxch/Documents/GitHub/RoamerPipeline/PhotoSets/EthanPic2/IMG_1475.JPG
+[22:37:10.131119][info] 708 matches in the image pair for the initial pose estimation.
+[22:37:10.489445][info] Remove outliers: 
+	- # outliers residual error: 0
+	- # outliers angular error: 0
+[22:37:10.611557][info] Initial pair is: 414432701, 2075366909
+[22:37:10.612558][info] Begin Incremental Reconstruction:
+	- mode: SfM augmentation
+	- # images in input: 77
+	- # images in resection: 75
+	- # landmarks in input: 695
+	- # cameras already calibrated: 2
+[22:37:10.613559][info] Update Reconstruction:
+	- resection id: 0
+	- # images in the resection group: 1
+	- # images remaining: 75
+[22:37:10.614559][info] Robust Resection of view: 1059548076
+[22:37:10.658599][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 15.461
+	- # points used for resection: 166
+	- # points validated by robust resection: 157
+[22:37:10.900820][info] Remove outliers: 
+	- # outliers residual error: 0
+	- # outliers angular error: 0
+[22:37:10.901821][info] Update Reconstruction complete: 
+	- # cameras calibrated: 3
+	- # landmarks: 1187
+[22:37:10.902822][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 74
+[22:37:10.903823][info] Robust Resection of view: 1261438133
+[22:37:10.987899][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 2.44584
+	- # points used for resection: 313
+	- # points validated by robust resection: 307
+[22:37:11.151048][info] Remove outliers: 
+	- # outliers residual error: 0
+	- # outliers angular error: 0
+[22:37:11.152049][info] Update Reconstruction complete: 
+	- # cameras calibrated: 4
+	- # landmarks: 1822
+[22:37:11.154051][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 73
+[22:37:11.155052][info] Robust Resection of view: 983357929
+[22:37:11.289174][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 1.92548
+	- # points used for resection: 531
+	- # points validated by robust resection: 501
+[22:37:11.535398][info] Remove outliers: 
+	- # outliers residual error: 0
+	- # outliers angular error: 0
+[22:37:11.536399][info] Update Reconstruction complete: 
+	- # cameras calibrated: 5
+	- # landmarks: 2582
+[22:37:11.538401][info] Update Reconstruction:
+	- resection id: 3
+	- # images in the resection group: 1
+	- # images remaining: 72
+[22:37:11.539402][info] Robust Resection of view: 265695382
+[22:37:11.673524][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 2.58564
+	- # points used for resection: 537
+	- # points validated by robust resection: 493
+[22:37:11.940767][info] Remove outliers: 
+	- # outliers residual error: 2
+	- # outliers angular error: 0
+[22:37:11.941768][info] Update Reconstruction complete: 
+	- # cameras calibrated: 6
+	- # landmarks: 2979
+[22:37:11.943770][info] Update Reconstruction:
+	- resection id: 4
+	- # images in the resection group: 1
+	- # images remaining: 71
+[22:37:11.945772][info] Robust Resection of view: 704502137
+[22:37:12.112925][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 2.26855
+	- # points used for resection: 690
+	- # points validated by robust resection: 659
+[22:37:12.381169][info] Remove outliers: 
+	- # outliers residual error: 0
+	- # outliers angular error: 0
+[22:37:12.382169][info] Update Reconstruction complete: 
+	- # cameras calibrated: 7
+	- # landmarks: 3846
+[22:37:12.384171][info] Update Reconstruction:
+	- resection id: 5
+	- # images in the resection group: 1
+	- # images remaining: 70
+[22:37:12.386173][info] Robust Resection of view: 1887534972
+[22:37:12.531306][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 2.61039
+	- # points used for resection: 575
+	- # points validated by robust resection: 548
+[22:37:12.822571][info] Remove outliers: 
+	- # outliers residual error: 0
+	- # outliers angular error: 0
+[22:37:12.823572][info] Update Reconstruction complete: 
+	- # cameras calibrated: 8
+	- # landmarks: 4297
+[22:37:12.825574][info] Update Reconstruction:
+	- resection id: 6
+	- # images in the resection group: 1
+	- # images remaining: 69
+[22:37:12.827575][info] Robust Resection of view: 121147830
+[22:37:12.990725][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 2.32984
+	- # points used for resection: 665
+	- # points validated by robust resection: 616
+[22:37:13.400097][info] Remove outliers: 
+	- # outliers residual error: 2
+	- # outliers angular error: 0
+[22:37:13.401098][info] Update Reconstruction complete: 
+	- # cameras calibrated: 9
+	- # landmarks: 4823
+[22:37:13.403100][info] Update Reconstruction:
+	- resection id: 7
+	- # images in the resection group: 1
+	- # images remaining: 68
+[22:37:13.405102][info] Robust Resection of view: 1081171077
+[22:37:13.613293][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 2.57774
+	- # points used for resection: 867
+	- # points validated by robust resection: 836
+[22:37:14.020662][info] Remove outliers: 
+	- # outliers residual error: 0
+	- # outliers angular error: 0
+[22:37:14.021663][info] Update Reconstruction complete: 
+	- # cameras calibrated: 10
+	- # landmarks: 5187
+[22:37:14.024666][info] Update Reconstruction:
+	- resection id: 8
+	- # images in the resection group: 1
+	- # images remaining: 67
+[22:37:14.025668][info] Robust Resection of view: 485519614
+[22:37:14.137770][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 2.47015
+	- # points used for resection: 422
+	- # points validated by robust resection: 408
+[22:37:14.477078][info] Remove outliers: 
+	- # outliers residual error: 0
+	- # outliers angular error: 0
+[22:37:14.478079][info] Update Reconstruction complete: 
+	- # cameras calibrated: 11
+	- # landmarks: 5464
+[22:37:14.481082][info] Update Reconstruction:
+	- resection id: 9
+	- # images in the resection group: 1
+	- # images remaining: 66
+[22:37:14.482083][info] Robust Resection of view: 2048594538
+[22:37:14.567160][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 3.41395
+	- # points used for resection: 319
+	- # points validated by robust resection: 308
+[22:37:14.989545][info] Remove outliers: 
+	- # outliers residual error: 3
+	- # outliers angular error: 0
+[22:37:14.990546][info] Update Reconstruction complete: 
+	- # cameras calibrated: 12
+	- # landmarks: 5682
+[22:37:14.993549][info] Update Reconstruction:
+	- resection id: 10
+	- # images in the resection group: 1
+	- # images remaining: 65
+[22:37:14.995551][info] Robust Resection of view: 404557507
+[22:37:15.052603][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 3.22323
+	- # points used for resection: 213
+	- # points validated by robust resection: 200
+[22:37:15.414933][info] Remove outliers: 
+	- # outliers residual error: 1
+	- # outliers angular error: 0
+[22:37:15.415934][info] Update Reconstruction complete: 
+	- # cameras calibrated: 13
+	- # landmarks: 5932
+[22:37:15.418937][info] Update Reconstruction:
+	- resection id: 11
+	- # images in the resection group: 1
+	- # images remaining: 64
+[22:37:15.419937][info] Robust Resection of view: 1481597607
+[22:37:15.513022][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 1.57261
+	- # points used for resection: 344
+	- # points validated by robust resection: 332
+[22:37:15.853332][info] Remove outliers: 
+	- # outliers residual error: 4
+	- # outliers angular error: 0
+[22:37:15.855334][info] Update Reconstruction complete: 
+	- # cameras calibrated: 14
+	- # landmarks: 6128
+[22:37:15.857336][info] Update Reconstruction:
+	- resection id: 12
+	- # images in the resection group: 1
+	- # images remaining: 63
+[22:37:15.859338][info] Robust Resection of view: 705256877
+[22:37:15.939411][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 1.88612
+	- # points used for resection: 296
+	- # points validated by robust resection: 290
+[22:37:16.307746][info] Remove outliers: 
+	- # outliers residual error: 7
+	- # outliers angular error: 0
+[22:37:16.308747][info] Update Reconstruction complete: 
+	- # cameras calibrated: 15
+	- # landmarks: 6399
+[22:37:16.311750][info] Update Reconstruction:
+	- resection id: 13
+	- # images in the resection group: 1
+	- # images remaining: 62
+[22:37:16.313752][info] Robust Resection of view: 1564394763
+[22:37:16.369803][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 2.39895
+	- # points used for resection: 208
+	- # points validated by robust resection: 196
+[22:37:16.685090][info] Remove outliers: 
+	- # outliers residual error: 9
+	- # outliers angular error: 0
+[22:37:16.687093][info] Update Reconstruction complete: 
+	- # cameras calibrated: 16
+	- # landmarks: 6587
+[22:37:16.690095][info] Update Reconstruction:
+	- resection id: 14
+	- # images in the resection group: 1
+	- # images remaining: 61
+[22:37:16.692097][info] Robust Resection of view: 771224007
+[22:37:16.750149][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 4.23708
+	- # points used for resection: 216
+	- # points validated by robust resection: 210
+[22:37:17.134500][info] Remove outliers: 
+	- # outliers residual error: 11
+	- # outliers angular error: 0
+[22:37:17.136502][info] Update Reconstruction complete: 
+	- # cameras calibrated: 17
+	- # landmarks: 6873
+[22:37:17.139504][info] Update Reconstruction:
+	- resection id: 15
+	- # images in the resection group: 1
+	- # images remaining: 60
+[22:37:17.140505][info] Robust Resection of view: 1593085527
+[22:37:17.213572][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 1.3487
+	- # points used for resection: 275
+	- # points validated by robust resection: 245
+[22:37:17.724037][info] Remove outliers: 
+	- # outliers residual error: 24
+	- # outliers angular error: 0
+[22:37:17.726039][info] Update Reconstruction complete: 
+	- # cameras calibrated: 18
+	- # landmarks: 7010
+[22:37:17.728041][info] Update Reconstruction:
+	- resection id: 16
+	- # images in the resection group: 1
+	- # images remaining: 59
+[22:37:17.730042][info] Robust Resection of view: 798973218
+[22:37:17.793100][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 2.55321
+	- # points used for resection: 233
+	- # points validated by robust resection: 221
+[22:37:18.183455][info] Remove outliers: 
+	- # outliers residual error: 26
+	- # outliers angular error: 0
+[22:37:18.185457][info] Update Reconstruction complete: 
+	- # cameras calibrated: 19
+	- # landmarks: 7193
+[22:37:18.188460][info] Update Reconstruction:
+	- resection id: 17
+	- # images in the resection group: 1
+	- # images remaining: 58
+[22:37:18.190462][info] Robust Resection of view: 405082748
+[22:37:18.228497][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 2.60545
+	- # points used for resection: 142
+	- # points validated by robust resection: 129
+[22:37:18.700927][info] Remove outliers: 
+	- # outliers residual error: 15
+	- # outliers angular error: 0
+[22:37:18.702929][info] Update Reconstruction complete: 
+	- # cameras calibrated: 20
+	- # landmarks: 7370
+[22:37:18.704931][info] Update Reconstruction:
+	- resection id: 18
+	- # images in the resection group: 1
+	- # images remaining: 57
+[22:37:18.706932][info] Robust Resection of view: 2030751971
+[22:37:18.733957][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 11.7242
+	- # points used for resection: 97
+	- # points validated by robust resection: 95
+[22:37:19.331501][info] Remove outliers: 
+	- # outliers residual error: 27
+	- # outliers angular error: 0
+[22:37:19.332502][info] Update Reconstruction complete: 
+	- # cameras calibrated: 21
+	- # landmarks: 7505
+[22:37:19.335505][info] Update Reconstruction:
+	- resection id: 19
+	- # images in the resection group: 1
+	- # images remaining: 56
+[22:37:19.337507][info] Robust Resection of view: 215382873
+[22:37:19.357525][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 11.0399
+	- # points used for resection: 69
+	- # points validated by robust resection: 57
+[22:37:19.764896][info] Remove outliers: 
+	- # outliers residual error: 23
+	- # outliers angular error: 0
+[22:37:19.766898][info] Update Reconstruction complete: 
+	- # cameras calibrated: 22
+	- # landmarks: 7573
+[22:37:19.769901][info] Update Reconstruction:
+	- resection id: 20
+	- # images in the resection group: 1
+	- # images remaining: 55
+[22:37:19.771903][info] Robust Resection of view: 1216237916
+[22:37:19.839965][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 1.96847
+	- # points used for resection: 258
+	- # points validated by robust resection: 245
+[22:37:20.339420][info] Remove outliers: 
+	- # outliers residual error: 3
+	- # outliers angular error: 0
+[22:37:20.341422][info] Update Reconstruction complete: 
+	- # cameras calibrated: 23
+	- # landmarks: 7701
+[22:37:20.344425][info] Update Reconstruction:
+	- resection id: 21
+	- # images in the resection group: 1
+	- # images remaining: 54
+[22:37:20.346426][info] Robust Resection of view: 222897565
+[22:37:20.432505][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 1.67292
+	- # points used for resection: 327
+	- # points validated by robust resection: 316
+[22:37:21.005026][info] Remove outliers: 
+	- # outliers residual error: 1
+	- # outliers angular error: 0
+[22:37:21.007028][info] Update Reconstruction complete: 
+	- # cameras calibrated: 24
+	- # landmarks: 7876
+[22:37:21.010032][info] Update Reconstruction:
+	- resection id: 22
+	- # images in the resection group: 1
+	- # images remaining: 53
+[22:37:21.013034][info] Robust Resection of view: 1580303157
+[22:37:21.108121][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 1.77528
+	- # points used for resection: 361
+	- # points validated by robust resection: 343
+[22:37:21.575546][info] Remove outliers: 
+	- # outliers residual error: 1
+	- # outliers angular error: 0
+[22:37:21.577548][info] Update Reconstruction complete: 
+	- # cameras calibrated: 25
+	- # landmarks: 8070
+[22:37:21.580551][info] Update Reconstruction:
+	- resection id: 23
+	- # images in the resection group: 1
+	- # images remaining: 52
+[22:37:21.582553][info] Robust Resection of view: 436115058
+[22:37:21.630596][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 2.02624
+	- # points used for resection: 181
+	- # points validated by robust resection: 170
+[22:37:22.028959][info] Remove outliers: 
+	- # outliers residual error: 7
+	- # outliers angular error: 0
+[22:37:22.030961][info] Update Reconstruction complete: 
+	- # cameras calibrated: 26
+	- # landmarks: 8182
+[22:37:22.033964][info] Update Reconstruction:
+	- resection id: 24
+	- # images in the resection group: 1
+	- # images remaining: 51
+[22:37:22.035966][info] Robust Resection of view: 2076392030
+[22:37:22.093018][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 1.90639
+	- # points used for resection: 215
+	- # points validated by robust resection: 205
+[22:37:22.557441][info] Remove outliers: 
+	- # outliers residual error: 8
+	- # outliers angular error: 0
+[22:37:22.559443][info] Update Reconstruction complete: 
+	- # cameras calibrated: 27
+	- # landmarks: 8455
+[22:37:22.562446][info] Update Reconstruction:
+	- resection id: 25
+	- # images in the resection group: 1
+	- # images remaining: 50
+[22:37:22.564447][info] Robust Resection of view: 577743018
+[22:37:22.583465][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 12.5567
+	- # points used for resection: 65
+	- # points validated by robust resection: 55
+[22:37:23.132965][info] Remove outliers: 
+	- # outliers residual error: 18
+	- # outliers angular error: 0
+[22:37:23.134967][info] Update Reconstruction complete: 
+	- # cameras calibrated: 28
+	- # landmarks: 8635
+[22:37:23.137970][info] Update Reconstruction:
+	- resection id: 26
+	- # images in the resection group: 1
+	- # images remaining: 49
+[22:37:23.139972][info] Robust Resection of view: 1499966861
+[22:37:23.164994][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 14.3175
+	- # points used for resection: 89
+	- # points validated by robust resection: 77
+[22:37:23.784559][info] Remove outliers: 
+	- # outliers residual error: 28
+	- # outliers angular error: 0
+[22:37:23.786561][info] Update Reconstruction complete: 
+	- # cameras calibrated: 29
+	- # landmarks: 8734
+[22:37:23.789564][info] Update Reconstruction:
+	- resection id: 27
+	- # images in the resection group: 1
+	- # images remaining: 48
+[22:37:23.791565][info] Robust Resection of view: 218127765
+[22:37:23.826598][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 9.83884
+	- # points used for resection: 129
+	- # points validated by robust resection: 110
+[22:37:24.465179][info] Remove outliers: 
+	- # outliers residual error: 35
+	- # outliers angular error: 0
+[22:37:24.467181][info] Update Reconstruction complete: 
+	- # cameras calibrated: 30
+	- # landmarks: 8930
+[22:37:24.470184][info] Update Reconstruction:
+	- resection id: 28
+	- # images in the resection group: 5
+	- # images remaining: 47
+[22:37:24.472186][info] Robust Resection of view: 453803718
+[22:37:24.472186][info] Robust Resection of view: 1866976262
+[22:37:24.473187][info] Robust Resection of view: 766245630
+[22:37:24.473187][info] Robust Resection of view: 1718489166
+[22:37:24.473187][info] Robust Resection of view: 382546242
+[22:37:24.499210][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 28.4541
+	- # points used for resection: 88
+	- # points validated by robust resection: 71
+[22:37:24.500211][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 23.1018
+	- # points used for resection: 97
+	- # points validated by robust resection: 73
+[22:37:24.506217][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 9.98427
+	- # points used for resection: 117
+	- # points validated by robust resection: 85
+[22:37:24.511222][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 8.33444
+	- # points used for resection: 138
+	- # points validated by robust resection: 116
+[22:37:24.518228][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 6.0599
+	- # points used for resection: 168
+	- # points validated by robust resection: 137
+[22:37:25.284926][info] Remove outliers: 
+	- # outliers residual error: 176
+	- # outliers angular error: 0
+[22:37:25.967549][info] Remove outliers: 
+	- # outliers residual error: 18
+	- # outliers angular error: 0
+[22:37:25.970551][info] Update Reconstruction complete: 
+	- # cameras calibrated: 35
+	- # landmarks: 10089
+[22:37:25.973554][info] Update Reconstruction:
+	- resection id: 29
+	- # images in the resection group: 7
+	- # images remaining: 42
+[22:37:25.976557][info] Robust Resection of view: 1816125058
+[22:37:25.976557][info] Robust Resection of view: 20630899
+[22:37:25.976557][info] Robust Resection of view: 1795513753
+[22:37:25.977558][info] Robust Resection of view: 1541257274
+[22:37:25.977558][info] Robust Resection of view: 2121696221
+[22:37:25.977558][info] Robust Resection of view: 1494270653
+[22:37:25.977558][info] Robust Resection of view: 1861925312
+[22:37:26.005583][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 15.9801
+	- # points used for resection: 104
+	- # points validated by robust resection: 65
+[22:37:26.007585][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 86.6538
+	- # points used for resection: 102
+	- # points validated by robust resection: 49
+[22:37:26.044619][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 7.00917
+	- # points used for resection: 249
+	- # points validated by robust resection: 205
+[22:37:26.051625][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 8.29387
+	- # points used for resection: 277
+	- # points validated by robust resection: 224
+[22:37:26.053627][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 7.25168
+	- # points used for resection: 283
+	- # points validated by robust resection: 241
+[22:37:26.056629][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 6.56024
+	- # points used for resection: 290
+	- # points validated by robust resection: 259
+[22:37:26.071643][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 5.08646
+	- # points used for resection: 350
+	- # points validated by robust resection: 315
+[22:37:26.956449][info] Remove outliers: 
+	- # outliers residual error: 334
+	- # outliers angular error: 0
+[22:37:27.649080][info] Remove outliers: 
+	- # outliers residual error: 37
+	- # outliers angular error: 0
+[22:37:27.656087][info] Poses removed from the reconstruction: {1861925312}
+[22:37:27.656087][info] Update Reconstruction complete: 
+	- # cameras calibrated: 41
+	- # landmarks: 10884
+[22:37:27.660090][info] Update Reconstruction:
+	- resection id: 30
+	- # images in the resection group: 1
+	- # images remaining: 35
+[22:37:27.662092][info] Robust Resection of view: 1474642507
+[22:37:27.682110][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 3.98662
+	- # points used for resection: 67
+	- # points validated by robust resection: 60
+[22:37:28.453813][info] Remove outliers: 
+	- # outliers residual error: 35
+	- # outliers angular error: 0
+[22:37:28.455816][info] Update Reconstruction complete: 
+	- # cameras calibrated: 42
+	- # landmarks: 11028
+[22:37:28.459819][info] Update Reconstruction:
+	- resection id: 31
+	- # images in the resection group: 1
+	- # images remaining: 34
+[22:37:28.462822][info] Robust Resection of view: 896192825
+[22:37:28.486844][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 4.98519
+	- # points used for resection: 86
+	- # points validated by robust resection: 78
+[22:37:29.196490][info] Remove outliers: 
+	- # outliers residual error: 33
+	- # outliers angular error: 4
+[22:37:29.199493][info] Update Reconstruction complete: 
+	- # cameras calibrated: 43
+	- # landmarks: 11076
+[22:37:29.202496][info] Update Reconstruction:
+	- resection id: 32
+	- # images in the resection group: 1
+	- # images remaining: 33
+[22:37:29.205498][info] Robust Resection of view: 1567680639
+[22:37:29.235526][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 5.85164
+	- # points used for resection: 113
+	- # points validated by robust resection: 58
+[22:37:29.883116][info] Remove outliers: 
+	- # outliers residual error: 41
+	- # outliers angular error: 1
+[22:37:29.886118][info] Update Reconstruction complete: 
+	- # cameras calibrated: 44
+	- # landmarks: 11257
+[22:37:29.890122][info] Update Reconstruction:
+	- resection id: 33
+	- # images in the resection group: 1
+	- # images remaining: 32
+[22:37:29.892124][info] Robust Resection of view: 734492105
+[22:37:29.933161][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 17.9884
+	- # points used for resection: 153
+	- # points validated by robust resection: 124
+[22:37:30.715874][info] Remove outliers: 
+	- # outliers residual error: 63
+	- # outliers angular error: 0
+[22:37:31.268379][info] Remove outliers: 
+	- # outliers residual error: 10
+	- # outliers angular error: 0
+[22:37:31.270380][info] Update Reconstruction complete: 
+	- # cameras calibrated: 45
+	- # landmarks: 11362
+[22:37:31.273383][info] Update Reconstruction:
+	- resection id: 34
+	- # images in the resection group: 1
+	- # images remaining: 31
+[22:37:31.276386][info] Robust Resection of view: 1444320462
+[22:37:31.295403][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 7.69596
+	- # points used for resection: 66
+	- # points validated by robust resection: 58
+[22:37:31.845905][info] Remove outliers: 
+	- # outliers residual error: 17
+	- # outliers angular error: 0
+[22:37:31.848907][info] Update Reconstruction complete: 
+	- # cameras calibrated: 46
+	- # landmarks: 11395
+[22:37:31.852911][info] Update Reconstruction:
+	- resection id: 35
+	- # images in the resection group: 1
+	- # images remaining: 30
+[22:37:31.854912][info] Robust Resection of view: 1117478728
+[22:37:31.888944][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 4.46911
+	- # points used for resection: 126
+	- # points validated by robust resection: 109
+[22:37:32.466470][info] Remove outliers: 
+	- # outliers residual error: 28
+	- # outliers angular error: 0
+[22:37:32.469472][info] Update Reconstruction complete: 
+	- # cameras calibrated: 47
+	- # landmarks: 11580
+[22:37:32.473476][info] Update Reconstruction:
+	- resection id: 36
+	- # images in the resection group: 1
+	- # images remaining: 29
+[22:37:32.475479][info] Robust Resection of view: 1259837869
+[22:37:32.516515][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 3.19202
+	- # points used for resection: 151
+	- # points validated by robust resection: 140
+[22:37:33.133077][info] Remove outliers: 
+	- # outliers residual error: 7
+	- # outliers angular error: 0
+[22:37:33.136080][info] Update Reconstruction complete: 
+	- # cameras calibrated: 48
+	- # landmarks: 11652
+[22:37:33.140084][info] Update Reconstruction:
+	- resection id: 37
+	- # images in the resection group: 1
+	- # images remaining: 28
+[22:37:33.142086][info] Robust Resection of view: 1846734614
+[22:37:33.168109][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 4.51814
+	- # points used for resection: 94
+	- # points validated by robust resection: 88
+[22:37:33.840722][info] Remove outliers: 
+	- # outliers residual error: 3
+	- # outliers angular error: 0
+[22:37:33.843725][info] Update Reconstruction complete: 
+	- # cameras calibrated: 49
+	- # landmarks: 11850
+[22:37:33.846728][info] Update Reconstruction:
+	- resection id: 38
+	- # images in the resection group: 1
+	- # images remaining: 27
+[22:37:33.849730][info] Robust Resection of view: 675634977
+[22:37:33.865745][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 19.4471
+	- # points used for resection: 52
+	- # points validated by robust resection: 27
+[22:37:34.645455][info] Remove outliers: 
+	- # outliers residual error: 62
+	- # outliers angular error: 0
+[22:37:35.300052][info] Remove outliers: 
+	- # outliers residual error: 6
+	- # outliers angular error: 1
+[22:37:35.303054][info] Update Reconstruction complete: 
+	- # cameras calibrated: 50
+	- # landmarks: 11947
+[22:37:35.308059][info] Update Reconstruction:
+	- resection id: 39
+	- # images in the resection group: 1
+	- # images remaining: 26
+[22:37:35.312063][info] Robust Resection of view: 2096417223
+[22:37:35.329078][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 10.0285
+	- # points used for resection: 59
+	- # points validated by robust resection: 58
+[22:37:36.157834][info] Remove outliers: 
+	- # outliers residual error: 42
+	- # outliers angular error: 0
+[22:37:36.160836][info] Update Reconstruction complete: 
+	- # cameras calibrated: 51
+	- # landmarks: 12036
+[22:37:36.163839][info] Update Reconstruction:
+	- resection id: 40
+	- # images in the resection group: 1
+	- # images remaining: 25
+[22:37:36.166841][info] Robust Resection of view: 1392468951
+[22:37:36.186860][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 89.177
+	- # points used for resection: 69
+	- # points validated by robust resection: 44
+[22:37:36.991594][info] Remove outliers: 
+	- # outliers residual error: 33
+	- # outliers angular error: 0
+[22:37:36.995597][info] Update Reconstruction complete: 
+	- # cameras calibrated: 52
+	- # landmarks: 12078
+[22:37:36.998600][info] Update Reconstruction:
+	- resection id: 41
+	- # images in the resection group: 1
+	- # images remaining: 24
+[22:37:37.001602][info] Robust Resection of view: 1387747476
+[22:37:37.021620][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 16.0168
+	- # points used for resection: 70
+	- # points validated by robust resection: 30
+[22:37:37.812341][info] Remove outliers: 
+	- # outliers residual error: 28
+	- # outliers angular error: 0
+[22:37:37.815343][info] Update Reconstruction complete: 
+	- # cameras calibrated: 53
+	- # landmarks: 12083
+[22:37:37.819348][info] Update Reconstruction:
+	- resection id: 42
+	- # images in the resection group: 1
+	- # images remaining: 23
+[22:37:37.821349][info] Robust Resection of view: 965715659
+[22:37:37.835362][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 8.77352
+	- # points used for resection: 43
+	- # points validated by robust resection: 42
+[22:37:38.486955][info] Remove outliers: 
+	- # outliers residual error: 30
+	- # outliers angular error: 0
+[22:37:38.489958][info] Update Reconstruction complete: 
+	- # cameras calibrated: 54
+	- # landmarks: 12163
+[22:37:38.493962][info] Update Reconstruction:
+	- resection id: 43
+	- # images in the resection group: 1
+	- # images remaining: 22
+[22:37:38.495964][info] Robust Resection of view: 2025875319
+[22:37:38.521987][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 5.34678
+	- # points used for resection: 92
+	- # points validated by robust resection: 63
+[22:37:39.128540][info] Remove outliers: 
+	- # outliers residual error: 33
+	- # outliers angular error: 0
+[22:37:39.131543][info] Update Reconstruction complete: 
+	- # cameras calibrated: 55
+	- # landmarks: 12324
+[22:37:39.135547][info] Update Reconstruction:
+	- resection id: 44
+	- # images in the resection group: 1
+	- # images remaining: 21
+[22:37:39.138549][info] Robust Resection of view: 1101473849
+[22:37:39.174582][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 6.37929
+	- # points used for resection: 135
+	- # points validated by robust resection: 74
+[22:37:39.896239][info] Remove outliers: 
+	- # outliers residual error: 39
+	- # outliers angular error: 0
+[22:37:39.899242][info] Update Reconstruction complete: 
+	- # cameras calibrated: 56
+	- # landmarks: 12399
+[22:37:39.902245][info] Update Reconstruction:
+	- resection id: 45
+	- # images in the resection group: 1
+	- # images remaining: 20
+[22:37:39.905248][info] Robust Resection of view: 1889038201
+[22:37:39.928269][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 5.74829
+	- # points used for resection: 81
+	- # points validated by robust resection: 60
+[22:37:40.707979][info] Remove outliers: 
+	- # outliers residual error: 22
+	- # outliers angular error: 0
+[22:37:40.710982][info] Update Reconstruction complete: 
+	- # cameras calibrated: 57
+	- # landmarks: 12537
+[22:37:40.714986][info] Update Reconstruction:
+	- resection id: 46
+	- # images in the resection group: 1
+	- # images remaining: 19
+[22:37:40.716987][info] Robust Resection of view: 676757260
+[22:37:40.741010][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 4.39971
+	- # points used for resection: 84
+	- # points validated by robust resection: 75
+[22:37:41.354568][info] Remove outliers: 
+	- # outliers residual error: 10
+	- # outliers angular error: 0
+[22:37:41.357571][info] Update Reconstruction complete: 
+	- # cameras calibrated: 58
+	- # landmarks: 12646
+[22:37:41.361575][info] Update Reconstruction:
+	- resection id: 47
+	- # images in the resection group: 1
+	- # images remaining: 18
+[22:37:41.364577][info] Robust Resection of view: 107064801
+[22:37:41.374587][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 18.201
+	- # points used for resection: 29
+	- # points validated by robust resection: 27
+[22:37:42.104251][info] Remove outliers: 
+	- # outliers residual error: 22
+	- # outliers angular error: 0
+[22:37:42.107254][info] Update Reconstruction complete: 
+	- # cameras calibrated: 59
+	- # landmarks: 12690
+[22:37:42.111258][info] Update Reconstruction:
+	- resection id: 48
+	- # images in the resection group: 1
+	- # images remaining: 17
+[22:37:42.114261][info] Robust Resection of view: 1159701109
+[22:37:42.131276][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 5.45209
+	- # points used for resection: 57
+	- # points validated by robust resection: 48
+[22:37:42.901978][info] Remove outliers: 
+	- # outliers residual error: 9
+	- # outliers angular error: 0
+[22:37:42.904981][info] Update Reconstruction complete: 
+	- # cameras calibrated: 60
+	- # landmarks: 12749
+[22:37:42.907984][info] Update Reconstruction:
+	- resection id: 49
+	- # images in the resection group: 1
+	- # images remaining: 16
+[22:37:42.910987][info] Robust Resection of view: 461490285
+[22:37:42.936009][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 2.6717
+	- # points used for resection: 89
+	- # points validated by robust resection: 79
+[22:37:43.560578][info] Remove outliers: 
+	- # outliers residual error: 6
+	- # outliers angular error: 0
+[22:37:43.563581][info] Update Reconstruction complete: 
+	- # cameras calibrated: 61
+	- # landmarks: 12846
+[22:37:43.567585][info] Update Reconstruction:
+	- resection id: 50
+	- # images in the resection group: 1
+	- # images remaining: 15
+[22:37:43.569586][info] Robust Resection of view: 1202276389
+[22:37:43.580596][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 8.5734
+	- # points used for resection: 29
+	- # points validated by robust resection: 22
+[22:37:44.207167][info] Remove outliers: 
+	- # outliers residual error: 9
+	- # outliers angular error: 0
+[22:37:44.210171][info] Update Reconstruction complete: 
+	- # cameras calibrated: 62
+	- # landmarks: 12934
+[22:37:44.213173][info] Update Reconstruction:
+	- resection id: 51
+	- # images in the resection group: 1
+	- # images remaining: 14
+[22:37:44.216176][info] Robust Resection of view: 1257965185
+[22:37:44.227186][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 4.32875
+	- # points used for resection: 30
+	- # points validated by robust resection: 22
+[22:37:44.895795][info] Remove outliers: 
+	- # outliers residual error: 2
+	- # outliers angular error: 0
+[22:37:44.899799][info] Update Reconstruction complete: 
+	- # cameras calibrated: 63
+	- # landmarks: 12980
+[22:37:44.902802][info] Update Reconstruction:
+	- resection id: 52
+	- # images in the resection group: 1
+	- # images remaining: 13
+[22:37:44.905804][info] Robust Resection of view: 441998772
+[22:37:44.915813][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 6.88848
+	- # points used for resection: 28
+	- # points validated by robust resection: 24
+[22:37:45.544386][info] Remove outliers: 
+	- # outliers residual error: 24
+	- # outliers angular error: 0
+[22:37:45.547389][info] Update Reconstruction complete: 
+	- # cameras calibrated: 64
+	- # landmarks: 13023
+[22:37:45.551392][info] Update Reconstruction:
+	- resection id: 53
+	- # images in the resection group: 1
+	- # images remaining: 12
+[22:37:45.554395][info] Robust Resection of view: 537605326
+[22:37:45.570409][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 2.48156
+	- # points used for resection: 54
+	- # points validated by robust resection: 51
+[22:37:46.195980][info] Remove outliers: 
+	- # outliers residual error: 2
+	- # outliers angular error: 0
+[22:37:46.199983][info] Update Reconstruction complete: 
+	- # cameras calibrated: 65
+	- # landmarks: 13149
+[22:37:46.202986][info] Update Reconstruction:
+	- resection id: 54
+	- # images in the resection group: 1
+	- # images remaining: 11
+[22:37:46.205989][info] Robust Resection of view: 1114184231
+[22:37:46.218000][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 1.6789
+	- # points used for resection: 37
+	- # points validated by robust resection: 33
+[22:37:47.015726][info] Remove outliers: 
+	- # outliers residual error: 2
+	- # outliers angular error: 0
+[22:37:47.019730][info] Update Reconstruction complete: 
+	- # cameras calibrated: 66
+	- # landmarks: 13367
+[22:37:47.022733][info] Update Reconstruction:
+	- resection id: 55
+	- # images in the resection group: 1
+	- # images remaining: 10
+[22:37:47.025736][info] Robust Resection of view: 744178710
+[22:37:47.052760][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 9.50858
+	- # points used for resection: 95
+	- # points validated by robust resection: 92
+[22:37:47.820460][info] Remove outliers: 
+	- # outliers residual error: 6
+	- # outliers angular error: 0
+[22:37:47.823463][info] Update Reconstruction complete: 
+	- # cameras calibrated: 67
+	- # landmarks: 13516
+[22:37:47.826466][info] Update Reconstruction:
+	- resection id: 56
+	- # images in the resection group: 1
+	- # images remaining: 9
+[22:37:47.829468][info] Robust Resection of view: 1969897084
+[22:37:47.864500][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 6.05639
+	- # points used for resection: 128
+	- # points validated by robust resection: 125
+[22:37:48.643211][info] Remove outliers: 
+	- # outliers residual error: 7
+	- # outliers angular error: 0
+[22:37:48.647213][info] Update Reconstruction complete: 
+	- # cameras calibrated: 68
+	- # landmarks: 13619
+[22:37:48.651217][info] Update Reconstruction:
+	- resection id: 57
+	- # images in the resection group: 1
+	- # images remaining: 8
+[22:37:48.653219][info] Robust Resection of view: 669291969
+[22:37:48.673237][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 3.28872
+	- # points used for resection: 68
+	- # points validated by robust resection: 66
+[22:37:49.379881][info] Remove outliers: 
+	- # outliers residual error: 1
+	- # outliers angular error: 0
+[22:37:49.383885][info] Update Reconstruction complete: 
+	- # cameras calibrated: 69
+	- # landmarks: 13708
+[22:37:49.386887][info] Update Reconstruction:
+	- resection id: 58
+	- # images in the resection group: 1
+	- # images remaining: 7
+[22:37:49.389890][info] Robust Resection of view: 2140944369
+[22:37:49.399907][info] Robust Resection information:
+	- resection status: true
+	- threshold (error max): 8.81785
+	- # points used for resection: 27
+	- # points validated by robust resection: 27
+[22:37:50.054495][info] Remove outliers: 
+	- # outliers residual error: 2
+	- # outliers angular error: 0
+[22:37:50.057499][info] Update Reconstruction complete: 
+	- # cameras calibrated: 70
+	- # landmarks: 13744
+[22:37:50.060503][info] Update Reconstruction:
+	- resection id: 59
+	- # images in the resection group: 1
+	- # images remaining: 6
+[22:37:50.063504][info] Robust Resection of view: 184172299
+[22:37:50.074514][info] Robust Resection information:
+	- resection status: false
+	- threshold (error max): 88.2197
+	- # points used for resection: 31
+	- # points validated by robust resection: 21
+[22:37:50.075515][info] Resection of view 184172299 failed.
+[22:37:50.076516][info] Update Reconstruction complete: 
+	- # cameras calibrated: 70
+	- # landmarks: 13744
+[22:37:50.080520][info] Update Reconstruction:
+	- resection id: 60
+	- # images in the resection group: 1
+	- # images remaining: 5
+[22:37:50.086525][info] Robust Resection of view: 1742181051
+[22:37:50.094532][info] Robust Resection information:
+	- resection status: false
+	- threshold (error max): 9.27464
+	- # points used for resection: 15
+	- # points validated by robust resection: 13
+[22:37:50.094532][info] Resection of view 1742181051 failed.
+[22:37:50.095533][info] Update Reconstruction complete: 
+	- # cameras calibrated: 70
+	- # landmarks: 13744
+[22:37:50.099536][info] Update Reconstruction:
+	- resection id: 61
+	- # images in the resection group: 1
+	- # images remaining: 4
+[22:37:50.102539][info] Robust Resection of view: 674892340
+[22:37:50.110547][info] Robust Resection information:
+	- resection status: false
+	- threshold (error max): 5.44203
+	- # points used for resection: 19
+	- # points validated by robust resection: 15
+[22:37:50.111547][info] Resection of view 674892340 failed.
+[22:37:50.111547][info] Update Reconstruction complete: 
+	- # cameras calibrated: 70
+	- # landmarks: 13744
+[22:37:50.134569][info] Structure from Motion statistics:
+	- # input images: 77
+	- # cameras calibrated: 70
+	- # landmarks: 13744
+	- elapsed time: 39.502
+	- residual RMSE: 0.632432
+[22:37:50.162594][info] Histogram of residuals:
+
+4.61e-08	|	52363
+0.39	|	16251
+0.781	|	6297
+1.17	|	2775
+1.56	|	1420
+1.95	|	729
+2.34	|	428
+2.73	|	246
+3.12	|	137
+3.51	|	44
+3.9
+
+[22:37:50.163595][info] # tracks: 13744
+[22:37:50.163595][info] Tracks Length min: 2
+[22:37:50.163595][info] Tracks Length median: 2
+[22:37:50.164596][info] Tracks Length max: 20
+[22:37:50.164596][info] Tracks Length mean: 2.93546
+[22:37:50.164596][info] Histogram of tracks length:
+
+2	|	8110
+3	|	2706
+4	|	1237
+5	|	715
+6	|	366
+7	|	238
+8	|	137
+9	|	83
+10	|	59
+11	|	27
+12	|	30
+13	|	11
+14	|	8
+15	|	10
+16	|	0
+17	|	3
+18	|	1
+19	|	2
+20	|	1
+21
+
+
+Compute scene structure color
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+[22:37:52.145401][info] Structure from motion took (s): 43.128000
+[22:37:52.145401][info] Generating HTML report...
+[22:37:52.177430][info] Export SfMData to disk: C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/StructureFromMotion/f43e3982b60faade086fcca7c61f75e7ddca3165/sfm.abc
+[22:37:52.345584][info] Structure from Motion results:
+	- # input images: 77
+	- # cameras calibrated: 70
+	- # landmarks: 13744

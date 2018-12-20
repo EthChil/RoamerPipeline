@@ -1,0 +1,18 @@
+{
+    "status": "SUCCESS",
+    "execMode": "LOCAL",
+    "nodeName": "Meshing_1",
+    "nodeType": "Meshing",
+    "packageName": "aliceVision",
+    "packageVersion": null,
+    "graph": "",
+    "commandLine": "aliceVision_meshing  --ini \"C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/PrepareDenseScene/cc2d749d50c272d73e04976cb1abe62b6c6bda20/mvs.ini\" --depthMapFolder \"C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/DepthMap/900a74028f1b016a4d086ef42e0ae39f39b17f77\" --depthMapFilterFolder \"C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/DepthMapFilter/e5f8303faf8c8a660b70220f30cfc73c567353ad\" --maxInputPoints 50000000 --maxPoints 5000000 --maxPointsPerVoxel 1000000 --minStep 2 --partitioning singleBlock --repartition multiResolution --angleFactor 15.0 --simFactor 15.0 --pixSizeMarginInitCoef 2.0 --pixSizeMarginFinalCoef 4.0 --voteMarginFactor 4.0 --contributeMarginFactor 2.0 --simGaussianSizeInit 10.0 --simGaussianSize 10.0 --minAngleThreshold 1.0 --refineFuse True --verboseLevel info --output \"C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/Meshing/2940d647d496bfb6c2fc67035f6ab411aad4da35/mesh.obj\" ",
+    "env": null,
+    "startDateTime": "2018-12-18 22:30:17.437084",
+    "endDateTime": "2018-12-18 22:31:51.913168",
+    "elapsedTime": 94.47608351707458,
+    "hostname": "DESKTOP-370SOTQ",
+    "sessionUid": "ea3295ae-0337-11e9-97b8-309c2328df18",
+    "returnCode": 0,
+    "elapsedTimeStr": "0:01:34.476084"
+}

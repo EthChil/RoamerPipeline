@@ -1,0 +1,18 @@
+{
+    "status": "SUCCESS",
+    "execMode": "LOCAL",
+    "nodeName": "PrepareDenseScene_1",
+    "nodeType": "PrepareDenseScene",
+    "packageName": "aliceVision",
+    "packageVersion": null,
+    "graph": "",
+    "commandLine": "aliceVision_prepareDenseScene  --input \"C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/StructureFromMotion/9bb7988399555aeebce88f74d9c64129d045dc93/sfm.abc\" --verboseLevel info --output \"C:/Users/maxch/Documents/GitHub/RoamerPipeline/Alice/MeshroomCache/PrepareDenseScene/cc2d749d50c272d73e04976cb1abe62b6c6bda20\" ",
+    "env": null,
+    "startDateTime": "2018-12-18 22:16:59.524050",
+    "endDateTime": "2018-12-18 22:17:10.273844",
+    "elapsedTime": 10.748792886734009,
+    "hostname": "DESKTOP-370SOTQ",
+    "sessionUid": "ea3295ae-0337-11e9-97b8-309c2328df18",
+    "returnCode": 0,
+    "elapsedTimeStr": "0:00:10.748793"
+}
