@@ -1,0 +1,61 @@
+12:15:10 [App     ] Build date: Nov 23 2017, 15:35:04
+12:15:10 [App     ] CPU: Intel(R) Core(TM) i7-4750HQ CPU @ 2.00GHz
+12:15:10 [App     ] RAM: 8.00GB Physical Memory 8.00GB Virtual Memory
+12:15:10 [App     ] OS: Darwin 18.0.0 (x86_64)
+12:15:10 [App     ] SSE & AVX compatible CPU & OS detected
+12:15:10 [App     ] Command line: -i /Users/Kratos/Desktop/OutputPlaza/MVS/output.mvs
+12:15:10 [App     ] Camera model loaded: platform 0; camera  0; f 0.873x0.873; poses 22
+12:15:10 [App     ] Image loaded   0: IMG_0472.JPG
+12:15:10 [App     ] Image loaded   1: IMG_0473.JPG
+12:15:10 [App     ] Image loaded   2: IMG_0474.JPG
+12:15:10 [App     ] Image loaded   3: IMG_0475.JPG
+12:15:10 [App     ] Image loaded   4: IMG_0476.JPG
+12:15:10 [App     ] Image loaded   5: IMG_0477.JPG
+12:15:10 [App     ] Image loaded   6: IMG_0478.JPG
+12:15:10 [App     ] Image loaded   7: IMG_0479.JPG
+12:15:10 [App     ] Image loaded   8: IMG_0480.JPG
+12:15:10 [App     ] Image loaded   9: IMG_0481.JPG
+12:15:10 [App     ] Image loaded  10: IMG_0482.JPG
+12:15:10 [App     ] Image loaded  11: IMG_0483.JPG
+12:15:10 [App     ] Image loaded  12: IMG_0484.JPG
+12:15:10 [App     ] Image loaded  13: IMG_0485.JPG
+12:15:10 [App     ] Image loaded  14: IMG_0486.JPG
+12:15:10 [App     ] Image loaded  15: IMG_0487.JPG
+12:15:10 [App     ] Image loaded  16: IMG_0488.JPG
+12:15:10 [App     ] Image loaded  17: IMG_0489.JPG
+12:15:10 [App     ] Image loaded  18: IMG_0490.JPG
+12:15:10 [App     ] Image loaded  19: IMG_0491.JPG
+12:15:10 [App     ] Image loaded  20: IMG_0492.JPG
+12:15:10 [App     ] Image loaded  21: IMG_0493.JPG
+12:15:10 [App     ] Scene loaded from interface format (51ms):
+	22 images (22 calibrated) with a total of 32.63 MPixels (1.48 MPixels/image)
+	1082 points, 0 vertices, 0 faces
+12:15:11 [App     ] Preparing images for dense reconstruction completed: 22 images (531ms)
+12:15:11 [App     ] error: reference image   0 has no good images in view
+12:15:11 [App     ] error: reference image   1 has no good images in view
+12:15:11 [App     ] error: reference image   2 has no good images in view
+12:15:11 [App     ] error: reference image   3 has no good images in view
+12:15:11 [App     ] error: reference image   4 has no good images in view
+12:15:11 [App     ] error: reference image   5 has no good images in view
+12:15:11 [App     ] error: reference image   6 has no good images in view
+12:15:11 [App     ] error: reference image   7 has no good images in view
+12:15:11 [App     ] error: reference image   8 has no good images in view
+12:15:11 [App     ] error: reference image   9 has no good images in view
+12:15:11 [App     ] error: reference image  10 has no good images in view
+12:15:11 [App     ] error: reference image  11 has no good images in view
+12:15:11 [App     ] error: reference image  12 has no good images in view
+12:15:11 [App     ] error: reference image  13 has no good images in view
+12:15:11 [App     ] error: reference image  14 has no good images in view
+12:15:11 [App     ] error: reference image  15 has no good images in view
+12:15:11 [App     ] error: reference image  16 has no good images in view
+12:15:11 [App     ] error: reference image  17 has no good images in view
+12:15:11 [App     ] error: reference image  18 has no good images in view
+12:15:11 [App     ] error: reference image  19 has no good images in view
+12:15:11 [App     ] error: reference image  20 has no good images in view
+12:15:11 [App     ] error: reference image  21 has no good images in view
+12:15:11 [App     ] Selecting images for dense reconstruction completed: 0 images (7ms)
+12:15:11 [App     ] Depth-maps fused and filtered: 0 depth-maps, 0 depths, 0 points (-2147483648%%) (0ms)
+12:15:11 [App     ] Densifying point-cloud completed: 0 points (541ms)
+12:15:11 [App     ] Scene saved (2ms):
+	22 images (22 calibrated)
+	0 points, 0 vertices, 0 faces
