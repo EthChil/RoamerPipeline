@@ -1,9 +1,0 @@
-19:37:11 [App     ] Build date: Nov 23 2017, 15:35:04
-19:37:11 [App     ] CPU: Intel(R) Core(TM) i7-4750HQ CPU @ 2.00GHz
-19:37:11 [App     ] RAM: 8.00GB Physical Memory 8.00GB Virtual Memory
-19:37:11 [App     ] OS: Darwin 18.0.0 (x86_64)
-19:37:11 [App     ] SSE & AVX compatible CPU & OS detected
-19:37:11 [App     ] Command line: -i /Users/Kratos/Desktop/IRHSOUT/MVS/output_dense.mvs
-19:37:11 [App     ] Scene loaded (36ms):
-	140 images (138 calibrated) with a total of 90.97 MPixels (0.66 MPixels/image)
-	0 points, 0 vertices, 0 faces

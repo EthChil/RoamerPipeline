@@ -158,19 +158,19 @@ pMVS.wait()
 
 #START OF MVS PIPELINE
 prnt ("9. Starting Dense Point Reconstruction")
-pDense = subprocess.Popen([join(MVS_PATH, "DensifyPointCloud"), "-i", MVS_OUTPUT + "/output.mvs"])
+pDense = subprocess.Popen([join(MVS_PATH, "DensifyPointCloud"), MVS_OUTPUT + "/output.mvs"])
 pDense.wait()
 
 prnt ("10. Starting mesh reconstruction")
-pMesh = subprocess.Popen([join(MVS_PATH, "ReconstructMesh"), "-i", MVS_OUTPUT + "/output_dense.mvs"])
+pMesh = subprocess.Popen([join(MVS_PATH, "ReconstructMesh"), MVS_OUTPUT + "/output_dense.mvs"])
 pMesh.wait()
 
 prnt ("11. Starting mesh refinement")
-pMeshRefine = subprocess.Popen([join(MVS_PATH, "RefineMesh"), "-i", MVS_OUTPUT + "/output_dense_mesh.mvs"])
+pMeshRefine = subprocess.Popen([join(MVS_PATH, "RefineMesh"), MVS_OUTPUT + "/output_dense_mesh.mvs"])
 pMeshRefine.wait()
 
 prnt ("12. Starting mesh texturing")
-pTexture = subprocess.Popen([join(MVS_PATH, "TextureMesh"), "-i", MVS_OUTPUT + "/output_dense_mesh_refine.mvs"])
+pTexture = subprocess.Popen([join(MVS_PATH, "TextureMesh"), MVS_OUTPUT + "/output_dense_mesh_refine.mvs"])
 pTexture.wait()
 
 #Clean out logs and other auxillary files
